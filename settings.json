@@ -1,0 +1,18 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "css",
+      "savePathReplacementPairs": "css"
+    }
+  ],
+  "tabnine.experimentalAutoImports": true,
+  "auto-rename-tag.activationOnLanguage": [
+
+    "*"
+  ],
+  "liveSassCompile.settings.autoprefix": [
+  
+  ]
+}

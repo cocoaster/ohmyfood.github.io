@@ -1,0 +1,17 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": " entreprise de commande de repas en ligne dans les restaurants gastronomiques de Paris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/styles.scss:./css/style.css -style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0",
+    "browserslist": "last 4 versions"
+  }
+}
