@@ -1,0 +1,12 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
