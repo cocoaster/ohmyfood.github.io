@@ -1,13 +1,15 @@
-@mixin media-breapoint-up($name){
-    @media screen and (min-width: map-get($breakpoints, $name)) {
-        @content;
+@mixin media-breapoint-up($name) {
+  @media screen and (min-width: map-get($breakpoints, $name)) {
+    @content;
+  }
 }
+@mixin media-breapoint-down($name) {
+  @media screen and (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
 }
-@mixin media-breapoint-down($name){
-    @media screen and (max-width: map-get($breakpoints, $name)) {
-        @content;
-    }
-}
-@mixin colors($color){
-
+@mixin fixed($position) {
+  position: fixed;
+  z-index: 10;
+  #{$position}: 0;
 }
