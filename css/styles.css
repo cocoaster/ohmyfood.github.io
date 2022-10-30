@@ -219,7 +219,7 @@ main #restaurants {
 }
 main #restaurants #marker {
   position: absolute;
-  top: -30px;
+  top: -40px;
 }
 main #restaurants h2 {
   font-family: robotto, sans-serif;
