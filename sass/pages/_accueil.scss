@@ -206,9 +206,10 @@ main {
       .restaurantimg {
         width: 100%;
         height: 180px;
-        object-fit: cover;
         border-radius: 20px 20px 0px 0px;
         transition: 0.4s ease-in-out;
+        object-fit: cover;
+
         &:hover {
           opacity: 0.3;
         }
@@ -236,5 +237,72 @@ main {
     position: absolute;
     right: 50px;
     bottom: 53px;
+  }
+}
+@include media-breapoint-up("md") {
+  main {
+    margin-top: 116px;
+    #functioning {
+      margin-left: 20px;
+      margin-right: 20px;
+
+      h2 {
+        font-family: $font2;
+        font-size: 1.3em;
+      }
+      #functioninglist {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        margin-right: 20px;
+
+        .functioning__button {
+          margin-bottom: 20px;
+          margin-right: 0px;
+          padding: 20px 10px 20px 5px;
+          box-shadow: 0px 4px 9px 3px #e2dddd;
+          display: flex;
+          align-items: center;
+          .fcticon {
+            font-size: 0.8em;
+            margin-right: 13px;
+          }
+          .fct__text {
+            font-size: 0.8em;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    #restaurants {
+      padding: 40px 20px;
+
+      .restaurant__lign {
+        display: flex;
+        justify-content: space-around;
+        .restaurantlink {
+          width: 98%;
+          .restaurantcontainers {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    #footerlist {
+      display: flex;
+      .footer__txt {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@include media-breapoint-up("lg") {
+  main {
+    margin-top: 204px;
   }
 }

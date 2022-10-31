@@ -129,7 +129,7 @@ main #navsection #nav__bar {
   text-align: center;
 }
 main #navsection #nav__bar #navbar__button {
-  background: linear-gradient(0deg, #9356DC 3%, #FF79DA 97%);
+  background: linear-gradient(0deg, #9356dc 3%, #ff79da 97%);
   border-radius: 30px;
   padding: 15px 18px;
   font-family: robotto, sans-serif;
@@ -174,7 +174,7 @@ main #functioning #functioninglist .functioning__button:hover {
   box-shadow: 1px 4px 12px 3px #e2dddd;
 }
 main #functioning #functioninglist .functioning__button:hover > .fcticon {
-  color: #9356DC;
+  color: #9356dc;
 }
 main #functioning #functioninglist .number__container {
   position: absolute;
@@ -187,7 +187,7 @@ main #functioning #functioninglist .number__container .circle {
   width: 7px;
   height: 7px;
   padding: 2px 12px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 100%;
 }
 main #functioning #functioninglist .number__container .circle .circle__number {
@@ -203,7 +203,7 @@ main #functioning #functioninglist .fcticon {
   color: #8d8d8d;
 }
 main #functioning #functioninglist .fcticon:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 main #functioning #functioninglist .fct__text {
   margin: 0px 23px 0px 0px;
@@ -250,10 +250,10 @@ main #restaurants .restaurantlink .restaurantcontainers:hover {
 main #restaurants .restaurantlink .restaurantimg {
   width: 100%;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   transition: 0.4s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #restaurants .restaurantlink .restaurantimg:hover {
   opacity: 0.3;
@@ -281,6 +281,69 @@ main .heartscontainer1 {
   bottom: 53px;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 116px;
+  }
+  main #functioning {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main #functioning h2 {
+    font-family: robotto, sans-serif;
+    font-size: 1.3em;
+  }
+  main #functioning #functioninglist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  main #functioning #functioninglist .functioning__button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 20px 10px 20px 5px;
+    box-shadow: 0px 4px 9px 3px #e2dddd;
+    display: flex;
+    align-items: center;
+  }
+  main #functioning #functioninglist .functioning__button .fcticon {
+    font-size: 0.8em;
+    margin-right: 13px;
+  }
+  main #functioning #functioninglist .functioning__button .fct__text {
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
+  main #restaurants {
+    padding: 40px 20px;
+  }
+  main #restaurants .restaurant__lign {
+    display: flex;
+    justify-content: space-around;
+  }
+  main #restaurants .restaurant__lign .restaurantlink {
+    width: 98%;
+  }
+  main #restaurants .restaurant__lign .restaurantlink .restaurantcontainers {
+    width: 95%;
+  }
+  footer {
+    display: flex;
+  }
+  footer #footerlist {
+    display: flex;
+  }
+  footer #footerlist .footer__txt {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    margin-top: 204px;
+  }
+}
 .topimg {
   margin-top: 0px;
   width: 100%;
@@ -337,7 +400,7 @@ main .heartscontainer1 {
   bottom: -10px;
   left: 0px;
   right: 25%;
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 5px solid #99e2d0;
 }
 .starter .container__menus {
   position: relative;
@@ -391,7 +454,7 @@ main .heartscontainer1 {
   position: absolute;
   width: 20%;
   height: 110px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   right: 0px;
   top: 0px;
   z-index: 1;
@@ -442,7 +505,7 @@ main .heartscontainer1 {
 .starter .container__menus .ghostbox .iconcercle .iconcheck {
   position: absolute;
   font-size: 1.2em;
-  color: #99E2D0;
+  color: #99e2d0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -460,7 +523,7 @@ main .heartscontainer1 {
   padding-top: 20px;
 }
 .order .order__button {
-  background: linear-gradient(0deg, #9356DC 3%, #FF79DA 97%);
+  background: linear-gradient(0deg, #9356dc 3%, #ff79da 97%);
   border-radius: 30px;
   padding: 20px 55px;
   font-family: robotto, sans-serif;
@@ -482,8 +545,15 @@ main .heartscontainer1 {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0;
+  .starter {
+    font-family: robotto, sans-serif;
+  }
+  .starter .subtitle__menus {
+    font-size: 1em;
+  }
+  .starter .subtitle__menus:after {
+    content: "";
+    width: 6%;
   }
 }
 header {
@@ -531,6 +601,26 @@ header .header__container figure .homelink2 #logo {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    height: 115px;
+  }
+  header .header__container {
+    position: relative;
+  }
+  header .header__container .homelink {
+    text-decoration: none;
+  }
+  header .header__container .homelink .arrow {
+    font-size: 45px;
+    margin-bottom: 13px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    height: 200px;
+  }
+}
 footer {
   background-color: #353535;
   padding-top: 14px;

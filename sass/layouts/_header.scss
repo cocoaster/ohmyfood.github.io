@@ -1,9 +1,4 @@
 //responsive mobile devices
-@include media-breapoint-up("sm") {
-  body {
-    margin: 0;
-  }
-}
 
 header {
   width: 100%;
@@ -45,5 +40,27 @@ header {
         }
       }
     }
+  }
+}
+
+@include media-breapoint-up("md") {
+  header {
+    height: 115px;
+    .header__container {
+      position: relative;
+      .homelink {
+        text-decoration: none;
+        .arrow {
+          font-size: 45px;
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breapoint-up("lg") {
+  header {
+    height: 200px;
   }
 }
