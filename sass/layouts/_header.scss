@@ -59,8 +59,18 @@ header {
   }
 }
 
-@include media-breapoint-up("lg") {
+@include media-breapoint-up("xl") {
   header {
     height: 200px;
+    .header__container {
+      position: relative;
+      .homelink {
+        text-decoration: none;
+        .arrow {
+          font-size: 65px;
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }

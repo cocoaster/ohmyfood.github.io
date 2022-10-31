@@ -261,7 +261,6 @@ main {
           margin-bottom: 20px;
           margin-right: 0px;
           padding: 20px 10px 20px 5px;
-          box-shadow: 0px 4px 9px 3px #e2dddd;
           display: flex;
           align-items: center;
           .fcticon {
@@ -290,19 +289,130 @@ main {
       }
     }
   }
-  footer {
-    display: flex;
-    #footerlist {
-      display: flex;
-      .footer__txt {
-        margin-left: 15px;
-      }
-    }
-  }
 }
 
-@include media-breapoint-up("lg") {
+@include media-breapoint-up("xl") {
   main {
     margin-top: 204px;
+    #location {
+      height: 71px;
+
+      &:hover {
+        cursor: grab;
+        box-shadow: 1px 1px 3px 3px #a8a6a6;
+      }
+      .location__icon {
+        font-size: 1.7rem;
+        padding-right: 25px;
+      }
+      form {
+        font-size: 2rem;
+
+        input {
+          width: 56%;
+          &::-webkit-input-placeholder {
+            font-size: 2rem;
+            &:focus::-webkit-input-placeholder {
+              opacity: 0;
+            }
+
+            &:-moz-placeholder {
+              font-size: 2rem;
+            }
+            &::-moz-placeholder {
+              font-size: 2em;
+            }
+            &:-ms-input-placeholder {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+    #navsection {
+      padding-top: 43px;
+      padding-bottom: 58px;
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+      #navsection__txt {
+        font-size: 1.9em;
+        margin-bottom: 30px;
+      }
+      #nav__bar {
+        margin: 0 auto;
+        #navbar__button {
+          border-radius: 40px;
+          padding: 25px 28px;
+          font-size: 1.8em;
+        }
+      }
+    }
+    #functioning {
+      margin: 50px 40px 50px 40px;
+
+      h2 {
+        font-family: $font2;
+        font-size: 2em;
+      }
+      #functioninglist {
+        margin-right: 0px;
+
+        .functioning__button {
+          width: 30%;
+          padding: 25px 10px 25px 25px;
+          border-radius: 40px;
+          .fcticon {
+            font-size: 1.3em;
+            margin-right: 23px;
+          }
+          .fct__text {
+            font-size: 1.3em;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    #restaurants {
+      padding: 40px 20px;
+      h2 {
+        font-size: 2em;
+      }
+      .restaurant__lign {
+        display: flex;
+        justify-content: space-around;
+        .restaurantlink {
+          width: 98%;
+          .restaurantcontainers {
+            width: 95%;
+            .restaurantimg {
+              width: 100%;
+              height: 180px;
+            }
+            .new {
+              position: absolute;
+              top: 0px;
+              right: 14px;
+              padding: 7px 13px;
+              font-size: 14px;
+            }
+            h3 {
+              font-size: 1.5em;
+              margin: 10px 0px 5px 10px;
+            }
+            .restaurantp {
+              margin: 0px 0px 13px 10px;
+              font-size: 1.5em;
+            }
+          }
+        }
+        .heartscontainer1 {
+          position: absolute;
+          right: 50px;
+          bottom: 53px;
+        }
+      }
+    }
   }
 }
