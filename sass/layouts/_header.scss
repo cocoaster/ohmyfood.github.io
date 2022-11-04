@@ -59,11 +59,30 @@ header {
   }
 }
 
+//version desktop
 @include media-breapoint-up("xl") {
   header {
-    height: 200px;
+    padding-top: 0;
+    position: relative;
+    background-color: transparent;
+    height: 153px;
+
     .header__container {
-      position: relative;
+      margin-bottom: 40px;
+      position: absolute;
+      height: 150px;
+      figure {
+        width: 1200px;
+        height: 150px;
+        margin-left: 10px;
+        .homelink2 {
+          height: 150px;
+          #logo {
+            width: 600px;
+            height: 150px;
+          }
+        }
+      }
       .homelink {
         text-decoration: none;
         .arrow {
@@ -72,5 +91,19 @@ header {
         }
       }
     }
+  }
+}
+.desktop__header {
+  width: 100%;
+  background-color: #ffffff;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fixed(top);
+
+  figure {
+    margin-right: 0;
+    width: 100%;
   }
 }
