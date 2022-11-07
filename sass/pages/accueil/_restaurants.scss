@@ -1,0 +1,133 @@
+#restaurants {
+  background-color: #f7f7f7;
+  padding: 40px 3%;
+  position: relative;
+}
+#marker {
+  position: absolute;
+  top: -40px;
+}
+h2 {
+  font-family: $font2;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+.restaurantlink {
+  text-decoration: none;
+  color: #000000;
+}
+.restaurantcontainers {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  width: 97%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  font-family: $font2;
+  box-shadow: 0px 4px 9px 3px #e2dddd;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    box-shadow: -5px 7px 10px 4px #e2dddd;
+  }
+}
+.restaurantimg {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+  transition: 0.4s ease-in-out;
+  object-fit: cover;
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+.new {
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  padding: 7px 13px;
+  background-color: #99e2d0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0c8e6e;
+}
+h3 {
+  margin: 10px 0px 5px 10px;
+  font-size: 1em;
+}
+.restaurantp {
+  margin: 0px 0px 13px 10px;
+  font-size: 1em;
+}
+
+@include media-breapoint-up("md") {
+  #restaurants {
+    padding: 40px 20px;
+  }
+
+  .restaurant__lign {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurantlink {
+    width: 98%;
+  }
+  .restaurantcontainers {
+    width: 95%;
+  }
+}
+
+@include media-breapoint-up("xl") {
+  #restaurants {
+    background-color: transparent;
+    position: absolute;
+    padding: 40px 20px;
+    right: 15px;
+    top: 155px;
+    text-align: center;
+    width: 56%;
+    max-width: 56%;
+  }
+  .homeh2 {
+    font-size: 1.6em;
+    margin-bottom: 36px;
+  }
+  .restaurant__lign {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .restaurantlink {
+    width: 98%;
+  }
+  .restaurantcontainers {
+    width: 95%;
+    height: 265px;
+  }
+  .restaurantimg {
+    width: 100%;
+    height: 186px;
+  }
+  .new {
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    padding: 7px 13px;
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1.2em;
+    text-align: start;
+    margin: 10px 0px 5px 25px;
+  }
+  .restaurantp {
+    text-align: start;
+    margin: 0px 0px 13px 25px;
+    font-size: 1.2em;
+  }
+}

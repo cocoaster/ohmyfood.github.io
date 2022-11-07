@@ -1,3 +1,9 @@
+.heartscontainer1 {
+  position: absolute;
+  transform: scale(0.8);
+  right: 35px;
+  bottom: 55px;
+}
 .heartcontainer2 {
   position: relative;
 }
@@ -23,7 +29,15 @@
     transform: scale(1.1);
   }
   &:hover + .emptyheart {
-    animation: emptyanim 0.2s ease-in-out both;
+    animation: emptyanim 1s ease-in-out both;
+  }
+}
+
+@include media-breapoint-up("xl") {
+  .heartscontainer1 {
+    position: absolute;
+    right: 50px;
+    bottom: 63px;
   }
 }
 

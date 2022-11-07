@@ -7,111 +7,117 @@ header {
   background-color: #ffffff;
   height: 60px;
   z-index: 200;
-  .header__container,
-  .desktop__header {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    position: relative;
-    .homelink {
-      text-decoration: none;
-      color: rgb(47, 46, 46);
-      .arrow {
-        position: absolute;
-        left: 13px;
-        bottom: 12px;
-        font-size: 1.2rem;
-        font-weight: 900;
-        color: rgb(57, 57, 57);
-      }
-    }
-    figure {
-      width: 100%;
-      margin: 0 auto;
-      .homelink2 {
-        display: block;
-        text-decoration: none;
-        height: auto;
-        text-align: center;
-        #logo {
-          text-align: center;
-          width: 55%;
-          height: auto;
-        }
-      }
-    }
-  }
+}
+.header__container,
+.desktop__header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+}
+.homelink {
+  text-decoration: none;
+  color: rgb(47, 46, 46);
+}
+.arrow {
+  position: absolute;
+  left: 13px;
+  bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(57, 57, 57);
+}
+
+figure {
+  width: 100%;
+  margin: 0 auto;
+}
+.homelink2 {
+  display: block;
+  text-decoration: none;
+  height: auto;
+  text-align: center;
+}
+#logo {
+  text-align: center;
+  width: 55%;
+  height: auto;
 }
 
 @include media-breapoint-up("md") {
   header {
     height: 101px;
-    .header__container {
-      position: relative;
-      .homelink {
-        text-decoration: none;
-        .arrow {
-          font-size: 45px;
-          margin-bottom: 13px;
-        }
-      }
-    }
+  }
+  .header__container {
+    position: relative;
+  }
+  .homelink {
+    text-decoration: none;
+  }
+  .arrow {
+    font-size: 45px;
+    margin-bottom: 13px;
   }
 }
 
 //version desktop
 @include media-breapoint-up("xl") {
-  header {
-    padding-top: 0;
-    position: absolute;
-    background-color: transparent;
-    height: 153px;
-    .header__container {
-      margin-top: 45px;
-      height: 96px;
-
-      figure {
-        height: 150px;
-        margin-left: 10px;
-        .homelink2 {
-          height: 150px;
-          #logo {
-            width: 600px;
-            height: 150px;
-          }
-        }
-      }
-      .homelink {
-        text-decoration: none;
-        .arrow {
-          font-size: 65px;
-          margin-bottom: 35px;
-          bottom: -7px;
-        }
-      }
-    }
+  .desktop__header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fixed(top);
   }
-}
-
-.desktop__header {
-  width: 100%;
-  background-color: #ffffff;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include fixed(top);
   .header__container {
     margin-top: 40px;
-    figure {
-      margin-right: 0;
-      width: 100%;
-    }
   }
-}
-.logoplace {
-  width: 100%;
-  margin: auto;
-  margin-right: 0;
+  #homelogo {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .logoplace {
+    width: 100%;
+    margin: auto;
+    margin-right: 0;
+    height: 150px;
+    margin-left: 10px;
+  }
+
+  header {
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    height: 153px;
+  }
+  .header__container {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 48px;
+  }
+
+  .logoplace {
+  }
+  .homelink2 {
+    height: 150px;
+  }
+  #logo {
+    width: 600px;
+    height: 150px;
+  }
+
+  .homelink {
+    text-decoration: none;
+  }
+  .arrow {
+    font-size: 65px;
+    margin-bottom: 35px;
+    bottom: -31px;
+  }
 }

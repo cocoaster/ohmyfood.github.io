@@ -1,0 +1,19 @@
+html,
+body {
+  margin-top: 0;
+}
+.mainrestaurant {
+  margin-top: 65px;
+}
+
+@include media-breapoint-up("md") {
+  .mainrestaurant {
+    margin-top: 140px;
+  }
+}
+
+@include media-breapoint-up("xl") {
+  .mainrestaurant {
+    margin-top: 140px;
+  }
+}

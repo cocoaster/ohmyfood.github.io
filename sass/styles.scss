@@ -8,7 +8,14 @@
 @import "base/base";
 @import "modules/loader";
 @import "modules/hearticon";
-@import "pages/accueil";
-@import "pages/restaurants";
+@import "pages/accueil/home-presentation";
+@import "pages/accueil/localisation";
+@import "pages/accueil/navigation";
+@import "pages/accueil/fonctionnement";
+@import "pages/accueil/restaurants";
+@import "pages/restaurants/restau-presentation";
+@import "pages/restaurants/topsection";
+@import "pages/restaurants/menus";
+@import "pages/restaurants/button";
 @import "layouts/header";
 @import "layouts/footer";

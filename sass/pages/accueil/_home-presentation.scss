@@ -1,0 +1,43 @@
+.homepage {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  animation: loaderduration 5.1s both;
+}
+.maindesktop {
+  margin-top: 61px;
+}
+
+@include media-breapoint-up("md") {
+  .maindesktop {
+    margin-top: 102px;
+  }
+}
+
+@include media-breapoint-up("xl") {
+  body,
+  html {
+    margin-top: 0;
+    height: min-content;
+  }
+  .homepage {
+    display: block;
+    background-color: #f7f7f7;
+    height: 950px;
+    width: 100%;
+  }
+  .maindesktop {
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .whiteleftcontainerdesktop {
+    background-color: #ffffff;
+    width: 40%;
+    height: 951px;
+  }
+  .leftelementscontainerdesktop {
+    margin-top: 221px;
+  }
+}

@@ -410,6 +410,14 @@ body .centerloader #plate {
   }
 }
 
+.heartscontainer1 {
+  position: absolute;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 35px;
+  bottom: 55px;
+}
+
 .heartcontainer2 {
   position: relative;
 }
@@ -448,8 +456,16 @@ body .centerloader #plate {
 }
 
 .fullheart:hover + .emptyheart {
-  -webkit-animation: emptyanim 0.2s ease-in-out both;
-          animation: emptyanim 0.2s ease-in-out both;
+  -webkit-animation: emptyanim 1s ease-in-out both;
+          animation: emptyanim 1s ease-in-out both;
+}
+
+@media screen and (min-width: 1100px) {
+  .heartscontainer1 {
+    position: absolute;
+    right: 50px;
+    bottom: 63px;
+  }
 }
 
 @-webkit-keyframes emptyanim {
@@ -482,11 +498,49 @@ body .centerloader #plate {
           animation: loaderduration 5.1s both;
 }
 
-main {
+.maindesktop {
   margin-top: 61px;
 }
 
-main #location {
+@media screen and (min-width: 769px) {
+  .maindesktop {
+    margin-top: 102px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body,
+  html {
+    margin-top: 0;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .homepage {
+    display: block;
+    background-color: #f7f7f7;
+    height: 950px;
+    width: 100%;
+  }
+  .maindesktop {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .whiteleftcontainerdesktop {
+    background-color: #ffffff;
+    width: 40%;
+    height: 951px;
+  }
+  .leftelementscontainerdesktop {
+    margin-top: 221px;
+  }
+}
+
+#location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,20 +558,20 @@ main #location {
   z-index: 1;
 }
 
-main #location:hover {
+#location:hover {
   cursor: -webkit-grab;
   cursor: grab;
   -webkit-box-shadow: 1px 1px 3px 3px #a8a6a6;
           box-shadow: 1px 1px 3px 3px #a8a6a6;
 }
 
-main #location .location__icon {
+.location__icon {
   font-size: 15px;
   padding-right: 15px;
   color: #363636;
 }
 
-main #location form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,47 +589,92 @@ main #location form {
   font-weight: 550;
 }
 
-main #location form input {
+form input {
   border: 0px;
   background-color: #eaeaea;
   outline: none;
   width: 56%;
 }
 
-main #location form input::-webkit-input-placeholder {
+form input::-webkit-input-placeholder {
   font-family: robotto, sans-serif;
   font-size: 1em;
   font-weight: 550;
 }
 
-main #location form input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+form input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
   visibility: hidden;
   opacity: 0;
 }
 
-main #location form input::-webkit-input-placeholder:-moz-placeholder {
+form input::-webkit-input-placeholder:-moz-placeholder {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-main #location form input::-webkit-input-placeholder::-moz-placeholder {
+form input::-webkit-input-placeholder::-moz-placeholder {
   font-size: 1em;
   font-weight: 600;
 }
 
-main #location form input::-webkit-input-placeholder:-ms-input-placeholder {
+form input::-webkit-input-placeholder:-ms-input-placeholder {
   font-size: 1em;
   font-weight: 600;
 }
 
-main #navsection {
+@media screen and (min-width: 1100px) {
+  #location {
+    height: 46px;
+    width: 301px;
+    margin: auto;
+    margin-top: 55px;
+    border-radius: 5px;
+    border: 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+            box-shadow: 0px 0px 0px;
+  }
+  #location:hover {
+    cursor: -webkit-grab;
+    cursor: grab;
+    -webkit-box-shadow: 1px 1px 3px 3px #a8a6a6;
+            box-shadow: 1px 1px 3px 3px #a8a6a6;
+  }
+  .location__icon {
+    font-size: 1.3rem;
+    padding-right: 25px;
+  }
+  form {
+    font-size: 1.3rem;
+  }
+  form input {
+    width: 56%;
+  }
+  form input::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  form input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  form input::-webkit-input-placeholder:-moz-placeholder {
+    font-size: 2rem;
+  }
+  form input::-webkit-input-placeholder::-moz-placeholder {
+    font-size: 2em;
+  }
+  form input::-webkit-input-placeholder:-ms-input-placeholder {
+    font-size: 2rem;
+  }
+}
+
+#navsection {
   background-color: #f7f7f7;
   margin: 0 auto;
   padding-top: 43px;
   padding-bottom: 58px;
 }
 
-main #navsection h1 {
+#homeh1 {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -584,7 +683,7 @@ main #navsection h1 {
   text-align: center;
 }
 
-main #navsection #navsection__txt {
+#navsection__txt {
   width: 80%;
   margin: 0 auto;
   font-family: robotto, sans-serif;
@@ -594,12 +693,12 @@ main #navsection #navsection__txt {
   margin-bottom: 30px;
 }
 
-main #navsection #nav__bar {
+#nav__bar {
   margin: 0 auto;
   text-align: center;
 }
 
-main #navsection #nav__bar #navbar__button {
+#navbar__button {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #9356dc), color-stop(97%, #ff79da));
   background: linear-gradient(0deg, #9356dc 3%, #ff79da 97%);
   border-radius: 30px;
@@ -614,22 +713,47 @@ main #navsection #nav__bar #navbar__button {
   transition: 0.4s ease-in-out;
 }
 
-main #navsection #nav__bar #navbar__button:hover {
+#navbar__button:hover {
   opacity: 0.7;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-main #functioning {
+@media screen and (min-width: 1100px) {
+  #navsection {
+    padding-top: 43px;
+    padding-bottom: 15px;
+    background-color: transparent;
+  }
+  #homeh1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  #navsection__txt {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  #nav__bar {
+    margin: 0 auto;
+    margin-bottom: 7px;
+  }
+  #navbar__button {
+    border-radius: 40px;
+    padding: 20px 28px;
+    font-size: 1.1em;
+  }
+}
+
+#functioning {
   margin-left: 20px;
 }
 
-main #functioning h2 {
+.homeh2 {
   font-family: robotto, sans-serif;
   font-size: 20px;
 }
 
-main #functioning #functioninglist {
+#functioninglist {
   max-width: 92%;
   list-style-type: none;
   font-family: robotto, sans-serif;
@@ -638,7 +762,7 @@ main #functioning #functioninglist {
   padding-left: 0px;
 }
 
-main #functioning #functioninglist .functioning__button {
+.functioning__button {
   font-size: 0.6em;
   position: relative;
   background-color: #f7f7f7;
@@ -655,17 +779,17 @@ main #functioning #functioninglist .functioning__button {
           align-items: center;
 }
 
-main #functioning #functioninglist .functioning__button:hover {
+.functioning__button:hover {
   background-color: #f5edff;
   -webkit-box-shadow: 1px 4px 12px 3px #e2dddd;
           box-shadow: 1px 4px 12px 3px #e2dddd;
 }
 
-main #functioning #functioninglist .functioning__button:hover > .fcticon {
+.functioning__button:hover > .fcticon {
   color: #9356dc;
 }
 
-main #functioning #functioninglist .number__container {
+.number__container {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -673,7 +797,7 @@ main #functioning #functioninglist .number__container {
           transform: translate(-50%, -50%);
 }
 
-main #functioning #functioninglist .number__container .circle {
+.circle {
   position: relative;
   width: 7px;
   height: 7px;
@@ -682,7 +806,7 @@ main #functioning #functioninglist .number__container .circle {
   border-radius: 100%;
 }
 
-main #functioning #functioninglist .number__container .circle .circle__number {
+.circle .circle__number {
   position: absolute;
   color: #ffffff;
   top: 50%;
@@ -691,49 +815,126 @@ main #functioning #functioninglist .number__container .circle .circle__number {
           transform: translate(-55%, -45%);
 }
 
-main #functioning #functioninglist .fcticon {
+.fcticon {
   margin: 0px 10px 0px 26px;
   font-size: 1em;
   color: #8d8d8d;
 }
 
-main #functioning #functioninglist .fcticon:hover {
+.fcticon:hover {
   color: #9356dc;
 }
 
-main #functioning #functioninglist .fct__text {
+.fct__text {
   margin: 0px 10px 0px 0px;
   font-size: 1.2em;
 }
 
-main #functioning #functioninglist .fct__text:hover {
+.fct__text:hover {
   color: #000000;
 }
 
-main #restaurants {
+@media screen and (min-width: 769px) {
+  #functioning {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .homeh2 {
+    font-family: robotto, sans-serif;
+    font-size: 1.3em;
+  }
+  #functioninglist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  .functioning__button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 20px 10px 20px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fcticon {
+    font-size: 1.3em;
+    margin-right: 13px;
+  }
+  .fct__text {
+    font-size: 1.3em;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #functioning {
+    margin: 50px 40px 100px 40px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .homeh2 {
+    font-family: robotto, sans-serif;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+  #functioninglist {
+    margin-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    padding-left: 35px;
+  }
+  .functioning__button {
+    width: 90%;
+    padding: 20px 10px 20px 20px;
+    border-radius: 40px;
+  }
+  .fcticon {
+    font-size: 1.8em;
+    margin-right: 23px;
+  }
+  .fct__text {
+    font-size: 1.6em;
+    margin-right: 20px;
+  }
+}
+
+#restaurants {
   background-color: #f7f7f7;
   padding: 40px 3%;
   position: relative;
 }
 
-main #restaurants #marker {
+#marker {
   position: absolute;
   top: -40px;
 }
 
-main #restaurants h2 {
+h2 {
   font-family: robotto, sans-serif;
   font-size: 20px;
   margin: 10px;
   margin-bottom: 25px;
 }
 
-main #restaurants .restaurantlink {
+.restaurantlink {
   text-decoration: none;
   color: #000000;
 }
 
-main #restaurants .restaurantlink .restaurantcontainers {
+.restaurantcontainers {
   position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -749,12 +950,12 @@ main #restaurants .restaurantlink .restaurantcontainers {
   transition: 0.4s ease-in-out;
 }
 
-main #restaurants .restaurantlink .restaurantcontainers:hover {
+.restaurantcontainers:hover {
   -webkit-box-shadow: -5px 7px 10px 4px #e2dddd;
           box-shadow: -5px 7px 10px 4px #e2dddd;
 }
 
-main #restaurants .restaurantlink .restaurantimg {
+.restaurantimg {
   width: 100%;
   height: 180px;
   border-radius: 20px 20px 0px 0px;
@@ -764,11 +965,11 @@ main #restaurants .restaurantlink .restaurantimg {
      object-fit: cover;
 }
 
-main #restaurants .restaurantlink .restaurantimg:hover {
+.restaurantimg:hover {
   opacity: 0.3;
 }
 
-main #restaurants .restaurantlink .new {
+.new {
   position: absolute;
   top: 0px;
   right: 14px;
@@ -779,253 +980,51 @@ main #restaurants .restaurantlink .new {
   color: #0c8e6e;
 }
 
-main #restaurants .restaurantlink h3 {
+h3 {
   margin: 10px 0px 5px 10px;
   font-size: 1em;
 }
 
-main #restaurants .restaurantlink .restaurantp {
+.restaurantp {
   margin: 0px 0px 13px 10px;
   font-size: 1em;
 }
 
-main .heartscontainer1 {
-  position: absolute;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  right: 35px;
-  bottom: 55px;
-}
-
 @media screen and (min-width: 769px) {
-  main {
-    margin-top: 102px;
-  }
-  main #functioning {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  main #functioning h2 {
-    font-family: robotto, sans-serif;
-    font-size: 1.3em;
-  }
-  main #functioning #functioninglist {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
-    margin-right: 20px;
-  }
-  main #functioning #functioninglist .functioning__button {
-    margin-bottom: 20px;
-    margin-right: 0px;
-    padding: 20px 10px 20px 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main #functioning #functioninglist .functioning__button .fcticon {
-    font-size: 1.3em;
-    margin-right: 13px;
-  }
-  main #functioning #functioninglist .functioning__button .fct__text {
-    font-size: 1.3em;
-    margin-right: 10px;
-  }
-  main #restaurants {
+  #restaurants {
     padding: 40px 20px;
   }
-  main #restaurants .restaurant__lign {
+  .restaurant__lign {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  main #restaurants .restaurant__lign .restaurantlink {
+  .restaurantlink {
     width: 98%;
   }
-  main #restaurants .restaurant__lign .restaurantlink .restaurantcontainers {
+  .restaurantcontainers {
     width: 95%;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  body,
-  html {
-    margin-top: 0;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  body .homepage,
-  html .homepage {
-    display: block;
-    background-color: #f7f7f7;
-    height: 1200px;
-    width: 100%;
-  }
-  body .maindesktop,
-  html .maindesktop {
-    margin-top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: auto;
-  }
-  body .maindesktop .whiteleftcontainerdesktop,
-  html .maindesktop .whiteleftcontainerdesktop {
-    background-color: #ffffff;
-    width: 40%;
-    height: 150vh;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop {
-    margin-top: 300px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location {
-    height: 65px;
-    width: 350px;
-    margin: auto;
-    margin-top: 55px;
-    border-radius: 5px;
-    border: 0px;
-    -webkit-box-shadow: 0px 0px 0px;
-            box-shadow: 0px 0px 0px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location:hover,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location:hover {
-    cursor: -webkit-grab;
-    cursor: grab;
-    -webkit-box-shadow: 1px 1px 3px 3px #a8a6a6;
-            box-shadow: 1px 1px 3px 3px #a8a6a6;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location .location__icon,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location .location__icon {
-    font-size: 1.3rem;
-    padding-right: 25px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form {
-    font-size: 1.3rem;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input {
-    width: 56%;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder {
-    text-align: center;
-    font-size: 1.3rem;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:focus::-webkit-input-placeholder,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
-    opacity: 0;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:-moz-placeholder,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:-moz-placeholder {
-    font-size: 2rem;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder::-moz-placeholder,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder::-moz-placeholder {
-    font-size: 2em;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:-ms-input-placeholder,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #location form input::-webkit-input-placeholder:-ms-input-placeholder {
-    font-size: 2rem;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection {
-    padding-top: 43px;
-    padding-bottom: 15px;
+  #restaurants {
     background-color: transparent;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection h1,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection h1 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #navsection__txt,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #navsection__txt {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #nav__bar,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #nav__bar {
-    margin: 0 auto;
-    margin-bottom: 7px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #nav__bar #navbar__button,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #navsection #nav__bar #navbar__button {
-    border-radius: 40px;
-    padding: 25px 28px;
-    font-size: 1.1em;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning {
-    margin: 50px 40px 100px 40px;
-    text-align: center;
-    margin-top: 15px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning h2,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning h2 {
-    font-family: robotto, sans-serif;
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist {
-    margin-right: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    padding-left: 15%;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button {
-    width: 85%;
-    padding: 25px 10px 25px 25px;
-    border-radius: 40px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button .fcticon,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button .fcticon {
-    font-size: 1.8em;
-    margin-right: 23px;
-  }
-  body .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button .fct__text,
-  html .maindesktop .whiteleftcontainerdesktop .leftelementscontainerdesktop #functioning #functioninglist .functioning__button .fct__text {
-    font-size: 1.8em;
-    margin-right: 20px;
-  }
-  body .maindesktop #restaurants,
-  html .maindesktop #restaurants {
     position: absolute;
     padding: 40px 20px;
     right: 15px;
-    bottom: 144px;
+    top: 155px;
     text-align: center;
     width: 56%;
     max-width: 56%;
   }
-  body .maindesktop #restaurants h2,
-  html .maindesktop #restaurants h2 {
-    font-size: 2em;
-    margin-bottom: 65px;
+  .homeh2 {
+    font-size: 1.6em;
+    margin-bottom: 36px;
   }
-  body .maindesktop #restaurants .restaurant__lign,
-  html .maindesktop #restaurants .restaurant__lign {
+  .restaurant__lign {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1035,45 +1034,33 @@ main .heartscontainer1 {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink {
+  .restaurantlink {
     width: 98%;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers {
+  .restaurantcontainers {
     width: 95%;
-    height: 280px;
+    height: 265px;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .restaurantimg,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .restaurantimg {
+  .restaurantimg {
     width: 100%;
-    height: 200px;
+    height: 186px;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .new,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .new {
+  .new {
     position: absolute;
     top: 0px;
     right: 14px;
     padding: 7px 13px;
     font-size: 1em;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers h3,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers h3 {
-    font-size: 1.4em;
+  h3 {
+    font-size: 1.2em;
     text-align: start;
     margin: 10px 0px 5px 25px;
   }
-  body .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .restaurantp,
-  html .maindesktop #restaurants .restaurant__lign .restaurantlink .restaurantcontainers .restaurantp {
+  .restaurantp {
     text-align: start;
     margin: 0px 0px 13px 25px;
-    font-size: 1.4em;
-  }
-  body .maindesktop #restaurants .restaurant__lign .heartscontainer1,
-  html .maindesktop #restaurants .restaurant__lign .heartscontainer1 {
-    position: absolute;
-    right: 50px;
-    bottom: 63px;
+    font-size: 1.2em;
   }
 }
 
@@ -1082,8 +1069,23 @@ body {
   margin-top: 0;
 }
 
-html .topimg,
-body .topimg {
+.mainrestaurant {
+  margin-top: 65px;
+}
+
+@media screen and (min-width: 769px) {
+  .mainrestaurant {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .mainrestaurant {
+    margin-top: 140px;
+  }
+}
+
+.topimg {
   margin-top: 0px;
   width: 100%;
   height: 240px;
@@ -1091,15 +1093,31 @@ body .topimg {
      object-fit: cover;
 }
 
-html .menus,
-body .menus {
+@media screen and (min-width: 769px) {
+  .topimg {
+    margin-top: 97px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .topimg {
+    margin-top: 90px;
+    height: 500px;
+  }
+}
+
+.menus {
   position: relative;
   width: 100%;
   height: 1038px;
 }
 
-html .menus .firstcontainermenu,
-body .menus .firstcontainermenu {
+.menus2 {
+  height: 1127px;
+}
+
+.firstcontainermenu {
   position: absolute;
   top: -20px;
   width: 100%;
@@ -1115,15 +1133,13 @@ body .menus .firstcontainermenu {
   padding-top: 20px;
 }
 
-html .menus .firstcontainermenu .restaurantname,
-body .menus .firstcontainermenu .restaurantname {
+.restaurantname {
   font-family: shrikhand;
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
 
-html .menus .firstcontainermenu .heartscontainer1bis,
-body .menus .firstcontainermenu .heartscontainer1bis {
+.heartscontainer1bis {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   position: absolute;
@@ -1131,13 +1147,11 @@ body .menus .firstcontainermenu .heartscontainer1bis {
   right: 45px;
 }
 
-html .menus .firstcontainermenu .starter,
-body .menus .firstcontainermenu .starter {
+.starter {
   font-family: robotto, sans-serif;
 }
 
-html .menus .firstcontainermenu .starter .subtitle__menus,
-body .menus .firstcontainermenu .starter .subtitle__menus {
+.subtitle__menus {
   font-size: 1em;
   font-weight: 100;
   color: #6d6d6d;
@@ -1145,8 +1159,7 @@ body .menus .firstcontainermenu .starter .subtitle__menus {
   margin-bottom: 26px;
 }
 
-html .menus .firstcontainermenu .starter .subtitle__menus:after,
-body .menus .firstcontainermenu .starter .subtitle__menus:after {
+.subtitle__menus:after {
   content: "";
   position: absolute;
   width: 12%;
@@ -1156,8 +1169,7 @@ body .menus .firstcontainermenu .starter .subtitle__menus:after {
   border-bottom: 5px solid #99e2d0;
 }
 
-html .menus .firstcontainermenu .starter .container__menus,
-body .menus .firstcontainermenu .starter .container__menus {
+.container__menus {
   position: relative;
   width: 100%;
   height: 60px;
@@ -1173,124 +1185,100 @@ body .menus .firstcontainermenu .starter .container__menus {
           box-shadow: 0px 0px 9px 2px #b5b3b3;
   -webkit-animation: enterelements 0.5s ease-in-out;
           animation: enterelements 0.5s ease-in-out;
-  width: auto;
-  transition: 4000ms ease-in-out;
-  -webkit-transition: 4000ms ease-in-out;
-  -moz-transition: 4000ms ease-in-out;
-  -ms-transition: 4000ms ease-in-out;
-  -o-transition: 4000ms ease-in-out;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--1,
-body .menus .firstcontainermenu .starter .container__menus--1 {
+.container__menus--1 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--2,
-body .menus .firstcontainermenu .starter .container__menus--2 {
+.container__menus--2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--3,
-body .menus .firstcontainermenu .starter .container__menus--3 {
+.container__menus--3 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--4,
-body .menus .firstcontainermenu .starter .container__menus--4 {
+.container__menus--4 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--5,
-body .menus .firstcontainermenu .starter .container__menus--5 {
+.container__menus--5 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--6,
-body .menus .firstcontainermenu .starter .container__menus--6 {
+.container__menus--6 {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--7,
-body .menus .firstcontainermenu .starter .container__menus--7 {
+.container__menus--7 {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--8,
-body .menus .firstcontainermenu .starter .container__menus--8 {
+.container__menus--8 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus--9,
-body .menus .firstcontainermenu .starter .container__menus--9 {
+.container__menus--9 {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover,
-body .menus .firstcontainermenu .starter .container__menus:hover {
+.container__menus:hover {
   -webkit-box-shadow: 1px 1px 7px 2px #8a8989;
           box-shadow: 1px 1px 7px 2px #8a8989;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover .hovervalidation,
-body .menus .firstcontainermenu .starter .container__menus:hover .hovervalidation {
+.container__menus:hover .hovervalidation {
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-animation: validationcontainer 1s ease-in-out forwards;
           animation: validationcontainer 1s ease-in-out forwards;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover .points,
-body .menus .firstcontainermenu .starter .container__menus:hover .points {
+.container__menus:hover .points {
   -webkit-animation: pointsanim 1s ease-in-out forwards;
           animation: pointsanim 1s ease-in-out forwards;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover .validation,
-body .menus .firstcontainermenu .starter .container__menus:hover .validation {
+.container__menus:hover .validation {
   -webkit-animation: checkanim 1s ease-in-out forwards;
           animation: checkanim 1s ease-in-out forwards;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover .iconcercle,
-body .menus .firstcontainermenu .starter .container__menus:hover .iconcercle {
+.container__menus:hover .iconcercle {
   -webkit-animation: circleanim 1.1s ease-in-out forwards;
           animation: circleanim 1.1s ease-in-out forwards;
 }
 
-html .menus .firstcontainermenu .starter .container__menus:hover .price,
-body .menus .firstcontainermenu .starter .container__menus:hover .price {
+.container__menus:hover .price {
   -webkit-animation: priceanim 1s ease-in-out forwards;
           animation: priceanim 1s ease-in-out forwards;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .title__container,
-body .menus .firstcontainermenu .starter .container__menus .title__container {
+.title__container {
   margin-top: 0;
   position: absolute;
   font-size: 0.7em;
   top: 15px;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .description__menus,
-body .menus .firstcontainermenu .starter .container__menus .description__menus {
+.description__menus {
   font-size: 0.5em;
   color: #6d6d6d;
   position: absolute;
   bottom: 7px;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .hovervalidation,
-body .menus .firstcontainermenu .starter .container__menus .hovervalidation {
+.hovervalidation {
   background-color: #ffffff;
   position: absolute;
   height: 20px;
@@ -1307,8 +1295,7 @@ body .menus .firstcontainermenu .starter .container__menus .hovervalidation {
           transform: scaleX(0);
 }
 
-html .menus .firstcontainermenu .starter .container__menus .points,
-body .menus .firstcontainermenu .starter .container__menus .points {
+.points {
   position: absolute;
   font-size: 0.6em;
   color: #6d6d6d;
@@ -1317,8 +1304,7 @@ body .menus .firstcontainermenu .starter .container__menus .points {
   opacity: -1;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .price,
-body .menus .firstcontainermenu .starter .container__menus .price {
+.price {
   position: absolute;
   bottom: 7px;
   right: 10px;
@@ -1327,8 +1313,7 @@ body .menus .firstcontainermenu .starter .container__menus .price {
   z-index: 10;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .validation,
-body .menus .firstcontainermenu .starter .container__menus .validation {
+.validation {
   position: absolute;
   right: 0;
   top: 0;
@@ -1347,8 +1332,7 @@ body .menus .firstcontainermenu .starter .container__menus .validation {
           transform: scale(0);
 }
 
-html .menus .firstcontainermenu .starter .container__menus .validation .ghostbox,
-body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox {
+.ghostbox {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1362,8 +1346,7 @@ body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox
           align-items: center;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .validation .ghostbox .iconcercle,
-body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox .iconcercle {
+.iconcercle {
   position: relative;
   width: 15px;
   height: 15px;
@@ -1379,8 +1362,7 @@ body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox
   -o-border-radius: 50%;
 }
 
-html .menus .firstcontainermenu .starter .container__menus .validation .ghostbox .iconcercle .iconcheck,
-body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox .iconcercle .iconcheck {
+.iconcheck {
   position: absolute;
   font-size: 0.7em;
   color: #99e2d0;
@@ -1393,73 +1375,27 @@ body .menus .firstcontainermenu .starter .container__menus .validation .ghostbox
   -o-transform: translate(-50%, -50%);
 }
 
-html .menus .firstcontainermenu .order,
-body .menus .firstcontainermenu .order {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  padding-top: 20px;
-}
-
-html .menus .firstcontainermenu .order .order__button,
-body .menus .firstcontainermenu .order .order__button {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #9356dc), color-stop(97%, #ff79da));
-  background: linear-gradient(0deg, #9356dc 3%, #ff79da 97%);
-  border-radius: 30px;
-  padding: 20px 55px;
-  font-family: robotto, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #ffffff;
-  border: none;
-  -webkit-box-shadow: 0px 4px 9px 3px #e2dddd;
-          box-shadow: 0px 4px 9px 3px #e2dddd;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-html .menus .firstcontainermenu .order .order__button:hover,
-body .menus .firstcontainermenu .order .order__button:hover {
-  opacity: 0.7;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-html .menus2,
-body .menus2 {
-  height: 1127px;
-}
-
 @media screen and (min-width: 769px) {
   .starter {
     font-family: robotto, sans-serif;
   }
-  .starter .subtitle__menus {
+  .subtitle__menus {
     font-size: 1em;
   }
-  .starter .subtitle__menus:after {
+  .subtitle__menus:after {
     content: "";
     width: 6%;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  main {
-    margin-top: 140px;
-  }
-  main .topimg {
-    margin-top: 30px;
-    height: 500px;
-  }
-  main .menus {
+  .menus {
     height: 780px;
   }
-  main .menus .firstcontainermenu {
+  .menus2 {
+    height: 911px;
+  }
+  .firstcontainermenu {
     top: -100px;
     width: 100%;
     height: auto;
@@ -1472,17 +1408,17 @@ body .menus2 {
     padding-right: 95px;
     padding-top: 20px;
   }
-  main .menus .firstcontainermenu .restaurantname {
+  .restaurantname {
     font-size: 2rem;
   }
-  main .menus .firstcontainermenu .heartscontainer1bis {
+  .heartscontainer1bis {
     position: absolute;
     top: 42px;
     right: 142px;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  main .menus .firstcontainermenu .desktopmenus {
+  .desktopmenus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1490,20 +1426,20 @@ body .menus2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter {
+  .starter {
     font-family: robotto, sans-serif;
     margin-bottom: 40px;
     width: 400px;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .subtitle__menus {
+  .subtitle__menus {
     font-size: 1.3em;
     margin-bottom: 37px;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .subtitle__menus:after {
+  .subtitle__menus:after {
     content: "";
     width: 5%;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus {
+  .container__menus {
     width: 90%;
     height: 110px;
     padding-left: 10px;
@@ -1516,15 +1452,15 @@ body .menus2 {
     -o-border-radius: 20px;
     width: auto;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .title__container {
+  .title__container {
     font-size: 1.4em;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .description__menus {
+  .description__menus {
     font-size: 1.1em;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .hovervalidation {
+  .hovervalidation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1546,17 +1482,17 @@ body .menus2 {
     right: -1px;
     bottom: 0px;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .points {
+  .points {
     position: absolute;
     font-size: 1.1em;
     color: #6d6d6d;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .price {
+  .price {
     font-size: 1.1em;
     position: absolute;
     z-index: 10;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .validation {
+  .validation {
     width: 20%;
     height: 110px;
     right: -1px;
@@ -1568,29 +1504,50 @@ body .menus2 {
     -webkit-transform-origin: right;
             transform-origin: right;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .validation .ghostbox {
+  .ghostbox {
     width: 100%;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .validation .ghostbox .iconcercle {
+  .iconcercle {
     width: 30px;
     height: 30px;
   }
-  main .menus .firstcontainermenu .desktopmenus .starter .container__menus .validation .ghostbox .iconcercle .iconcheck {
+  .iconcheck {
     font-size: 1.2em;
   }
 }
 
-main {
-  margin-top: 140px;
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-top: 20px;
 }
 
-main .topimg {
-  margin-top: 30px;
-  height: 500px;
+.order__button {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #9356dc), color-stop(97%, #ff79da));
+  background: linear-gradient(0deg, #9356dc 3%, #ff79da 97%);
+  border-radius: 30px;
+  padding: 20px 55px;
+  font-family: robotto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+  -webkit-box-shadow: 0px 4px 9px 3px #e2dddd;
+          box-shadow: 0px 4px 9px 3px #e2dddd;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
-main .menus2 {
-  height: 911px;
+.order__button:hover {
+  opacity: 0.7;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 header {
@@ -1604,8 +1561,8 @@ header {
   z-index: 200;
 }
 
-header .header__container,
-header .desktop__header {
+.header__container,
+.desktop__header {
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1617,14 +1574,12 @@ header .desktop__header {
   position: relative;
 }
 
-header .header__container .homelink,
-header .desktop__header .homelink {
+.homelink {
   text-decoration: none;
   color: #2f2e2e;
 }
 
-header .header__container .homelink .arrow,
-header .desktop__header .homelink .arrow {
+.arrow {
   position: absolute;
   left: 13px;
   bottom: 12px;
@@ -1633,22 +1588,19 @@ header .desktop__header .homelink .arrow {
   color: #393939;
 }
 
-header .header__container figure,
-header .desktop__header figure {
+figure {
   width: 100%;
   margin: 0 auto;
 }
 
-header .header__container figure .homelink2,
-header .desktop__header figure .homelink2 {
+.homelink2 {
   display: block;
   text-decoration: none;
   height: auto;
   text-align: center;
 }
 
-header .header__container figure .homelink2 #logo,
-header .desktop__header figure .homelink2 #logo {
+#logo {
   text-align: center;
   width: 55%;
   height: auto;
@@ -1658,81 +1610,78 @@ header .desktop__header figure .homelink2 #logo {
   header {
     height: 101px;
   }
-  header .header__container {
+  .header__container {
     position: relative;
   }
-  header .header__container .homelink {
+  .homelink {
     text-decoration: none;
   }
-  header .header__container .homelink .arrow {
+  .arrow {
     font-size: 45px;
     margin-bottom: 13px;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  header {
-    padding-top: 0;
-    position: absolute;
-    background-color: transparent;
-    height: 153px;
+  .desktop__header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
   }
-  header .header__container {
-    margin-top: 45px;
-    height: 96px;
+  .header__container {
+    margin-top: 40px;
   }
-  header .header__container figure {
+  #homelogo {
+    margin-right: 0;
+    width: 100%;
+  }
+  .logoplace {
+    width: 100%;
+    margin: auto;
+    margin-right: 0;
     height: 150px;
     margin-left: 10px;
   }
-  header .header__container figure .homelink2 {
+  header {
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    height: 153px;
+  }
+  .header__container {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 48px;
+  }
+  .homelink2 {
     height: 150px;
   }
-  header .header__container figure .homelink2 #logo {
+  #logo {
     width: 600px;
     height: 150px;
   }
-  header .header__container .homelink {
+  .homelink {
     text-decoration: none;
   }
-  header .header__container .homelink .arrow {
+  .arrow {
     font-size: 65px;
     margin-bottom: 35px;
-    bottom: -7px;
+    bottom: -31px;
   }
-}
-
-.desktop__header {
-  width: 100%;
-  background-color: #ffffff;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-}
-
-.desktop__header .header__container {
-  margin-top: 40px;
-}
-
-.desktop__header .header__container figure {
-  margin-right: 0;
-  width: 100%;
-}
-
-.logoplace {
-  width: 100%;
-  margin: auto;
-  margin-right: 0;
 }
 
 footer {
@@ -1742,46 +1691,46 @@ footer {
   color: #ffffff;
 }
 
-footer #logo__link {
+#logo__link {
   text-decoration: none;
   color: #ffffff;
 }
 
-footer #logo__link:hover {
+#logo__link:hover {
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-footer #logo__link #footertitle {
+#footertitle {
   font-family: shrikhand;
   letter-spacing: 1px;
   -webkit-transform: scaleY(1.1);
           transform: scaleY(1.1);
   font-weight: 100;
   text-shadow: 0.1px 0.1px 1px #353535;
-  font-size: 16px;
+  font-size: 1em;
   margin-left: 30px;
   color: #ffffff;
 }
 
-footer #footerlist {
+#footerlist {
   list-style-type: none;
   font-family: robotto, sans-serif;
   padding-left: 15px;
 }
 
-footer #footerlist .footer__txt {
-  font-size: 15px;
+.footer__txt {
+  font-size: 0.9em;
   margin-bottom: 8px;
   padding-left: 15px;
 }
 
-footer #footerlist .footer__txt .footer__link {
+.footer__link {
   text-decoration: none;
   color: #ffffff;
 }
 
-footer #footerlist .footer__txt .footer__link .footericon {
+.footericon {
   padding-right: 12px;
 }
 
@@ -1791,12 +1740,12 @@ footer #footerlist .footer__txt .footer__link .footericon {
     display: -ms-flexbox;
     display: flex;
   }
-  footer #footerlist {
+  #footerlist {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer #footerlist .footer__txt {
+  .footer__txt {
     margin-left: 15px;
   }
 }
@@ -1806,27 +1755,27 @@ footer #footerlist .footer__txt .footer__link .footericon {
     z-index: 2;
     margin-top: 40px;
     position: absolute;
-    bottom: 0;
+    bottom: -105px;
     left: 0;
     right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer #logo__link {
+  #logo__link {
     text-decoration: none;
   }
-  footer #logo__link #footertitle {
-    font-size: 1.5em;
+  #footertitle {
+    font-size: 1em;
     margin-left: 30px;
   }
-  footer #footerlist {
+  #footerlist {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer #footerlist .footer__txt {
-    font-size: 1.5em;
+  .footer__txt {
+    font-size: 1.1em;
     margin-left: 45px;
   }
 }

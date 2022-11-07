@@ -1,0 +1,144 @@
+#functioning {
+  margin-left: 20px;
+}
+.homeh2 {
+  font-family: $font2;
+  font-size: 20px;
+}
+
+#functioninglist {
+  max-width: 92%;
+  list-style-type: none;
+  font-family: $font2;
+  font-weight: bold;
+  margin: 6px;
+  padding-left: 0px;
+}
+.functioning__button {
+  font-size: 0.6em;
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 25px 0px;
+  box-shadow: 0px 4px 9px 3px #e2dddd;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: #f5edff;
+    box-shadow: 1px 4px 12px 3px #e2dddd;
+  }
+  &:hover > .fcticon {
+    color: $primary;
+  }
+}
+
+.number__container {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translate(-50%, -50%);
+}
+.circle {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  padding: 2px 12px;
+  background-color: $primary;
+  border-radius: 100%;
+  .circle__number {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -45%);
+  }
+}
+
+.fcticon {
+  margin: 0px 10px 0px 26px;
+  font-size: 1em;
+  color: #8d8d8d;
+  &:hover {
+    color: $primary;
+  }
+}
+.fct__text {
+  margin: 0px 10px 0px 0px;
+  font-size: 1.2em;
+  &:hover {
+    color: #000000;
+  }
+}
+
+@include media-breapoint-up("md") {
+  #functioning {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .homeh2 {
+    font-family: $font2;
+    font-size: 1.3em;
+  }
+
+  #functioninglist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+
+  .functioning__button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 20px 10px 20px 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fcticon {
+    font-size: 1.3em;
+    margin-right: 13px;
+  }
+  .fct__text {
+    font-size: 1.3em;
+    margin-right: 10px;
+  }
+}
+
+@include media-breapoint-up("xl") {
+  #functioning {
+    margin: 50px 40px 100px 40px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .homeh2 {
+    font-family: $font2;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+  #functioninglist {
+    margin-right: 0px;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 35px;
+  }
+
+  .functioning__button {
+    width: 90%;
+    padding: 20px 10px 20px 20px;
+    border-radius: 40px;
+  }
+  .fcticon {
+    font-size: 1.8em;
+    margin-right: 23px;
+  }
+  .fct__text {
+    font-size: 1.6em;
+    margin-right: 20px;
+  }
+}
