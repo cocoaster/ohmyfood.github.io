@@ -3,6 +3,9 @@
 }
 .emptyheart {
   position: absolute;
+  &:hover {
+    animation: emptyanim 1s ease-in-out both;
+  }
   &:hover + .fullheart {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -17,6 +20,18 @@
   transform: scale(0);
   transition: transform 800ms ease-in-out;
   &:hover {
+    transform: scale(1.1);
+  }
+  &:hover + .emptyheart {
+    animation: emptyanim 0.2s ease-in-out both;
+  }
+}
+
+@keyframes emptyanim {
+  0% {
     transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }

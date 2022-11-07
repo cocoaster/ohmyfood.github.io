@@ -1,9 +1,11 @@
-.deskversion {
-  width: 0;
-  height: 0;
+.homepage {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  animation: loaderduration 5.1s both;
 }
 main {
-  margin-top: 85px;
+  margin-top: 61px;
   #location {
     display: flex;
     align-items: center;
@@ -119,11 +121,12 @@ main {
       margin: 6px;
       padding-left: 0px;
       .functioning__button {
+        font-size: 0.6em;
         position: relative;
         background-color: #f7f7f7;
         border-radius: 20px;
         margin-bottom: 20px;
-        padding: 25px 10px;
+        padding: 25px 0px;
         box-shadow: 0px 4px 9px 3px #e2dddd;
         display: flex;
         align-items: center;
@@ -157,16 +160,16 @@ main {
         }
       }
       .fcticon {
-        margin: 0px 23px 0px 26px;
-        font-size: 20px;
+        margin: 0px 10px 0px 26px;
+        font-size: 1em;
         color: #8d8d8d;
         &:hover {
           color: $primary;
         }
       }
       .fct__text {
-        margin: 0px 23px 0px 0px;
-        font-size: 1em;
+        margin: 0px 10px 0px 0px;
+        font-size: 1.2em;
         &:hover {
           color: #000000;
         }
@@ -230,23 +233,25 @@ main {
       }
       h3 {
         margin: 10px 0px 5px 10px;
+        font-size: 1em;
       }
       .restaurantp {
         margin: 0px 0px 13px 10px;
-        font-size: 18px;
+        font-size: 1em;
       }
     }
   }
   .heartscontainer1 {
     position: absolute;
-    right: 50px;
-    bottom: 53px;
+    transform: scale(0.8);
+    right: 35px;
+    bottom: 55px;
   }
 }
 
 @include media-breapoint-up("md") {
   main {
-    margin-top: 116px;
+    margin-top: 102px;
     #functioning {
       margin-left: 20px;
       margin-right: 20px;
@@ -269,11 +274,11 @@ main {
           display: flex;
           align-items: center;
           .fcticon {
-            font-size: 0.8em;
+            font-size: 1.3em;
             margin-right: 13px;
           }
           .fct__text {
-            font-size: 0.8em;
+            font-size: 1.3em;
             margin-right: 10px;
           }
         }
@@ -298,109 +303,121 @@ main {
 
 //version dekstop
 @include media-breapoint-up("xl") {
-  body {
-    background-color: #f7f7f7;
-    .deskversion {
+  body,
+  html {
+    margin-top: 0;
+    height: max-content;
+    .homepage {
       display: block;
-      background-color: #ffffff;
-      height: 980px;
-      width: 40%;
+      background-color: #f7f7f7;
+      height: 1200px;
+      width: 100%;
     }
-    main {
+    .maindesktop {
       margin-top: 0px;
+      display: flex;
+      width: 100%;
+      height: auto;
+      .whiteleftcontainerdesktop {
+        background-color: #ffffff;
+        width: 40%;
+        height: 150vh;
+        .leftelementscontainerdesktop {
+          margin-top: 300px;
+          #location {
+            height: 65px;
+            width: 350px;
+            margin: auto;
+            margin-top: 55px;
+            border-radius: 5px;
+            border: 0px;
+            box-shadow: 0px 0px 0px;
 
-      #location {
-        height: 65px;
-        width: 350px;
-        margin: auto;
-        margin-top: 55px;
-        border-radius: 5px;
-        border: 0px;
-        box-shadow: 0px 0px 0px;
-
-        &:hover {
-          cursor: grab;
-          box-shadow: 1px 1px 3px 3px #a8a6a6;
-        }
-        .location__icon {
-          font-size: 1.3rem;
-          padding-right: 25px;
-        }
-        form {
-          font-size: 1.3rem;
-
-          input {
-            width: 56%;
-            &::-webkit-input-placeholder {
-              text-align: center;
+            &:hover {
+              cursor: grab;
+              box-shadow: 1px 1px 3px 3px #a8a6a6;
+            }
+            .location__icon {
               font-size: 1.3rem;
-              &:focus::-webkit-input-placeholder {
-                opacity: 0;
-              }
+              padding-right: 25px;
+            }
+            form {
+              font-size: 1.3rem;
 
-              &:-moz-placeholder {
-                font-size: 2rem;
-              }
-              &::-moz-placeholder {
-                font-size: 2em;
-              }
-              &:-ms-input-placeholder {
-                font-size: 2rem;
+              input {
+                width: 56%;
+                &::-webkit-input-placeholder {
+                  text-align: center;
+                  font-size: 1.3rem;
+                  &:focus::-webkit-input-placeholder {
+                    opacity: 0;
+                  }
+
+                  &:-moz-placeholder {
+                    font-size: 2rem;
+                  }
+                  &::-moz-placeholder {
+                    font-size: 2em;
+                  }
+                  &:-ms-input-placeholder {
+                    font-size: 2rem;
+                  }
+                }
               }
             }
           }
-        }
-      }
-      #navsection {
-        padding-top: 43px;
-        padding-bottom: 15px;
-        background-color: transparent;
-        h1 {
-          margin-bottom: 20px;
-          font-size: 1.5em;
-        }
-        #navsection__txt {
-          font-size: 1.4em;
-          margin-bottom: 30px;
-        }
-        #nav__bar {
-          margin: 0 auto;
-          margin-bottom: 7px;
-          #navbar__button {
-            border-radius: 40px;
-            padding: 25px 28px;
-            font-size: 1.1em;
-          }
-        }
-      }
-      #functioning {
-        margin: 50px 40px 100px 40px;
-        text-align: center;
-        margin-top: 15px;
-
-        h2 {
-          font-family: $font2;
-          font-size: 1.5em;
-          margin-top: 20px;
-          margin-bottom: 30px;
-        }
-        #functioninglist {
-          margin-right: 0px;
-          flex-direction: column;
-          margin: auto;
-          padding-left: 15%;
-
-          .functioning__button {
-            width: 85%;
-            padding: 25px 10px 25px 25px;
-            border-radius: 40px;
-            .fcticon {
-              font-size: 1.1em;
-              margin-right: 23px;
+          #navsection {
+            padding-top: 43px;
+            padding-bottom: 15px;
+            background-color: transparent;
+            h1 {
+              margin-bottom: 20px;
+              font-size: 1.5em;
             }
-            .fct__text {
-              font-size: 1.1em;
-              margin-right: 20px;
+            #navsection__txt {
+              font-size: 1.4em;
+              margin-bottom: 30px;
+            }
+            #nav__bar {
+              margin: 0 auto;
+              margin-bottom: 7px;
+              #navbar__button {
+                border-radius: 40px;
+                padding: 25px 28px;
+                font-size: 1.1em;
+              }
+            }
+          }
+          #functioning {
+            margin: 50px 40px 100px 40px;
+            text-align: center;
+            margin-top: 15px;
+
+            h2 {
+              font-family: $font2;
+              font-size: 1.5em;
+              margin-top: 20px;
+              margin-bottom: 30px;
+            }
+            #functioninglist {
+              margin-right: 0px;
+              flex-direction: column;
+              margin: auto;
+              padding-left: 15%;
+
+              .functioning__button {
+                width: 85%;
+                padding: 25px 10px 25px 25px;
+                border-radius: 40px;
+                .fcticon {
+                  font-size: 1.8em;
+                  margin-right: 23px;
+                }
+                .fct__text {
+                  font-size: 1.8em;
+                  margin-right: 20px;
+                }
+              }
             }
           }
         }
@@ -409,9 +426,10 @@ main {
         position: absolute;
         padding: 40px 20px;
         right: 15px;
-        bottom: -210px;
+        bottom: 144px;
         text-align: center;
-        width: 865px;
+        width: 56%;
+        max-width: 56%;
         h2 {
           font-size: 2em;
           margin-bottom: 65px;

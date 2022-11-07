@@ -2,41 +2,42 @@
 
 header {
   width: 100%;
-  padding-top: 28px;
-  padding-bottom: 8px;
+  margin: 0 auto;
   @include fixed(top);
   background-color: #ffffff;
-  height: 78px;
-  .header__container {
+  height: 60px;
+  z-index: 200;
+  .header__container,
+  .desktop__header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
     position: relative;
     .homelink {
       text-decoration: none;
       color: rgb(47, 46, 46);
       .arrow {
         position: absolute;
-        left: 23px;
-        bottom: 9px;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        font-size: 18px;
+        left: 13px;
+        bottom: 12px;
+        font-size: 1.2rem;
         font-weight: 900;
         color: rgb(57, 57, 57);
       }
     }
     figure {
-      text-align: center;
-      margin-bottom: 5px;
-      margin-top: 5px;
+      width: 100%;
+      margin: 0 auto;
       .homelink2 {
         display: block;
         text-decoration: none;
         height: auto;
         text-align: center;
         #logo {
+          text-align: center;
           width: 55%;
           height: auto;
-          margin: 0 auto;
         }
       }
     }
@@ -45,7 +46,7 @@ header {
 
 @include media-breapoint-up("md") {
   header {
-    height: 115px;
+    height: 101px;
     .header__container {
       position: relative;
       .homelink {
@@ -63,16 +64,14 @@ header {
 @include media-breapoint-up("xl") {
   header {
     padding-top: 0;
-    position: relative;
+    position: absolute;
     background-color: transparent;
     height: 153px;
-
     .header__container {
-      margin-bottom: 40px;
-      position: absolute;
-      height: 150px;
+      margin-top: 45px;
+      height: 96px;
+
       figure {
-        width: 1200px;
         height: 150px;
         margin-left: 10px;
         .homelink2 {
@@ -88,11 +87,13 @@ header {
         .arrow {
           font-size: 65px;
           margin-bottom: 35px;
+          bottom: -7px;
         }
       }
     }
   }
 }
+
 .desktop__header {
   width: 100%;
   background-color: #ffffff;
@@ -101,9 +102,16 @@ header {
   justify-content: center;
   align-items: center;
   @include fixed(top);
-
-  figure {
-    margin-right: 0;
-    width: 100%;
+  .header__container {
+    margin-top: 40px;
+    figure {
+      margin-right: 0;
+      width: 100%;
+    }
   }
+}
+.logoplace {
+  width: 100%;
+  margin: auto;
+  margin-right: 0;
 }

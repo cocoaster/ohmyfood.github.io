@@ -52,6 +52,12 @@ footer {
 
 @include media-breapoint-up("xl") {
   footer {
+    z-index: 2;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     #logo__link {
       text-decoration: none;
