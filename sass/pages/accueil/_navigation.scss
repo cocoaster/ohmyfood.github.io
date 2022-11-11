@@ -68,3 +68,9 @@
     font-size: 1.1em;
   }
 }
+
+@include media-breapoint-up("xxl") {
+  #navsection {
+    padding-top: 55px;
+  }
+}

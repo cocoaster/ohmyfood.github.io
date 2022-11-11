@@ -1,14 +1,17 @@
 .topimg {
   margin-top: 0px;
-  width: 100%;
-  height: 240px;
+  height: 177px;
   object-fit: cover;
+  width: 100%;
 }
 
 @include media-breapoint-up("md") {
+  #topsection {
+    margin-top: 0px;
+  }
   .topimg {
-    margin-top: 97px;
-    height: 500px;
+    margin-top: 0px;
+    height: 300px;
   }
 }
 

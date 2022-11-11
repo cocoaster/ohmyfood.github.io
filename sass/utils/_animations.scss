@@ -12,7 +12,7 @@
   }
 
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-285%);
   }
 }
 
@@ -26,7 +26,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(-800%);
+    transform: translateX(-580%);
   }
 }
 @keyframes circleanim {
@@ -76,5 +76,31 @@
   100% {
     opacity: 1;
     z-index: 0;
+  }
+}
+
+@include media-breapoint-up("sm") {
+  @keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(-205%);
+    }
+  }
+
+  @keyframes pointsanim {
+    0% {
+      opacity: -1;
+      transform: translateX(0px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-580%);
+    }
   }
 }

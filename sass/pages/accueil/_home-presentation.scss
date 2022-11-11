@@ -8,6 +8,24 @@
   margin-top: 61px;
 }
 
+@include media-breapoint-up("m") {
+  .maindesktop {
+    margin-top: 73px;
+  }
+}
+
+@include media-breapoint-up("ml") {
+  .maindesktop {
+    margin-top: 80px;
+  }
+}
+
+@include media-breapoint-up("mm") {
+  .maindesktop {
+    margin-top: 96px;
+  }
+}
+
 @include media-breapoint-up("md") {
   .maindesktop {
     margin-top: 102px;
@@ -41,3 +59,22 @@
     margin-top: 221px;
   }
 }
+
+@include media-breapoint-up("xxl") {
+  body {
+    height: 1100px;
+  }
+  .homepage {
+    height: 1100px;
+  }
+  .whiteleftcontainerdesktop {
+    height: 1100px;
+  }
+  .leftelementscontainerdesktop {
+    margin-top: 306px;
+  }
+}
+
+@include media-breapoint-up("xxxl") {
+  max-width: 1280px;
+} ;

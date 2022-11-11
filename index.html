@@ -15,91 +15,13 @@
     />
   </head>
   <body>
-    <div class="centerloader">
-      <div class="loadercontainer">
-        <svg
-          id="smoke"
-          data-name="smoke"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 48.86 62.07"
-          width="70px"
-          height="120px"
-        >
-          <defs>
-            <linearGradient
-              id="smokegradient"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#000000">
-                <animate
-                  attributeName="stop-color"
-                  values="#bec3c4; #000000"
-                  dur="5s"
-                  repeatCount="indefinite"
-                ></animate>
-              </stop>
-              <stop offset="100%" stop-color="#bec3c4">
-                <animate
-                  attributeName="stop-color"
-                  values="#000000; #bec3c4"
-                  dur="0.8s"
-                  repeatCount="indefinite"
-                ></animate>
-              </stop>
-            </linearGradient>
-            <linearGradient
-              id="smokegradient2"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#bec3c4">
-                <animate
-                  attributeName="stop-color"
-                  values="#000000; #bec3c4"
-                  dur="0.5s"
-                  repeatCount="indefinite"
-                ></animate>
-              </stop>
-              <stop offset="100%" stop-color="#000000">
-                <animate
-                  attributeName="stop-color"
-                  values="#bec3c4; #000000"
-                  dur="10s"
-                  repeatCount="indefinite"
-                ></animate>
-              </stop>
-            </linearGradient>
-          </defs>
-          <g>
-            <path
-              class="smokepath smokepath--3"
-              data-name="smokepath--3"
-              d="M817.75,462.34c-1-8-.46-15.87,2.64-23.27,3.88-9.23,4-18.15-1.39-27,5.15,1.79,10.06,8.77,10,15.38-.05,4-.7,8.58-2.66,12C822.13,446.64,818,453.68,817.75,462.34Z"
-              fill="url(#smokegradient)"
-              transform="translate(-780.11 -400.99)"
-            />
-            <path
-              class="smokepath smokepath--1"
-              data-name="smokepath--1"
-              d="M780.67,463.06c-1-7-.88-14,1.71-20.58,4-10.12,5.91-20-1.08-30.49,11,6.5,13.81,19.22,7.05,29.83-3.07,4.83-5.9,9.68-6.85,15.42C781.18,459.17,781,461.11,780.67,463.06Z"
-              fill="url(#smokegradient)"
-              transform="translate(-780.11 -400.99)"
-            />
-            <path
-              class="smokepath smokepath--2"
-              data-name="smokepath--2"
-              d="M799.67,452.06c-1-7-.88-14,1.71-20.58,4-10.12,5.91-20-1.08-30.49,11,6.5,13.81,19.22,7.05,29.83-3.07,4.83-5.9,9.68-6.85,15.42C800.18,448.17,800,450.11,799.67,452.06Z"
-              fill="url(#smokegradient2)"
-              transform="translate(-780.11 -400.99)"
-            />
-          </g>
-        </svg>
-
+    <div id="loader">
+      <div id="loader__container">
+        <div id="globalsmoke">
+          <div class="smoke smoke-1"></div>
+          <div class="smoke smoke-2"></div>
+          <div class="smoke smoke-3"></div>
+        </div>
         <svg
           id="plate"
           data-name="plate"

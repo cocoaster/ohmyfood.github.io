@@ -131,3 +131,9 @@ h3 {
     font-size: 1.2em;
   }
 }
+
+@include media-breapoint-up("xxl") {
+  #restaurants {
+    top: 238px;
+  }
+}

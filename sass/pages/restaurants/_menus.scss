@@ -1,10 +1,10 @@
 .menus {
   position: relative;
   width: 100%;
-  height: 1038px;
+  height: 981px;
 }
 .menus2 {
-  height: 1127px;
+  height: 1062px;
 }
 
 .firstcontainermenu {
@@ -25,12 +25,13 @@
 .restaurantname {
   font-family: $font1;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-bottom: 0;
 } //end restaurantname
 .heartscontainer1bis {
-  transform: scale(0.7);
+  transform: scale(0.6);
   position: absolute;
-  top: 28px;
+  top: 36px;
   right: 45px;
 } //end heartscontainer1bis
 .starter {
@@ -41,11 +42,12 @@
   font-weight: 100;
   color: #6d6d6d;
   position: relative;
+  margin-top: 30px;
   margin-bottom: 26px;
   &:after {
     content: "";
     position: absolute;
-    width: 12%;
+    width: 24%;
     bottom: -10px;
     left: 0px;
     right: 25%;
@@ -55,15 +57,15 @@
 .container__menus {
   position: relative;
   width: 100%;
-  height: 60px;
+  height: 50px;
   background-color: #ffffff;
   padding-left: 10px;
   margin-top: 20px;
-  border-radius: 20px solid #000000;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 10px solid #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   box-shadow: 0px 0px 9px 2px #b5b3b3;
 
   animation: enterelements 0.5s ease-in-out;
@@ -95,21 +97,27 @@
 
 .title__container {
   margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
   position: absolute;
   font-size: 0.7em;
-  top: 15px;
+  margin-left: 0px;
+  top: 8px;
+  left: 10px;
 }
 .description__menus {
-  font-size: 0.5em;
-  color: #6d6d6d;
+  font-size: 0.52em;
+  color: #2a2929;
   position: absolute;
-  bottom: 7px;
+  bottom: 4px;
+  left: 10px;
+  width: 78%;
 }
 .hovervalidation {
   background-color: #ffffff;
   position: absolute;
   height: 20px;
-  width: 82px;
+  width: 79px;
   border-radius: 0px 20px 20px 0px;
   -webkit-border-radius: 0px 20px 20px 0px;
   -moz-border-radius: 0px 20px 20px 0px;
@@ -122,17 +130,17 @@
 }
 .points {
   position: absolute;
-  font-size: 0.6em;
+  font-size: 0.52em;
   color: #6d6d6d;
-  bottom: 7px;
+  bottom: 4px;
   right: 30px;
   opacity: -1;
 }
 .price {
   position: absolute;
-  bottom: 7px;
+  bottom: 4px;
   right: 10px;
-  font-size: 0.5em;
+  font-size: 0.52em;
   font-weight: bold;
   z-index: 10;
 }
@@ -141,14 +149,14 @@
   right: 0;
   top: 0;
   width: 40px;
-  height: 61px;
+  height: 50px;
   background-color: $tertiary;
   z-index: 1;
-  border-radius: 0px 20px 8px 0px;
-  -webkit-border-radius: 0px 20px 8px 0px;
-  -moz-border-radius: 0px 20px 8px 0px;
-  -ms-border-radius: 0px 20px 8px 0px;
-  -o-border-radius: 0px 20px 8px 0px;
+  border-radius: 0px 10px 8px 0px;
+  -webkit-border-radius: 0px 10px 8px 0px;
+  -moz-border-radius: 0px 10px 8px 0px;
+  -ms-border-radius: 0px 10px 8px 0px;
+  -o-border-radius: 0px 10px 8px 0px;
   transform-origin: right;
   transform: scale(0);
 }
@@ -185,7 +193,82 @@
   -o-transform: translate(-50%, -50%);
 }
 
+@include media-breapoint-up("sm") {
+  .menus2 {
+    height: 1302px;
+    width: 100%;
+  }
+  .menus {
+    height: 1203px;
+  }
+  .restaurantname {
+    font-size: 1.5rem;
+  }
+  .heartscontainer1bis {
+    top: 39px;
+    right: 54px;
+  }
+  .starter {
+    margin-top: 40px;
+  }
+  .subtitle__menus {
+    margin-top: 40px;
+    &:after {
+      content: "";
+      width: 15%;
+    }
+  }
+  .container__menus {
+    height: 70px;
+  }
+  .title__container {
+    font-size: 1em;
+  }
+  .description__menus {
+    font-size: 0.85em;
+    bottom: 0 + px;
+  }
+
+  .price {
+    font-size: 0.8em;
+    bottom: 1px;
+  }
+  .points {
+    font-size: 0.8em;
+    bottom: 1px;
+  }
+  .validation {
+    height: 70px;
+  }
+}
+
+@include media-breapoint-up("m") {
+  .heartscontainer1bis {
+    transform: scale(0.8);
+    top: 36px;
+    right: 54px;
+  }
+  .subtitle__menus {
+    font-size: 1.1em;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 12%;
+    }
+  }
+}
+
+@include media-breapoint-up("m") {
+  .heartscontainer1bis {
+    transform: scale(0.8);
+    top: 32px;
+  }
+}
+
 @include media-breapoint-up("md") {
+  .menus {
+    height: 1339px;
+  }
   .starter {
     font-family: $font2;
   }
@@ -195,6 +278,18 @@
       content: "";
       width: 6%;
     }
+  }
+  .container__menus {
+    height: 85px;
+  }
+  .price {
+    font-size: 1em;
+  }
+  .points {
+    font-size: 1em;
+  }
+  .validation {
+    height: 85px;
   }
 }
 
@@ -243,12 +338,12 @@
     margin-bottom: 37px;
     &:after {
       content: "";
-      width: 5%;
+      width: 18%;
     }
   }
   .container__menus {
-    width: 90%;
-    height: 110px;
+    width: 95%;
+    height: 80px;
     padding-left: 10px;
     padding-top: 10px;
     margin-top: 20px;
@@ -257,15 +352,16 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    width: auto;
   }
   .title__container {
-    font-size: 1.4em;
+    font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 0;
   }
   .description__menus {
-    font-size: 1.1em;
+    font-size: 0.75em;
+    margin-top: 10px;
   }
   .hovervalidation {
     display: flex;
@@ -285,17 +381,17 @@
   }
   .points {
     position: absolute;
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: #6d6d6d;
   }
   .price {
-    font-size: 1.1em;
+    font-size: 0.8em;
     position: absolute;
     z-index: 10;
   }
   .validation {
     width: 20%;
-    height: 110px;
+    height: 80px;
     right: -1px;
     border-radius: 0px 15px 15px 0px;
     -webkit-border-radius: 0px 15px 15px 0px;
