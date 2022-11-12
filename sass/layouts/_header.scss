@@ -32,6 +32,7 @@ header {
 figure {
   width: 100%;
   margin: 0 auto;
+  margin-top: 7px;
 }
 .homelink2 {
   display: block;
@@ -46,6 +47,14 @@ figure {
 }
 
 @include media-breapoint-up("sm") {
+  figure {
+    margin-top: 0;
+  }
+  .arrow {
+    top: 7px;
+    left: 28px;
+    font-size: 1.2rem;
+  }
 }
 
 @include media-breapoint-up("m") {
@@ -56,6 +65,9 @@ figure {
     margin-top: 9px;
   }
 }
+figure {
+  margin-top: 8px;
+}
 
 @include media-breapoint-up("mm") {
   header {
@@ -64,6 +76,10 @@ figure {
   .header__container {
     margin-top: 17px;
   }
+}
+.arrow {
+  bottom: -6px;
+  font-size: 2.2rem;
 }
 
 @include media-breapoint-up("md") {

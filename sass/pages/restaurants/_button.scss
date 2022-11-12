@@ -22,8 +22,19 @@
   }
 }
 
-@include media-breapoint-up("md") {
+@include media-breapoint-up("sm") {
+  .order__button {
+    padding: 15px 40px;
+    font-size: 1em;
+  }
 }
 
 @include media-breapoint-up("xl") {
+  .order {
+    margin-top: -13px;
+  }
+  .order__button {
+    font-size: 1.2em;
+    padding: 20px 60px;
+  }
 }

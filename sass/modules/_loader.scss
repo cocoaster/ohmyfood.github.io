@@ -22,8 +22,9 @@ body {
   animation: mvtloader 3s forwards ease-in-out infinite;
 }
 #globalsmoke {
+  z-index: -1;
   position: relative;
-  width: 80px;
+  width: 39px;
   height: 11%;
   display: flex;
   justify-content: center;
@@ -136,5 +137,11 @@ body {
     z-index: -100;
     opacity: 0;
     visibility: hidden;
+  }
+}
+@include media-breapoint-up("xl") {
+  #globalsmoke {
+    position: relative;
+    width: 80px;
   }
 }

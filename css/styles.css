@@ -59,33 +59,25 @@
 
 @-webkit-keyframes pointsanim {
   0% {
-    opacity: -1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 0;
   }
-  50% {
+  25% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(-580%);
-            transform: translateX(-580%);
   }
 }
 
 @keyframes pointsanim {
   0% {
-    opacity: -1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 0;
   }
-  50% {
+  25% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(-580%);
-            transform: translateX(-580%);
   }
 }
 
@@ -214,8 +206,8 @@
               transform: translateX(0px);
     }
     100% {
-      -webkit-transform: translateX(-205%);
-              transform: translateX(-205%);
+      -webkit-transform: translateX(-305%);
+              transform: translateX(-305%);
     }
   }
   @keyframes priceanim {
@@ -224,38 +216,31 @@
               transform: translateX(0px);
     }
     100% {
-      -webkit-transform: translateX(-205%);
-              transform: translateX(-205%);
+      -webkit-transform: translateX(-305%);
+              transform: translateX(-305%);
     }
   }
-  @-webkit-keyframes pointsanim {
+}
+
+@media screen and (min-width: 1100px) {
+  @-webkit-keyframes priceanim {
     0% {
-      opacity: -1;
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
     }
-    50% {
-      opacity: 1;
-    }
     100% {
-      opacity: 1;
-      -webkit-transform: translateX(-580%);
-              transform: translateX(-580%);
+      -webkit-transform: translateX(-375%);
+              transform: translateX(-375%);
     }
   }
-  @keyframes pointsanim {
+  @keyframes priceanim {
     0% {
-      opacity: -1;
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
     }
-    50% {
-      opacity: 1;
-    }
     100% {
-      opacity: 1;
-      -webkit-transform: translateX(-580%);
-              transform: translateX(-580%);
+      -webkit-transform: translateX(-375%);
+              transform: translateX(-375%);
     }
   }
 }
@@ -302,8 +287,9 @@ body {
 }
 
 #globalsmoke {
+  z-index: -1;
   position: relative;
-  width: 80px;
+  width: 39px;
   height: 11%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,6 +480,21 @@ body {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  #globalsmoke {
+    position: relative;
+    width: 80px;
+  }
+}
+
+.heartscontainer1bis {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  position: absolute;
+  top: 31px;
+  right: 39px;
+}
+
 .heartscontainer1 {
   position: absolute;
   -webkit-transform: scale(0.8);
@@ -544,7 +545,32 @@ body {
           animation: emptyanim 1s ease-in-out both;
 }
 
+@media screen and (min-width: 360px) {
+  .heartscontainer1bis {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    top: 37px;
+    right: 54px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .heartscontainer1bis {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 54px;
+    top: 32px;
+  }
+}
+
 @media screen and (min-width: 1100px) {
+  .heartscontainer1bis {
+    position: absolute;
+    top: 42px;
+    right: 142px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
   .heartscontainer1 {
     position: absolute;
     right: 50px;
@@ -621,8 +647,9 @@ body {
   .homepage {
     display: block;
     background-color: #f7f7f7;
-    height: 950px;
+    height: 1019px;
     width: 100%;
+    height: 1024px;
   }
   .maindesktop {
     margin-top: 0px;
@@ -635,7 +662,7 @@ body {
   .whiteleftcontainerdesktop {
     background-color: #ffffff;
     width: 40%;
-    height: 951px;
+    height: 1024px;
   }
   .leftelementscontainerdesktop {
     margin-top: 221px;
@@ -1037,7 +1064,7 @@ form input::-webkit-input-placeholder:-ms-input-placeholder {
 
 @media screen and (min-width: 1100px) {
   #functioning {
-    margin: 50px 40px 100px 40px;
+    margin: 50px 40px 0px 40px;
     text-align: center;
     margin-top: 15px;
   }
@@ -1247,8 +1274,15 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
+  body {
+    height: 100%;
+  }
   .mainrestaurant {
+    height: 1166px;
     margin-top: 55px;
+  }
+  .mainrestaurant2 {
+    height: 1287px;
   }
 }
 
@@ -1308,14 +1342,6 @@ body {
   letter-spacing: 1px;
   font-size: 1rem;
   margin-bottom: 0;
-}
-
-.heartscontainer1bis {
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
-  position: absolute;
-  top: 36px;
-  right: 45px;
 }
 
 .starter {
@@ -1473,15 +1499,6 @@ body {
           transform: scaleX(0);
 }
 
-.points {
-  position: absolute;
-  font-size: 0.52em;
-  color: #6d6d6d;
-  bottom: 4px;
-  right: 30px;
-  opacity: -1;
-}
-
 .price {
   position: absolute;
   bottom: 4px;
@@ -1564,10 +1581,6 @@ body {
   .restaurantname {
     font-size: 1.5rem;
   }
-  .heartscontainer1bis {
-    top: 39px;
-    right: 54px;
-  }
   .starter {
     margin-top: 40px;
   }
@@ -1576,12 +1589,14 @@ body {
   }
   .subtitle__menus:after {
     content: "";
-    width: 15%;
+    width: 13%;
   }
   .container__menus {
     height: 70px;
+    border-radius: 18px;
   }
   .title__container {
+    margin-top: 2px;
     font-size: 1em;
   }
   .description__menus {
@@ -1592,22 +1607,13 @@ body {
     font-size: 0.8em;
     bottom: 1px;
   }
-  .points {
-    font-size: 0.8em;
-    bottom: 1px;
-  }
   .validation {
+    width: 63px;
     height: 70px;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .heartscontainer1bis {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    top: 36px;
-    right: 54px;
-  }
   .subtitle__menus {
     font-size: 1.1em;
   }
@@ -1618,11 +1624,14 @@ body {
   }
 }
 
-@media screen and (min-width: 450px) {
-  .heartscontainer1bis {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    top: 32px;
+@media screen and (min-width: 500px) {
+  .subtitle__menus {
+    font-size: 1.1em;
+  }
+  .subtitle__menus:after {
+    content: "";
+    position: absolute;
+    width: 8%;
   }
 }
 
@@ -1646,9 +1655,6 @@ body {
   .price {
     font-size: 1em;
   }
-  .points {
-    font-size: 1em;
-  }
   .validation {
     height: 85px;
   }
@@ -1656,7 +1662,7 @@ body {
 
 @media screen and (min-width: 1100px) {
   .menus {
-    height: 665px;
+    height: 675px;
   }
   .menus2 {
     height: 793px;
@@ -1664,25 +1670,18 @@ body {
   .firstcontainermenu {
     top: -100px;
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 105px 105px 0px 0px;
     -webkit-border-radius: 105px 105px 0px 0px;
     -moz-border-radius: 105px 105px 0px 0px;
     -ms-border-radius: 105px 105px 0px 0px;
     -o-border-radius: 105px 105px 0px 0px;
-    padding-left: 95px;
-    padding-right: 95px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
   }
   .restaurantname {
     font-size: 2rem;
-  }
-  .heartscontainer1bis {
-    position: absolute;
-    top: 42px;
-    right: 142px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   .desktopmenus {
     display: -webkit-box;
@@ -1703,7 +1702,7 @@ body {
   }
   .subtitle__menus:after {
     content: "";
-    width: 18%;
+    width: 15%;
   }
   .container__menus {
     width: 95%;
@@ -1724,20 +1723,11 @@ body {
     margin-left: 0;
   }
   .description__menus {
-    font-size: 0.75em;
+    font-size: 0.9em;
     margin-top: 10px;
   }
   .hovervalidation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
+    background-color: transparent;
     height: 50px;
     width: 169px;
     border-radius: 0px 15px 15px 0px;
@@ -1745,14 +1735,10 @@ body {
     -moz-border-radius: 0px 15px 15px 0px;
     -ms-border-radius: 0px 15px 15px 0px;
     -o-border-radius: 0px 15px 15px 0px;
-    opacity: 0;
-    right: -1px;
-    bottom: 0px;
   }
   .points {
-    position: absolute;
-    font-size: 0.8em;
-    color: #6d6d6d;
+    background-color: #ffffff;
+    opacity: 0;
   }
   .price {
     font-size: 0.8em;
@@ -1817,6 +1803,23 @@ body {
   cursor: grab;
 }
 
+@media screen and (min-width: 360px) {
+  .order__button {
+    padding: 15px 40px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .order {
+    margin-top: -13px;
+  }
+  .order__button {
+    font-size: 1.2em;
+    padding: 20px 60px;
+  }
+}
+
 header {
   width: 100%;
   margin: 0 auto;
@@ -1858,6 +1861,7 @@ header {
 figure {
   width: 100%;
   margin: 0 auto;
+  margin-top: 7px;
 }
 
 .homelink2 {
@@ -1873,6 +1877,17 @@ figure {
   height: auto;
 }
 
+@media screen and (min-width: 360px) {
+  figure {
+    margin-top: 0;
+  }
+  .arrow {
+    top: 7px;
+    left: 28px;
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (min-width: 450px) {
   header {
     height: 73px;
@@ -1882,6 +1897,10 @@ figure {
   }
 }
 
+figure {
+  margin-top: 8px;
+}
+
 @media screen and (min-width: 600px) {
   header {
     height: 95px;
@@ -1889,6 +1908,11 @@ figure {
   .header__container {
     margin-top: 17px;
   }
+}
+
+.arrow {
+  bottom: -6px;
+  font-size: 2.2rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -2058,11 +2082,8 @@ footer {
 @media screen and (min-width: 1100px) {
   footer {
     z-index: 2;
-    margin-top: 40px;
-    position: absolute;
-    bottom: -105px;
-    left: 0;
-    right: 0;
+    margin-top: 0px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

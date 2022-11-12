@@ -18,15 +18,13 @@
 
 @keyframes pointsanim {
   0% {
-    opacity: -1;
-    transform: translateX(0px);
+    opacity: 0;
   }
-  50% {
+  25% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    transform: translateX(-580%);
   }
 }
 @keyframes circleanim {
@@ -86,21 +84,18 @@
     }
 
     100% {
-      transform: translateX(-205%);
+      transform: translateX(-305%);
     }
   }
-
-  @keyframes pointsanim {
+}
+@include media-breapoint-up("xl") {
+  @keyframes priceanim {
     0% {
-      opacity: -1;
       transform: translateX(0px);
     }
-    50% {
-      opacity: 1;
-    }
+
     100% {
-      opacity: 1;
-      transform: translateX(-580%);
+      transform: translateX(-375%);
     }
   }
 }

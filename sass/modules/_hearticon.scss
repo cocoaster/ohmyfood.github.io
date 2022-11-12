@@ -1,3 +1,9 @@
+.heartscontainer1bis {
+  transform: scale(0.6);
+  position: absolute;
+  top: 31px;
+  right: 39px;
+}
 .heartscontainer1 {
   position: absolute;
   transform: scale(0.8);
@@ -32,8 +38,28 @@
     animation: emptyanim 1s ease-in-out both;
   }
 }
+@include media-breapoint-up("sm") {
+  .heartscontainer1bis {
+    transform: scale(0.8);
+    top: 37px;
+    right: 54px;
+  }
+}
+@include media-breapoint-up("m") {
+  .heartscontainer1bis {
+    transform: scale(0.8);
+    right: 54px;
+    top: 32px;
+  }
+}
 
 @include media-breapoint-up("xl") {
+  .heartscontainer1bis {
+    position: absolute;
+    top: 42px;
+    right: 142px;
+    transform: scale(1.2);
+  }
   .heartscontainer1 {
     position: absolute;
     right: 50px;
