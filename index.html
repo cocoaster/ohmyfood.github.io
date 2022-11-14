@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
     <script
       src="https://kit.fontawesome.com/1e3e9e4ecb.js"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commander vos repas gastronomiques</title>
     <meta
       name="description"
-      content="Réduisez votre temps d'attente en composant et en commandant votre repas en ligne dans les restaurants gastronomiques de Paris"
-    />
+      content="Réduisez votre temps d'attente en composant et en commandant votre repas en ligne dans les restaurants gastronomiques de Paris">
   </head>
   <body>
     <div id="loader">
@@ -60,7 +59,7 @@
     <div class="homepage">
       <header>
         <div class="header__container">
-          <figure id="homelogo">
+          <h1 id="homelogo">
             <a class="homelink2" href="index.html">
               <svg
                 id="logo"
@@ -112,7 +111,7 @@
                 />
               </svg>
             </a>
-          </figure>
+        </h1>
         </div>
       </header>
       <main class="maindesktop">
@@ -128,23 +127,19 @@
                   type="text"
                   style="color: #000000"
                   name="locationsearch"
-                  placeholder="Paris, Belleville"
-                />
-                <p id=""></p>
+                  placeholder="Paris, Belleville">
               </form>
             </section>
             <section id="navsection">
-              <h1 id="homeh1">Réservez le menu qui vous convient</h1>
+              <h2 id="homeh1">Réservez le menu qui vous convient</h2>
               <p id="navsection__txt">
                 Découvrez des restaurants d'exception, sélectionnés par nos
                 soins.
               </p>
-              <nav id="nav__bar" role="navigation">
-                <a id="link__btn" href="#marker"
-                  ><button id="navbar__button" type="button">
+              <nav id="nav__bar">
+                  <button id="navbar__button" type="button" onclick="window.location.href = '#marker'; ">
                     Explorez nos restaurants
-                  </button></a
-                >
+                  </button>
               </nav>
             </section>
             <section id="functioning">
@@ -190,16 +185,14 @@
                 <img
                   class="restaurantimg"
                   src="Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                  alt="restaurant la palette du goût"
-                  href="La-palette-du-goût.html"
-                />
+                  alt="restaurant la palette du goût">
                 <p class="new">Nouveau</p>
-                <h3 class="restaurant__title">La palette du goût</h3 class="restaurant__title">
+                <h3 class="restaurant__title">La palette du goût</h3>
                 <p class="restaurantp">Ménilmontant</p>
                 <div class="heartscontainer1">
                   <div class="heartcontainer2">
                     <div class="fullheart"></div>
-                    <svg id="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path id="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
+                    <svg class="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path class="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
                 </div>
                 </div>
               </div>
@@ -209,16 +202,14 @@
                 <img
                   class="restaurantimg"
                   src="Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="restaurant la note enchantée"
-                  href="La-note-enchantée.html"
-                />
+                  alt="restaurant la note enchantée">
                 <p class="new">Nouveau</p>
-                <h3 class="restaurant__title">La note enchantée</h3 class="restaurant__title">
+                <h3 class="restaurant__title">La note enchantée</h3>
                 <p class="restaurantp">Charonne</p>
                 <div class="heartscontainer1">
                   <div class="heartcontainer2">
                     <div class="fullheart"></div>
-                    <svg id="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path id="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
+                    <svg class="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path class="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
                 </div>
                 </div>
               </div>
@@ -230,15 +221,13 @@
                 <img
                   class="restaurantimg"
                   src="Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="restaurant À la française"
-                  href="À-la-française.html"
-                />
+                  alt="restaurant À la française">
                 <h3 class="restaurant__title">À la française</h3>
                 <p class="restaurantp">Cité Rouge</p>
                 <div class="heartscontainer1">
                   <div class="heartcontainer2">
                     <div class="fullheart"></div>
-                    <svg id="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path id="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
+                    <svg class="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path class="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
                 </div>
                 </div>
               </div>
@@ -248,15 +237,13 @@
                 <img
                   class="restaurantimg"
                   src="Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="restaurant Le délice des sens"
-                  href="Le-delice-des-sens.html"
-                />
+                  alt="restaurant Le délice des sens">
                 <h3 class="restaurant__title">Le délice des sens</h3>
                 <p class="restaurantp">Folie Méricourt</p>
                 <div class="heartscontainer1">
                   <div class="heartcontainer2">
                     <div class="fullheart"></div>
-                    <svg id="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path id="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
+                    <svg class="emptyheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.65 162.28"><path class="emptyheart-2" d="M86,18.74c.65-.71,1.82-1.93,2.94-3.19C102,1,118.4-2.64,136.48,1.79,153.42,6,163.2,18.27,168,34.55c5,17,2.66,33.44-5,49.22-8.44,17.48-20.65,32.18-35,44.89C115.21,140,101.52,150.24,88.22,161c-1.6,1.29-3.21,1.9-5.15.51-22.2-15.84-43.45-32.77-60.56-54.26C12.84,95.08,4.8,82,1.56,66.55c-3-14.22-1.85-28,4.54-41.22C21.76-7,62.1-5.15,78.92,12.73A81.25,81.25,0,0,0,86,18.74ZM85.16,158.1c13.74-9.09,33.55-25.4,45.46-37.38,11.49-11.54,21.77-24,28.85-38.79,7.85-16.4,9.63-33.31,3.24-50.59-12.5-33.78-52.66-33.21-69-14.94-2,2.24-4.12,4.36-6.06,6.65-1.61,1.92-3,2-4.62,0-1.87-2.21-3.93-4.26-5.85-6.44C60.83-1.95,20.46-2.57,7.93,31.23.47,51.34,4,70.43,14.59,88.43,31.91,117.9,58.15,138.36,85.16,158.1Z" transform="translate(0.02 0)"/></svg>
                 </div>
                 </div>
               </div>

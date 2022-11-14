@@ -258,8 +258,7 @@ body {
           mask-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDExLjkgNTEuMDciPjxwYXRoIGlkPSJmdW3DqWVfZyIgZGF0YS1uYW1lPSJmdW3DqWUgZyIgZD0iTTc4MC42Nyw0NjMuMDZjLTEtNy0uODgtMTQsMS43MS0yMC41OCw0LTEwLjEyLDUuOTEtMjAtMS4wOC0zMC40OSwxMSw2LjUsMTMuODEsMTkuMjIsNy4wNSwyOS44My0zLjA3LDQuODMtNS45LDkuNjgtNi44NSwxNS40MkM3ODEuMTgsNDU5LjE3LDc4MSw0NjEuMTEsNzgwLjY3LDQ2My4wNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03ODAuMTEgLTQxMS45OSkiLz48L3N2Zz4=);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-animation: smokegradient 2s ease infinite both alternate;
-          animation: smokegradient 2s ease infinite both alternate;
+  animation: smokegradient 2.3s ease infinite both alternate-reverse;
 }
 
 .smoke-2 {
@@ -269,8 +268,7 @@ body {
           mask-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDExLjkgNTEuMDciPjxwYXRoIGlkPSJmdW3DqWVfbSIgZGF0YS1uYW1lPSJmdW3DqWUgbSIgZD0iTTc5OS42Nyw0NTIuMDZjLTEtNy0uODgtMTQsMS43MS0yMC41OCw0LTEwLjEyLDUuOTEtMjAtMS4wOC0zMC40OSwxMSw2LjUsMTMuODEsMTkuMjIsNy4wNSwyOS44My0zLjA3LDQuODMtNS45LDkuNjgtNi44NSwxNS40MkM4MDAuMTgsNDQ4LjE3LDgwMCw0NTAuMTEsNzk5LjY3LDQ1Mi4wNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03OTkuMTEgLTQwMC45OSkiLz48L3N2Zz4=);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-animation: smokegradient 2s ease infinite alternate;
-          animation: smokegradient 2s ease infinite alternate;
+  animation: smokegradient 2.3s ease infinite reverse;
   -webkit-animation-delay: 0.33s;
           animation-delay: 0.33s;
 }
@@ -283,8 +281,7 @@ body {
           mask-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDExLjY4IDUwLjI4Ij48cGF0aCBpZD0iZnVtw6llX2QiIGRhdGEtbmFtZT0iZnVtw6llIGQiIGQ9Ik04MTcuNzUsNDYyLjM0Yy0xLTgtLjQ2LTE1Ljg3LDIuNjQtMjMuMjcsMy44OC05LjIzLDQtMTguMTUtMS4zOS0yNyw1LjE1LDEuNzksMTAuMDYsOC43NywxMCwxNS4zOC0uMDUsNC0uNyw4LjU4LTIuNjYsMTJDODIyLjEzLDQ0Ni42NCw4MTgsNDUzLjY4LDgxNy43NSw0NjIuMzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODE3LjI4IC00MTIuMDUpIi8+PC9zdmc+);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-animation: smokegradient 2s ease infinite alternate;
-          animation: smokegradient 2s ease infinite alternate;
+  animation: smokegradient 2.3s ease infinite alternate-reverse;
   -webkit-animation-delay: 0.66s;
           animation-delay: 0.66s;
 }
@@ -467,6 +464,13 @@ body {
     bottom: -20px;
   }
 }
+.heartlink {
+  text-decoration: none;
+  width: 100%;
+  height: 11px;
+  display: inline-block;
+}
+
 .heartscontainer1bis {
   transform: scale(0.7);
   position: absolute;
@@ -1764,7 +1768,7 @@ body {
 @media screen and (min-width: 1100px) {
   .topimg {
     margin-top: 90px;
-    height: 470px;
+    height: 450px;
   }
 }
 .menus {
