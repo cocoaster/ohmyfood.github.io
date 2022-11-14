@@ -1,9 +1,12 @@
 #functioning {
-  margin-left: 20px;
+  margin-left: 12px;
+  margin-top: 30px;
 }
-.homeh2 {
+.homeh2-1 {
   font-family: $font2;
-  font-size: 20px;
+  font-size: 0.9em;
+  margin-left: 1px;
+  margin-bottom: 25px;
 }
 
 #functioninglist {
@@ -15,12 +18,12 @@
   padding-left: 0px;
 }
 .functioning__button {
-  font-size: 0.6em;
+  font-size: 0.65em;
   position: relative;
   background-color: #f7f7f7;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
-  padding: 25px 0px;
+  padding: 17px 0px;
   box-shadow: 0px 4px 9px 3px #e2dddd;
   display: flex;
   align-items: center;
@@ -36,15 +39,13 @@
 .number__container {
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 0px;
   transform: translate(-50%, -50%);
 }
 .circle {
   display: inline-block;
   position: relative;
-  width: 7px;
-  height: 22px;
-  padding: 2px 12px;
+  padding: 8px 8px;
   background-color: $primary;
   border-radius: 100%;
   .circle__number {
@@ -52,12 +53,11 @@
     color: #ffffff;
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -45%);
+    transform: translate(-50%, -50%);
   }
 }
-
 .fcticon {
-  margin: 0px 10px 0px 26px;
+  margin: 0px 10px 0px 25px;
   font-size: 1em;
   color: #8d8d8d;
   &:hover {
@@ -66,30 +66,138 @@
 }
 .fct__text {
   margin: 0px 10px 0px 0px;
-  font-size: 1.2em;
+  font-size: 0.9em;
   &:hover {
     color: #000000;
   }
 }
 
 @include media-breapoint-up("sm") {
+  .homeh2-1 {
+    font-size: 1.1em;
+  }
   .fct__text {
-    font-size: 1.4em;
+    font-size: 1.13em;
   }
   .fcticon {
-    margin: 0px 15px 0px 31px;
+    margin: 0px 15px 0px 25px;
     font-size: 1.4em;
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breapoint-up("sm2") {
+  .homeh2-1 {
+    font-size: 1.2em;
+  }
+  .circle{
+    padding: 10px 10px;
+    .circle__number {
+      transform: translate(-60%, -50%);
+    }
+  }
   .fct__text {
-    font-size: 1.9em;
+    font-size: 1.4em;
+  }
+  .fcticon {
+    font-size: 1.5em;
   }
 }
-.fcticon {
-  font-size: 1.9em;
+@include media-breapoint-up("sm3") {
+  .homeh2-1 {
+    font-size: 1.3em;
+  }
+  .functioning__button {
+    padding: 23px 0px;
+  }
+  .circle{
+    padding: 10px 10px;
+    .circle__number {
+      transform: translate(-60%, -50%);
+    }
+  }
+  .fct__text {
+    font-size: 1.5em;
+  }
+  .fcticon {
+    font-size: 1.63em;
+  }
 }
+
+
+@include media-breapoint-up("m") {
+  #functioning {
+    margin-top: 45px;
+  }
+  .homeh2-1 {
+    margin-bottom: 35px;
+  }
+    .fct__text {
+    font-size: 1.68em;
+  }
+.fcticon {
+  font-size: 1.83em;
+  }
+}
+
+@include media-breapoint-up("ml") {
+  #functioning {
+    margin-top: 45px;
+  }
+  .homeh2-1 {
+  font-size: 1.8em;
+  }
+    .fct__text {
+    font-size: 2.1em;
+  }
+.fcticon {
+  font-size: 2.1em;
+  margin-left: 40px;
+  margin-right: 30px;
+  }
+}
+@include media-breapoint-up("ml1") {
+  #functioning {
+    margin-top: 50px;
+    margin-left: 22px;
+  }
+  .homeh2-1 {
+  font-size: 1.8em;
+  }
+    .fct__text {
+    font-size: 2.1em;
+  }
+.fcticon {
+  font-size: 2.1em;
+  margin-left: 40px;
+  margin-right: 30px;
+  }
+}
+
+@include media-breapoint-up("mll") {
+  #functioning {
+    margin-top: 58px;
+    margin-left: 23px;
+  }
+  .homeh2-1 {
+  font-size: 1.8em;
+  margin-bottom: 42px;
+  }
+  .circle{
+    padding: 15px 15px;
+    .circle__number{
+      font-size: 1.2em;
+    }
+  }
+  .fct__text {
+    font-size: 2.3em;
+  }
+.fcticon {
+  font-size: 2.3em;
+  margin-left: 40px;
+  margin-right: 30px;
+  }
+}
+
 @include media-breapoint-up("md") {
   #functioning {
     margin-left: 20px;
@@ -120,6 +228,7 @@
   .fcticon {
     font-size: 1.3em;
     margin-right: 13px;
+    margin-left: 24px;
   }
   .fct__text {
     font-size: 1.3em;

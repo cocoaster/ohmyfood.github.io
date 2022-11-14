@@ -72,11 +72,10 @@
   &:hover {
     box-shadow: 1px 1px 7px 2px #8a8989;
   }
-  &:hover .hovervalidation {
-    transform-origin: right;
-    animation: validationcontainer 1s ease-in-out forwards;
-  }
   &:hover .points {
+    animation: pointsanim 1s ease-in-out forwards;
+  }
+  &:hover .points0 {
     animation: pointsanim 1s ease-in-out forwards;
   }
   &:hover .validation {
@@ -91,16 +90,18 @@
 }
 
 .title__container {
+  background-color: #ffffff;
   margin-top: 0;
   margin-bottom: 20px;
   padding-top: 0;
   position: absolute;
-  font-size: 0.7em;
+  font-size: 0.6em;
   margin-left: 0px;
   top: 8px;
   left: 10px;
 }
 .description__menus {
+  background-color: #ffffff;
   font-size: 0.52em;
   color: #2a2929;
   position: absolute;
@@ -108,22 +109,19 @@
   left: 10px;
   width: 78%;
 }
-.hovervalidation {
+.points0 {
   background-color: #ffffff;
-  position: absolute;
-  height: 20px;
-  width: 79px;
-  border-radius: 0px 20px 20px 0px;
-  -webkit-border-radius: 0px 20px 20px 0px;
-  -moz-border-radius: 0px 20px 20px 0px;
-  -ms-border-radius: 0px 20px 20px 0px;
-  -o-border-radius: 0px 20px 20px 0px;
   opacity: 0;
-  right: 0px;
-  bottom: 1px;
-  transform: scaleX(0);
 }
-.points {
+.points1 {
+  padding-right: 58px;
+
+  background-color: #ffffff;
+  opacity: 0;
+}
+.points{
+  background-color: #ffffff;
+  opacity: 0;
 }
 .price {
   position: absolute;
@@ -188,7 +186,7 @@
     width: 100%;
   }
   .menus {
-    height: 1203px;
+    height: 1217px;
   }
   .restaurantname {
     font-size: 1.5rem;
@@ -207,24 +205,67 @@
   .container__menus {
     height: 70px;
     border-radius: 18px;
+    &:hover .points1 {
+      animation: pointsanim 1s ease-in-out forwards;
+    }
   }
   .title__container {
     margin-top: 2px;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .description__menus {
-    font-size: 0.85em;
+    font-size: 0.64em;
     bottom: 0px;
   }
 
   .price {
-    font-size: 0.8em;
+    font-size: 0.64em;
+    right: 15px;
     bottom: 1px;
   }
 
   .validation {
     width: 63px;
     height: 70px;
+  }
+}
+
+@include media-breapoint-up("sm1") {
+  .title__container {
+    font-size: 1em;
+  }
+  .description__menus {
+    font-size: 0.7em;
+    bottom: 0px;
+  }
+  .price {
+    font-size: 0.7em;
+  }
+}
+
+@include media-breapoint-up("sm2") {
+  .title__container {
+    font-size: 1em;
+  }
+  .description__menus {
+    font-size: 0.8em;
+    bottom: 0px;
+  }
+  .price {
+    font-size: 0.8em;
+  }
+}
+
+@include media-breapoint-up("sm2bis") {
+  .title__container {
+    font-size: 1.1em;
+  }
+  .description__menus {
+    font-size: 0.85em;
+    bottom: 0px;
+  }
+  .price {
+    font-size: 0.85em;
   }
 }
 
@@ -276,12 +317,18 @@
   }
 }
 
+@include media-breapoint-up("lg1") {
+  .menus{
+    height: 1457px; 
+  }
+}
+
 @include media-breapoint-up("xl") {
   .menus {
-    height: 675px;
+    height: 703px;
   }
   .menus2 {
-    height: 793px;
+    height: 823px;
   }
   .firstcontainermenu {
     top: -100px;
@@ -337,19 +384,10 @@
     margin-left: 0;
   }
   .description__menus {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-top: 10px;
   }
-  .hovervalidation {
-    background-color: transparent;
-    height: 50px;
-    width: 169px;
-    border-radius: 0px 15px 15px 0px;
-    -webkit-border-radius: 0px 15px 15px 0px;
-    -moz-border-radius: 0px 15px 15px 0px;
-    -ms-border-radius: 0px 15px 15px 0px;
-    -o-border-radius: 0px 15px 15px 0px;
-  }
+ 
   .points {
     background-color: #ffffff;
     opacity: 0;
@@ -379,5 +417,11 @@
   }
   .iconcheck {
     font-size: 1.2em;
+  }
+}
+
+@include media-breapoint-up("xxl"){
+  .description__menus {
+    font-size: 0.9em;
   }
 }

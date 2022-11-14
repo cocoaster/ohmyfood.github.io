@@ -5,7 +5,7 @@
   background-color: #eaeaea;
   box-shadow: -1.8px 0px 1.2px 0px #000000;
   width: auto;
-  height: 55px;
+  height: 40px;
   z-index: 1;
   &:hover {
     cursor: grab;
@@ -13,8 +13,9 @@
   }
 }
 .location__icon {
-  font-size: 15px;
-  padding-right: 15px;
+  font-size: 0.9em;
+  padding-right: 10px;
+  padding-bottom: 5px;
   color: #363636;
 }
 
@@ -26,85 +27,288 @@ form {
   border: 0px;
   background-color: #eaeaea;
   font-family: $font2;
-  font-size: 1rem;
-  font-weight: 550;
-
+  font-size: .8rem;
+  font-weight: bold;
+  width: 100%;
   input {
     border: 0px;
     background-color: #eaeaea;
     outline: none;
-    width: 56%;
+    width: 46%;
+    height: auto;
     &::-webkit-input-placeholder {
+      color: #000000;
       font-family: $font2;
-      font-size: 1em;
-      font-weight: 550;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+    &:-moz-placeholder {
+      color: #000000;
+      font-family: $font2;
+      font-size: 0.9em;
+      font-weight: bold;
+      width: 100%;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+      font-family: $font2;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+    &:-ms-input-placeholder {
+      color: #000000;;
+      font-family: $font2;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
       &:focus::-webkit-input-placeholder {
         visibility: hidden;
         opacity: 0;
       }
-
-      &:-moz-placeholder {
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      &::-moz-placeholder {
-        font-size: 1em;
-        font-weight: 600;
-      }
-      &:-ms-input-placeholder {
-        font-size: 1em;
-        font-weight: 600;
-      }
     }
   }
+
+@include media-breapoint-up("sm"){
+    form {
+      display: flex;
+      input {
+        border: 0px;
+        &::-webkit-input-placeholder {
+          font-size: 1em;
+        }
+        &:-moz-placeholder {
+          font-size: 1em;
+        }
+        &::-moz-placeholder {
+          font-size: 1em;
+        }
+        &:-ms-input-placeholder {
+          font-size: 1em;
+        }
+        }
+      }
 }
+
+@include media-breapoint-up("sm2"){
+  form {
+    font-size: 1.1em;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.1em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.1em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.1em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.1em;
+      }
+    }
+  } 
+}
+
+@include media-breapoint-up("sm3"){
+  #location{
+    height: 53px;
+  }
+  form {
+    font-size: 1.05em;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.05em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.05em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.05em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.05em;
+      }
+    } 
+  }
+}
+
+@include media-breapoint-up("m"){
+  #location {
+    height: 55px;
+  }
+  .location__icon {
+    font-size: 1.3em;
+  }
+  form {
+    font-size: 1.1em;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.1em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.1em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.1em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.1em;
+      }
+    }
+  } 
+}
+
+@include media-breapoint-up("ml") {
+  #location {
+    height: 67px;
+  }
+  form {
+    font-size: 1.15em;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.15em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.15em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.15em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.15em;
+      }
+    }
+  } 
+}
+
+@include media-breapoint-up("mll1") {
+  #location {
+    height: 67px;
+  }
+  .location__icon{
+    font-size: 1.4em;
+    padding-right: 27px;
+  }
+  form {
+    font-size: 1.3em;
+    height: 45px;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.3em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.3em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.3em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.6em;
+      }
+    }
+  } 
+}
+
 
 @include media-breapoint-up("md") {
   #location {
     margin-top: 153px;
   }
+  .location__icon{
+    font-size: 1.6em;
+    padding-right: 27px;
+  }
+  form {
+    height: 60px;
+    font-size: 1.4em;
+    input {
+      height: 45px;
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1.4em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.4em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.4em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.4em;
+      }
+    }
+  } 
+}
+
+@include media-breapoint-up("lg1") {
+  #location {
+    margin-top: 153px;
+    height: 82px;
+  }
+  .location__icon{
+    font-size: 1.6em;
+    padding-right: 1px;
+  }
+  form {
+    font-size: 1.8em;
+    height: min-content;
+    input {
+      border: 0px;
+      height: 100px;
+      &::-webkit-input-placeholder {
+        font-size: 1.8em;
+      }
+      &:-moz-placeholder {
+        font-size: 1.8em;
+      }
+      &::-moz-placeholder {
+        font-size: 1.8em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.8em;
+      }
+    }
+  } 
 }
 
 @include media-breapoint-up("xl") {
   #location {
-    height: 46px;
-    width: 301px;
+    height: 53px;
+    width: 390px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 281px;
+    box-shadow: 0px -1px 4px 0.3px #000000;
     border-radius: 5px;
-    border: 0px;
-    box-shadow: 0px 0px 0px;
-
-    &:hover {
-      cursor: grab;
-      box-shadow: 1px 1px 3px 3px #a8a6a6;
-    }
   }
   .location__icon {
-    font-size: 1.3rem;
-    padding-right: 25px;
+    font-size: 1.2rem;
+    padding-right: 0px;
+    padding-left: 32px;
   }
   form {
     font-size: 1.3rem;
+    border-radius: 5px;
 
     input {
       width: 56%;
+      height: 52px;
       &::-webkit-input-placeholder {
         text-align: center;
         font-size: 1.3rem;
-        &:focus::-webkit-input-placeholder {
-          opacity: 0;
-        }
-
-        &:-moz-placeholder {
-          font-size: 2rem;
-        }
-        &::-moz-placeholder {
-          font-size: 2em;
-        }
-        &:-ms-input-placeholder {
-          font-size: 2rem;
-        }
+      }
+      &:-moz-placeholder {
+        font-size: 1.3rem;
+      }
+      &::-moz-placeholder {
+        font-size: 1.3rem;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.3rem;
       }
     }
   }

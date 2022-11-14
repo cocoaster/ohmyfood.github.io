@@ -1,17 +1,18 @@
 #restaurants {
   background-color: #f7f7f7;
-  padding: 40px 3%;
+  padding: 20px 3%;
+  margin-top: 50px;
   position: relative;
 }
 #marker {
   position: absolute;
   top: -40px;
 }
-h2 {
+.homeh2 {
   font-family: $font2;
-  font-size: 20px;
+  font-size: 1em;
   margin: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .restaurantlink {
@@ -55,13 +56,64 @@ h2 {
   font-weight: bold;
   color: #0c8e6e;
 }
-h3 {
-  margin: 10px 0px 5px 10px;
+.restaurant__title {
+  font-family: $font2;
+  margin: 10px 0px 13px 10px;
   font-size: 1em;
 }
 .restaurantp {
+  font-family: $font2;
   margin: 0px 0px 13px 10px;
   font-size: 1em;
+}
+
+@include media-breapoint-up("sm") {
+  .homeh2 {
+    font-size: 1.1em;
+  }
+}
+@include media-breapoint-up("sm2") {
+  .homeh2 {
+    font-size: 1.2em;
+  }
+}
+
+@include media-breapoint-up("sm3") {
+  #restaurants{
+    margin-top: 70px;
+  }
+  .homeh2 {
+    font-size: 1.4em;
+  }
+}
+
+@include media-breapoint-up("m") {
+  #restaurants{
+    margin-top: 70px;
+  }
+  .homeh2 {
+    font-size: 1.45em;
+  }
+}
+
+@include media-breapoint-up("ml") {
+  #restaurants{
+    padding: 40px 3%;
+    }
+  .homeh2 {
+    font-size: 1.7em;
+    margin-bottom: 25px;
+  }
+}
+
+@include media-breapoint-up("ml1") {
+  #restaurants{
+    padding: 45px 3%;
+    }
+  .homeh2 {
+    font-size: 1.8em;
+    margin-bottom: 27px;
+  }
 }
 
 @include media-breapoint-up("md") {
@@ -120,20 +172,20 @@ h3 {
     padding: 7px 13px;
     font-size: 1em;
   }
-  h3 {
-    font-size: 1.2em;
+  .restaurant__title {
+    font-size: 1.3em;
     text-align: start;
-    margin: 10px 0px 5px 25px;
+    margin: 10px 0px 5px 20px;
   }
   .restaurantp {
     text-align: start;
-    margin: 0px 0px 13px 25px;
+    margin: 0px 0px 13px 20px;
     font-size: 1.2em;
   }
 }
 
 @include media-breapoint-up("xxl") {
   #restaurants {
-    top: 238px;
+    top: 168px;
   }
 }

@@ -5,32 +5,77 @@
   animation: loaderduration 5.1s both;
 }
 .maindesktop {
-  margin-top: 61px;
+  margin-top: 54px;
+}
+
+@include media-breapoint-up("s"){
+  .maindesktop {
+    margin-top: 59px;
+  }
+}
+
+@include media-breapoint-up("sm1"){
+  .maindesktop {
+    margin-top: 70px;
+  }
+}
+
+@include media-breapoint-up("sm2"){
+  .maindesktop {
+    margin-top: 66px;
+  }
+}
+@include media-breapoint-up("sm2bis"){
+  .maindesktop {
+    margin-top: 77px;
+  }
+}
+
+@include media-breapoint-up("sm3"){
+  .maindesktop {
+    margin-top: 78px;
+  }
 }
 
 @include media-breapoint-up("m") {
   .maindesktop {
-    margin-top: 73px;
+    margin-top: 88px;
   }
 }
+
+
 
 @include media-breapoint-up("ml") {
   .maindesktop {
-    margin-top: 80px;
+    margin-top: 88px;
   }
 }
 
-@include media-breapoint-up("mm") {
+@include media-breapoint-up("mll") {
   .maindesktop {
-    margin-top: 96px;
+    margin-top: 115px;
+  }
+}
+
+@include media-breapoint-up("mll1") {
+  .maindesktop {
+    margin-top: 117px;
   }
 }
 
 @include media-breapoint-up("md") {
   .maindesktop {
-    margin-top: 102px;
+    margin-top: -4px;
   }
 }
+
+@include media-breapoint-up("lg1") {
+  .maindesktop {
+    margin-top: 166px;
+  }
+}
+
+
 
 @include media-breapoint-up("xl") {
   body,
@@ -77,5 +122,4 @@
 }
 
 @include media-breapoint-up("xxxl") {
-  max-width: 1280px;
-} ;
+}
