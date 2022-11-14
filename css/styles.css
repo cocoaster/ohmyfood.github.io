@@ -247,6 +247,7 @@ body {
   width: 25%;
   height: 80px;
   background-size: 300% 300%;
+  filter: blur(5px);
 }
 
 .smoke-1 {
@@ -1014,12 +1015,12 @@ form input:focus::-webkit-input-placeholder {
     width: 390px;
     margin: 0 auto;
     margin-top: 281px;
-    box-shadow: 0px -1px 4px 0.3px #000000;
+    box-shadow: 0px 0px 4px 0px #000000;
     border-radius: 5px;
   }
   .location__icon {
     font-size: 1.2rem;
-    padding-right: 0px;
+    padding-right: 16px;
     padding-left: 32px;
   }
   form {
@@ -1457,6 +1458,16 @@ form input:focus::-webkit-input-placeholder {
     padding: 20px 10px 20px 5px;
     display: flex;
     align-items: center;
+    -webkit-animation: enterelements 0.5s ease-in-out 5.4s;
+            animation: enterelements 0.5s ease-in-out 5.4s;
+  }
+  .functioning__button--1 {
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+  }
+  .functioning__button--2 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
   }
   .fcticon {
     font-size: 1.3em;
@@ -1663,6 +1674,22 @@ form input:focus::-webkit-input-placeholder {
   .restaurantcontainers {
     width: 95%;
     height: 265px;
+    -webkit-animation: enterelements 1s ease-in-out;
+            animation: enterelements 1s ease-in-out;
+    -webkit-animation-delay: 5.4s;
+            animation-delay: 5.4s;
+  }
+  .restaurantcontainers--1 {
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+  }
+  .restaurantcontainers--2 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .restaurantcontainers--3 {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
   }
   .restaurantimg {
     width: 100%;
@@ -2294,6 +2321,53 @@ figure {
   height: auto;
 }
 
+.letter {
+  perspective: 1000px;
+  opacity: 0;
+  -webkit-animation: letteranim 0.3s linear forwards;
+          animation: letteranim 0.3s linear forwards;
+}
+
+.letter-1 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.letter-2 {
+  -webkit-animation-delay: 5.05s;
+          animation-delay: 5.05s;
+}
+
+.letter-3 {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+.letter-4 {
+  -webkit-animation-delay: 5.15s;
+          animation-delay: 5.15s;
+}
+
+.letter-5 {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.letter-6 {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+
+.letter-7 {
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
+}
+
+.letter-8 {
+  -webkit-animation-delay: 5.35s;
+          animation-delay: 5.35s;
+}
+
 @media screen and (min-width: 285px) {
   figure {
     margin-top: 0;
@@ -2430,6 +2504,26 @@ figure {
   #homelogo {
     margin-bottom: 78px;
     margin-top: 50px;
+  }
+}
+@-webkit-keyframes letteranim {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes letteranim {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
   }
 }
 footer {

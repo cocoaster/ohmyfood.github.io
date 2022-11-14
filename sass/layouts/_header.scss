@@ -45,6 +45,39 @@ figure {
   width: 55%;
   height: auto;
 }
+.letter{
+  perspective: 1000px;
+  opacity: 0;
+  animation: letteranim 0.3s linear forwards;
+
+}
+.letter-1{
+  animation-delay: 5s;
+  }
+.letter-2 {
+  animation-delay: 5.05s;  
+}
+.letter-3 {
+  animation-delay: 5.1s;  
+}
+.letter-4 {
+  animation-delay: 5.15s;  
+}
+.letter-5 {
+  animation-delay: 5.2s;  
+}
+.letter-6 {
+  animation-delay: 5.25s;  
+}
+.letter-7 {
+  animation-delay: 5.3s;  
+}
+.letter-8 {
+  animation-delay: 5.35s;  
+}
+
+
+
 
 @include media-breapoint-up("sm") {
   figure {
@@ -188,5 +221,17 @@ figure {
   #homelogo {
     margin-bottom: 78px;
     margin-top: 50px;
+  }
+}
+
+@keyframes letteranim{
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
   }
 }

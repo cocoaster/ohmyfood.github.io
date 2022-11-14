@@ -157,10 +157,17 @@
   .restaurantlink {
     width: 98%;
   }
-  .restaurantcontainers {
-    width: 95%;
-    height: 265px;
+.restaurantcontainers {
+  width: 95%;
+  height: 265px;
+  animation: enterelements 1s ease-in-out;
+  animation-delay: 5.4s;
+  @for $i from 1 to $numrestaurantcontainers {
+    &--#{$i} {
+      animation-delay: $animdelaybox * $i;
+    }
   }
+}
   .restaurantimg {
     width: 100%;
     height: 186px;
