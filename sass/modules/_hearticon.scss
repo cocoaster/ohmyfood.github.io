@@ -22,10 +22,10 @@ bottom: 45px;
   left: 0;
 
 &#emptyheart:hover{
-  animation: heartanim2 0.8s ease-in-out both;
+  animation: heartanim2 0.4s ease-in-out forwards;
 }
 &#emptyheart:hover + .fullheart{
-  animation: heartanim 0.8s ease-in-out both;
+  animation: heartanim 0.4s ease-in-out forwards;
 }
 }
 .heartcontainer2{
@@ -33,7 +33,7 @@ bottom: 45px;
   width: 20px;
   height: 20px;
 &.heartcontainer2:hover > .fullheart{
-  animation: heartanim 0.8s ease-in-out both;
+  animation: heartanim .4s linear  forwards;
 }
 }
 .fullheart {
@@ -45,7 +45,7 @@ bottom: 45px;
   height: 20px;
   mask-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iZnVsbGhlYXJ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjIuNjYgMTU0LjEzIj48cGF0aCBpZD0iZnVsbGhlYXJ0LTIiIGRhdGEtbmFtZT0iZnVsbGhlYXJ0IiBkPSJNNDU2LjM0LDE5OS40N2M3Ljg0LTE2LjQsOS42My0zMy4zMSwzLjI0LTUwLjU5LTEyLjUtMzMuNzgtNTIuNjYtMzMuMjEtNjktMTQuOTQtMiwyLjI0LTQuMTMsNC4zNy02LjA2LDYuNjYtMS42MiwxLjkxLTMsMi00LjYyLDAtMS44Ny0yLjIxLTMuOTQtNC4yNi01Ljg1LTYuNDMtMTYuMzYtMTguNTYtNTYuNzItMTkuMTktNjkuMjYsMTQuNjEtNy40NSwyMC4xMS0zLjk0LDM5LjIsNi42Nyw1Ny4yQzMyOC43OCwyMzUuNDIsMzU1LDI1NS44OCwzODIsMjc1LjY0YzEzLjc0LTkuMDksMzMuNTUtMjUuNCw0NS40Ni0zNy4zOEM0MzksMjI2LjcyLDQ0OS4yNiwyMTQuMjYsNDU2LjM0LDE5OS40N1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMDAuOCAtMTIxLjUxKSIvPjwvc3ZnPg==);
   mask-repeat: no-repeat;
-  background: linear-gradient(270deg, #ff79da, #9356dc, #ff79da, #9356dc);
+  background: linear-gradient(180deg, $primary 0%, $secondary 10%);
   background-size: 800% 800%;
   transform: scale(0);
 
