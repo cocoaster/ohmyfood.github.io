@@ -1100,7 +1100,7 @@ form input:focus::-webkit-input-placeholder {
 }
 #navbar__button:hover {
   box-shadow: 0px 4px 9px 3px #7b7a7a;
-  opacity: 0.7;
+  opacity: 0.75;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -2138,10 +2138,10 @@ body {
 }
 @media screen and (min-width: 1100px) {
   .menus {
-    height: 703px;
+    height: 724px;
   }
   .menus2 {
-    height: 823px;
+    height: 843px;
   }
   .firstcontainermenu {
     top: -100px;
