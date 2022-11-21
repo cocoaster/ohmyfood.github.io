@@ -316,8 +316,11 @@ form {
   }
 }
 
-@include media-breapoint-up("xxl") {
+@include media-breapoint-up("xxxxl") {
   .leftelementscontainerdesktop {
-    margin-top: 293px;
+    margin-top: 333px;
+  }
+  #location{
+    margin-bottom: 30px;
   }
 }

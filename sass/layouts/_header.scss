@@ -1,5 +1,9 @@
 //responsive mobile devices
-
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 header {
   width: 100%;
   margin: 0 auto;
@@ -219,8 +223,8 @@ figure {
 
 @include media-breapoint-up("xxl") {
   #homelogo {
-    margin-bottom: 78px;
-    margin-top: 50px;
+    margin-bottom: 118px;
+    margin-top: 90px;
   }
 }
 
@@ -233,5 +237,17 @@ figure {
   100% {
     opacity: 1;
     transform: rotateY(0deg);
+  }
+}
+
+@include media-breapoint-up("xxxxl"){
+  .header__container{
+    height: 301px;
+  }
+  #homelogo {
+    margin-left: -270px;
+  }
+  .arrow{
+    top: 118px;
   }
 }

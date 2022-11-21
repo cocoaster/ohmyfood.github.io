@@ -277,3 +277,25 @@
     margin-right: 20px;
   }
 }
+
+@include media-breapoint-up("xxxxl"){
+  .homeh2-1{
+    margin-top: 42px;
+    margin-bottom: 57px;
+    font-size: 3em;
+  }
+  .functioning__button{
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .fcticon {
+    font-size: 1.9em;
+    margin-right: 28px;
+  }
+  .fct__text {
+    font-size: 1.7em;
+    margin-right: 25px;
+  }
+
+}

@@ -24,3 +24,12 @@ body {
     height: 1287px;
   }
 }
+
+@include media-breapoint-up("xxxxl"){
+  .mainrestaurant{
+    height: 1450px;
+  }
+  .mainrestaurant2 {
+    height: 1484px;
+  }
+}

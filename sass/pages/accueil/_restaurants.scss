@@ -191,8 +191,22 @@
   }
 }
 
-@include media-breapoint-up("xxl") {
+@include media-breapoint-up("xxxxl") {
   #restaurants {
-    top: 168px;
+    top: 208px;
   }
+  .homeh2 {
+    margin-bottom: 90px;
+    font-size: 3.2em;
+  }
+  .restaurant__lign{
+    margin-bottom: 17px;
+  }
+  .restaurantcontainers{
+    height: 405px;
+  }
+  .restaurantimg{
+    height: 305px;
+  }
+
 }

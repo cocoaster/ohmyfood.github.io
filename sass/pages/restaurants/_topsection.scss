@@ -21,3 +21,9 @@
     height: 450px;
   }
 }
+
+@include media-breapoint-up("xxxxl") {
+  .topimg {
+    height: 654px;
+  }
+}

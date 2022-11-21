@@ -425,3 +425,30 @@
     font-size: 0.9em;
   }
 }
+
+@include media-breapoint-up("xxxxl") {
+  .menus{
+    height: 800px;
+  }
+  .menus2{
+    height: 836px;
+  }
+
+  .firstcontainermenu{
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+  .container__menus{
+    width: 139%;
+    height: 90px;
+  }
+  .description__menus{
+    margin-bottom: 15px;
+  }
+  .price{
+    bottom: 15px;
+  }
+  .validation{
+    height: 90px;
+  }
+}

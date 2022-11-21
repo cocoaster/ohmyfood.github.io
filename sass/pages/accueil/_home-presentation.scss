@@ -121,5 +121,11 @@
   }
 }
 
-@include media-breapoint-up("xxxl") {
+@include media-breapoint-up("xxxxl") {
+  .homepage {
+    height: 1644px;
+  }
+  .whiteleftcontainerdesktop {
+    height: 1644px;
+  }
 }

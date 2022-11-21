@@ -198,6 +198,24 @@
     }
   }
 }
+@media screen and (min-width: 2000px) {
+  @-webkit-keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-555%);
+    }
+  }
+  @keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-555%);
+    }
+  }
+}
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -740,6 +758,14 @@ html {
     margin-top: 306px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .homepage {
+    height: 1644px;
+  }
+  .whiteleftcontainerdesktop {
+    height: 1644px;
+  }
+}
 #location {
   display: flex;
   align-items: center;
@@ -1051,9 +1077,12 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 2000px) {
   .leftelementscontainerdesktop {
-    margin-top: 293px;
+    margin-top: 333px;
+  }
+  #location {
+    margin-bottom: 30px;
   }
 }
 #navsection {
@@ -1242,6 +1271,16 @@ form input:focus::-webkit-input-placeholder {
 @media screen and (min-width: 1220px) {
   #navsection {
     padding-top: 52px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #homeh1 {
+    font-size: 3.2em;
+    margin-bottom: 44px;
+  }
+  #navsection__txt {
+    font-size: 2.3em;
+    margin-bottom: 52px;
   }
 }
 #functioning {
@@ -1519,6 +1558,26 @@ form input:focus::-webkit-input-placeholder {
     margin-right: 20px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .homeh2-1 {
+    margin-top: 42px;
+    margin-bottom: 57px;
+    font-size: 3em;
+  }
+  .functioning__button {
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .fcticon {
+    font-size: 1.9em;
+    margin-right: 28px;
+  }
+  .fct__text {
+    font-size: 1.7em;
+    margin-right: 25px;
+  }
+}
 #restaurants {
   background-color: #f7f7f7;
   padding: 20px 3%;
@@ -1720,9 +1779,22 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 2000px) {
   #restaurants {
-    top: 168px;
+    top: 208px;
+  }
+  .homeh2 {
+    margin-bottom: 90px;
+    font-size: 3.2em;
+  }
+  .restaurant__lign {
+    margin-bottom: 17px;
+  }
+  .restaurantcontainers {
+    height: 405px;
+  }
+  .restaurantimg {
+    height: 305px;
   }
 }
 html,
@@ -1751,6 +1823,14 @@ body {
     height: 1287px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .mainrestaurant {
+    height: 1450px;
+  }
+  .mainrestaurant2 {
+    height: 1484px;
+  }
+}
 .topimg {
   margin-top: 0px;
   height: 177px;
@@ -1772,6 +1852,11 @@ body {
   .topimg {
     margin-top: 90px;
     height: 450px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .topimg {
+    height: 654px;
   }
 }
 .menus {
@@ -2234,6 +2319,31 @@ body {
     font-size: 0.9em;
   }
 }
+@media screen and (min-width: 2000px) {
+  .menus {
+    height: 800px;
+  }
+  .menus2 {
+    height: 836px;
+  }
+  .firstcontainermenu {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+  .container__menus {
+    width: 139%;
+    height: 90px;
+  }
+  .description__menus {
+    margin-bottom: 15px;
+  }
+  .price {
+    bottom: 15px;
+  }
+  .validation {
+    height: 90px;
+  }
+}
 .order {
   display: flex;
   justify-content: center;
@@ -2276,6 +2386,17 @@ body {
     padding: 20px 60px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .order {
+    margin-top: 3px;
+  }
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   width: 100%;
   margin: 0 auto;
@@ -2510,8 +2631,8 @@ figure {
 }
 @media screen and (min-width: 1220px) {
   #homelogo {
-    margin-bottom: 78px;
-    margin-top: 50px;
+    margin-bottom: 118px;
+    margin-top: 90px;
   }
 }
 @-webkit-keyframes letteranim {
@@ -2532,6 +2653,17 @@ figure {
   100% {
     opacity: 1;
     transform: rotateY(0deg);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .header__container {
+    height: 301px;
+  }
+  #homelogo {
+    margin-left: -270px;
+  }
+  .arrow {
+    top: 118px;
   }
 }
 footer {
@@ -2613,5 +2745,18 @@ footer {
   .footer__txt {
     font-size: 1.1em;
     margin-left: 45px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  footer {
+    padding-top: 51px;
+    padding-bottom: 91px;
+    padding-left: 40px;
+  }
+  #footertitle {
+    font-size: 3em;
+  }
+  .footer__txt {
+    font-size: 2.2em;
   }
 }/*# sourceMappingURL=styles.css.map */

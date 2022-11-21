@@ -78,3 +78,17 @@ footer {
     margin-left: 45px;
   }
 }
+
+@include media-breapoint-up("xxxxl"){
+  footer{
+    padding-top: 51px;
+    padding-bottom: 91px;
+    padding-left: 40px;
+  }
+  #footertitle{
+    font-size: 3em;
+}
+.footer__txt{
+  font-size: 2.2em;
+}
+}
