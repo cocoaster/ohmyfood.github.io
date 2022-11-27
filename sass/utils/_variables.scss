@@ -23,6 +23,12 @@ $breakpoints: (
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+$gradientbutton: linear-gradient(to bottom, $primary, $secondary);
+$lighten: 10%;
+$gradient-lighten: linear-gradient(to bottom, 
+lighten($primary,$lighten),
+lighten($secondary, $lighten));
+
 
 $font1: shrikhand;
 $font2: robotto, sans-serif;

@@ -215,13 +215,13 @@
   }
   .description__menus {
     font-size: 0.64em;
-    bottom: 0px;
+    bottom: 10px;
   }
 
   .price {
     font-size: 0.64em;
     right: 15px;
-    bottom: 1px;
+    bottom: 10px;
   }
 
   .validation {
@@ -236,7 +236,7 @@
   }
   .description__menus {
     font-size: 0.7em;
-    bottom: 0px;
+    bottom: 10px;
   }
   .price {
     font-size: 0.7em;
@@ -249,7 +249,7 @@
   }
   .description__menus {
     font-size: 0.8em;
-    bottom: 0px;
+    bottom: 10px;
   }
   .price {
     font-size: 0.8em;
@@ -262,7 +262,6 @@
   }
   .description__menus {
     font-size: 0.85em;
-    bottom: 0px;
   }
   .price {
     font-size: 0.85em;
@@ -325,10 +324,10 @@
 
 @include media-breapoint-up("xl") {
   .menus {
-    height: 724px;
+    height: 752px;
   }
   .menus2 {
-    height: 843px;
+    height: 876px;
   }
   .firstcontainermenu {
     top: -100px;

@@ -26,20 +26,10 @@
   text-align: center;
 }
 #navbar__button {
-  background: linear-gradient(0deg, $primary 3%, $secondary 97%);
   border-radius: 30px;
   padding: 11px 14px;
-  font-family: $font2;
   font-size: 0.6em;
-  color: #ffffff;
-  border: none;
-  box-shadow: -1px 1px 4px 0.5px #b2acac;
-  transition: 0.4s ease-in-out;
-  &:hover {
-    box-shadow: 0px 4px 9px 3px #7b7a7a;
-    opacity: 0.75;
-    cursor: grab;
-  }
+  @extend .btn;
 } 
 
 @include media-breapoint-up("sm"){
