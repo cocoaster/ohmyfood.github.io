@@ -616,6 +616,12 @@ body {
     right: 54px;
   }
 }
+@media screen and (min-width: 360px) {
+  .heartscontainer1bis {
+    top: 30px;
+    right: 41px;
+  }
+}
 @media screen and (min-width: 420px) {
   .heartscontainer1bis {
     transform: scale(0.8);

@@ -97,6 +97,13 @@ bottom: 45px;
     right: 54px;
   }
 }
+@include media-breapoint-up("sm2bis") {
+  .heartscontainer1bis{
+  top: 30px;
+  right: 41px;
+  }
+}
+
 @include media-breapoint-up("m") {
   .heartscontainer1bis {
     transform: scale(0.8);
