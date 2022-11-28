@@ -9,7 +9,7 @@ header {
   margin: 0 auto;
   @include fixed(top);
   background-color: #ffffff;
-  height: 53px;
+  height: 57px;
   z-index: 200;
 }
 .header__container,
@@ -56,28 +56,28 @@ figure {
 
 }
 .letter-1{
-  animation-delay: 5s;
+  animation-delay: 3s;
   }
 .letter-2 {
-  animation-delay: 5.05s;  
+  animation-delay: 3.05s;  
 }
 .letter-3 {
-  animation-delay: 5.1s;  
+  animation-delay: 3.1s;  
 }
 .letter-4 {
-  animation-delay: 5.15s;  
+  animation-delay: 3.15s;  
 }
 .letter-5 {
-  animation-delay: 5.2s;  
+  animation-delay: 3.2s;  
 }
 .letter-6 {
-  animation-delay: 5.25s;  
+  animation-delay: 3.25s;  
 }
 .letter-7 {
-  animation-delay: 5.3s;  
+  animation-delay: 3.3s;  
 }
 .letter-8 {
-  animation-delay: 5.35s;  
+  animation-delay: 3.35s;  
 }
 
 
@@ -97,6 +97,9 @@ figure {
   }
 }
 @include media-breapoint-up("sm3") {
+  header{
+    height: 73px ;
+  }
   figure {
     margin-top: 0;
   }
@@ -119,6 +122,12 @@ figure {
   margin-top: 10px;
 }
 
+@include media-breapoint-up("ml1"){
+  header{
+    height: 83px;
+  }
+}
+
 @include media-breapoint-up("mll") {
   header {
     height: 95px;
@@ -130,6 +139,12 @@ figure {
 .arrow {
   bottom: 12px;
   font-size: 1.2rem;
+}
+
+@include media-breapoint-up("mll1"){
+  header{
+    height: 110px;
+  } 
 }
 
 @include media-breapoint-up("md") {
@@ -151,7 +166,7 @@ figure {
 
 @include media-breapoint-up("lg") {
   header {
-    height: 130px;
+    height: 140px;
   }
 }
 
@@ -213,7 +228,6 @@ figure {
     width: 600px;
     height: 150px;
   }
-
   .homelink {
     text-decoration: none;
   }

@@ -1,6 +1,6 @@
 footer {
   background-color: #353535;
-  padding-top: 14px;
+  padding-top: 25px;
   padding-bottom: 30px;
   color: #ffffff;
 }
@@ -20,6 +20,7 @@ footer {
   text-shadow: 0.1px 0.1px 1px #353535;
   font-size: 1em;
   margin-left: 30px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -44,6 +45,7 @@ footer {
 @include media-breapoint-up("md") {
   footer {
     display: flex;
+    padding-top: 35px;
   }
   #footerlist {
     display: flex;
@@ -53,20 +55,26 @@ footer {
   }
 }
 
+@include media-breapoint-up("lg") {
+  footer{
+    padding-top: 35px ;
+  }
+}
+
 @include media-breapoint-up("xl") {
   footer {
     z-index: 2;
     margin-top: 0px;
     position: relative;
-
     display: flex;
+    padding-top: 30px;
   }
   #logo__link {
     text-decoration: none;
   }
 
   #footertitle {
-    font-size: 1em;
+    font-size: 1.8em;
     margin-left: 30px;
   }
 
@@ -74,7 +82,7 @@ footer {
     display: flex;
   }
   .footer__txt {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-left: 45px;
   }
 }

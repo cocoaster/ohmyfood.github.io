@@ -139,7 +139,7 @@
     position: absolute;
     padding: 40px 20px;
     right: 15px;
-    top: 155px;
+    top: 248px;
     text-align: center;
     width: 56%;
     max-width: 56%;
@@ -160,14 +160,15 @@
 .restaurantcontainers {
   width: 95%;
   height: 265px;
-  animation: enterelements 1s ease-in-out;
-  animation-delay: 5.4s;
-  @for $i from 1 to $numrestaurantcontainers {
-    &--#{$i} {
-      animation-delay: $animdelaybox * $i;
+  animation: enterelements .5s ease-in-out;
+  animation-delay: 3.1s;
+  @for $e from 1 to $numrestaurantcontainers {
+    &--#{$e} {
+      animation-delay: $animdelaybox * $e;
     }
   }
 }
+
   .restaurantimg {
     width: 100%;
     height: 186px;

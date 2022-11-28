@@ -225,6 +225,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+}
+
 body {
   position: relative;
 }
@@ -656,8 +661,8 @@ body {
   width: 100%;
   height: auto;
   background: transparent;
-  -webkit-animation: loaderduration 5.1s both;
-          animation: loaderduration 5.1s both;
+  -webkit-animation: loaderduration 3.1s both;
+          animation: loaderduration 3.1s both;
 }
 
 .maindesktop {
@@ -706,7 +711,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .maindesktop {
-    margin-top: 117px;
+    margin-top: 111px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -732,7 +737,7 @@ html {
     background-color: #f7f7f7;
     height: 1019px;
     width: 100%;
-    height: 1024px;
+    height: 1200px;
   }
   .maindesktop {
     margin-top: 0px;
@@ -743,7 +748,7 @@ html {
   .whiteleftcontainerdesktop {
     background-color: #ffffff;
     width: 40%;
-    height: 1024px;
+    height: 1200px;
   }
   .leftelementscontainerdesktop {
     margin-top: 221px;
@@ -754,10 +759,10 @@ html {
     height: 1100px;
   }
   .homepage {
-    height: 1100px;
+    height: 1200px;
   }
   .whiteleftcontainerdesktop {
-    height: 1100px;
+    height: 1200px;
   }
   .leftelementscontainerdesktop {
     margin-top: 306px;
@@ -988,7 +993,7 @@ form input:focus::-webkit-input-placeholder {
     margin-top: 153px;
   }
   .location__icon {
-    font-size: 1.6em;
+    font-size: 1em;
     padding-right: 27px;
   }
   form {
@@ -1013,14 +1018,19 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.4em;
   }
 }
+@media screen and (min-width: 830px) {
+  .location__icon {
+    font-size: 1em;
+  }
+}
 @media screen and (min-width: 1000px) {
   #location {
     margin-top: 153px;
     height: 82px;
   }
   .location__icon {
-    font-size: 1.6em;
-    padding-right: 1px;
+    font-size: 1em;
+    padding-right: 10px;
   }
   form {
     font-size: 1.8em;
@@ -1030,19 +1040,19 @@ form input:focus::-webkit-input-placeholder {
   }
   form input {
     border: 0px;
-    height: 100px;
+    height: 50px;
   }
   form input::-webkit-input-placeholder {
-    font-size: 1.8em;
+    font-size: 1em;
   }
   form input:-moz-placeholder {
-    font-size: 1.8em;
+    font-size: 1em;
   }
   form input::-moz-placeholder {
-    font-size: 1.8em;
+    font-size: 1em;
   }
   form input:-ms-input-placeholder {
-    font-size: 1.8em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1050,7 +1060,7 @@ form input:focus::-webkit-input-placeholder {
     height: 53px;
     width: 390px;
     margin: 0 auto;
-    margin-top: 281px;
+    margin-top: 374px;
     box-shadow: 0px -0.5px 2.5px 0px #aaa9a9;
     border-radius: 5px;
   }
@@ -1229,7 +1239,7 @@ form input:focus::-webkit-input-placeholder {
     margin-bottom: 43px;
   }
   #navsection__txt {
-    font-size: 2.7em;
+    font-size: 2.3em;
     margin-bottom: 55px;
   }
   #navbar__button {
@@ -1497,8 +1507,8 @@ form input:focus::-webkit-input-placeholder {
     padding: 20px 10px 20px 5px;
     display: flex;
     align-items: center;
-    -webkit-animation: enterelements 0.5s ease-in-out 5.4s;
-            animation: enterelements 0.5s ease-in-out 5.4s;
+    -webkit-animation: enterelements 0.5s ease-in-out 3.1s;
+            animation: enterelements 0.5s ease-in-out 3.1s;
   }
   .functioning__button--1 {
     -webkit-animation-delay: 0.25s;
@@ -1712,7 +1722,7 @@ form input:focus::-webkit-input-placeholder {
     position: absolute;
     padding: 40px 20px;
     right: 15px;
-    top: 155px;
+    top: 248px;
     text-align: center;
     width: 56%;
     max-width: 56%;
@@ -1733,10 +1743,10 @@ form input:focus::-webkit-input-placeholder {
   .restaurantcontainers {
     width: 95%;
     height: 265px;
-    -webkit-animation: enterelements 1s ease-in-out;
-            animation: enterelements 1s ease-in-out;
-    -webkit-animation-delay: 5.4s;
-            animation-delay: 5.4s;
+    -webkit-animation: enterelements 0.5s ease-in-out;
+            animation: enterelements 0.5s ease-in-out;
+    -webkit-animation-delay: 3.1s;
+            animation-delay: 3.1s;
   }
   .restaurantcontainers--1 {
     -webkit-animation-delay: 0.25s;
@@ -1790,13 +1800,8 @@ form input:focus::-webkit-input-placeholder {
     height: 305px;
   }
 }
-html,
-body {
-  margin: 0;
-}
-
 .mainrestaurant {
-  margin-top: 65px;
+  margin-top: 58px;
 }
 
 @media screen and (min-width: 760px) {
@@ -1809,11 +1814,11 @@ body {
     height: 100%;
   }
   .mainrestaurant {
-    height: 1196px;
+    height: 1287px;
     margin-top: 55px;
   }
   .mainrestaurant2 {
-    height: 1317px;
+    height: 1350px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -1855,7 +1860,7 @@ body {
 .menus {
   position: relative;
   width: 100%;
-  height: 981px;
+  height: 976px;
 }
 
 .menus2 {
@@ -1924,40 +1929,40 @@ body {
           animation: enterelements 0.5s ease-in-out;
 }
 .container__menus--1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.container__menus--2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.container__menus--2 {
+.container__menus--3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.container__menus--4 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.container__menus--3 {
+.container__menus--5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.container__menus--6 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.container__menus--4 {
+.container__menus--7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.container__menus--8 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-.container__menus--5 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.container__menus--6 {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-.container__menus--7 {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-.container__menus--8 {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
 .container__menus--9 {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .container__menus:hover {
   box-shadow: 1px 1px 7px 2px #8a8989;
@@ -2083,12 +2088,12 @@ body {
 }
 
 @media screen and (min-width: 285px) {
+  .menus {
+    height: 1208px;
+  }
   .menus2 {
     height: 1302px;
     width: 100%;
-  }
-  .menus {
-    height: 1217px;
   }
   .restaurantname {
     font-size: 1.5rem;
@@ -2154,6 +2159,12 @@ body {
   }
 }
 @media screen and (min-width: 360px) {
+  .menus {
+    height: 1205px;
+  }
+  .menus2 {
+    height: 1293px;
+  }
   .title__container {
     font-size: 1.1em;
   }
@@ -2162,6 +2173,14 @@ body {
   }
   .price {
     font-size: 0.85em;
+  }
+}
+@media screen and (min-width: 380px) {
+  .menus {
+    height: 1207px;
+  }
+  .menus2 {
+    height: 1312px;
   }
 }
 @media screen and (min-width: 420px) {
@@ -2188,6 +2207,9 @@ body {
   .menus {
     height: 1339px;
   }
+  .menus2 {
+    height: 1454px;
+  }
   .starter {
     font-family: robotto, sans-serif;
   }
@@ -2210,15 +2232,18 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .menus {
-    height: 1457px;
+    height: 1343px;
+  }
+  .menus2 {
+    height: 1434px;
   }
 }
 @media screen and (min-width: 1100px) {
   .menus {
-    height: 752px;
+    height: 837px;
   }
   .menus2 {
-    height: 876px;
+    height: 901px;
   }
   .firstcontainermenu {
     top: -100px;
@@ -2384,7 +2409,7 @@ header {
   z-index: 10;
   top: 0;
   background-color: #ffffff;
-  height: 53px;
+  height: 57px;
   z-index: 200;
 }
 
@@ -2438,43 +2463,43 @@ figure {
 }
 
 .letter-1 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .letter-2 {
-  -webkit-animation-delay: 5.05s;
-          animation-delay: 5.05s;
+  -webkit-animation-delay: 3.05s;
+          animation-delay: 3.05s;
 }
 
 .letter-3 {
-  -webkit-animation-delay: 5.1s;
-          animation-delay: 5.1s;
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
 }
 
 .letter-4 {
-  -webkit-animation-delay: 5.15s;
-          animation-delay: 5.15s;
+  -webkit-animation-delay: 3.15s;
+          animation-delay: 3.15s;
 }
 
 .letter-5 {
-  -webkit-animation-delay: 5.2s;
-          animation-delay: 5.2s;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
 }
 
 .letter-6 {
-  -webkit-animation-delay: 5.25s;
-          animation-delay: 5.25s;
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
 }
 
 .letter-7 {
-  -webkit-animation-delay: 5.3s;
-          animation-delay: 5.3s;
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
 }
 
 .letter-8 {
-  -webkit-animation-delay: 5.35s;
-          animation-delay: 5.35s;
+  -webkit-animation-delay: 3.35s;
+          animation-delay: 3.35s;
 }
 
 @media screen and (min-width: 285px) {
@@ -2491,6 +2516,9 @@ figure {
   }
 }
 @media screen and (min-width: 380px) {
+  header {
+    height: 73px;
+  }
   figure {
     margin-top: 0;
   }
@@ -2512,6 +2540,11 @@ figure {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 530px) {
+  header {
+    height: 83px;
+  }
+}
 @media screen and (min-width: 600px) {
   header {
     height: 95px;
@@ -2525,6 +2558,11 @@ figure {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 650px) {
+  header {
+    height: 110px;
+  }
+}
 @media screen and (min-width: 760px) {
   header {
     height: 139px;
@@ -2543,7 +2581,7 @@ figure {
 }
 @media screen and (min-width: 830px) {
   header {
-    height: 130px;
+    height: 140px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -2651,7 +2689,7 @@ figure {
 }
 footer {
   background-color: #353535;
-  padding-top: 14px;
+  padding-top: 25px;
   padding-bottom: 30px;
   color: #ffffff;
 }
@@ -2673,6 +2711,7 @@ footer {
   text-shadow: 0.1px 0.1px 1px #353535;
   font-size: 1em;
   margin-left: 30px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -2700,6 +2739,7 @@ footer {
 @media screen and (min-width: 760px) {
   footer {
     display: flex;
+    padding-top: 35px;
   }
   #footerlist {
     display: flex;
@@ -2708,25 +2748,31 @@ footer {
     margin-left: 15px;
   }
 }
+@media screen and (min-width: 830px) {
+  footer {
+    padding-top: 35px;
+  }
+}
 @media screen and (min-width: 1100px) {
   footer {
     z-index: 2;
     margin-top: 0px;
     position: relative;
     display: flex;
+    padding-top: 30px;
   }
   #logo__link {
     text-decoration: none;
   }
   #footertitle {
-    font-size: 1em;
+    font-size: 1.8em;
     margin-left: 30px;
   }
   #footerlist {
     display: flex;
   }
   .footer__txt {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-left: 45px;
   }
 }
