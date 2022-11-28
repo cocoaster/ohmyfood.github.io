@@ -1,3 +1,4 @@
+## ARCHITECTURE DES DOSSIERS ET FICHIERS DU SITE OHMYFOOD ##
 Ce dépôt contient le *frontend* du site __ohmyfood__ qui permet de réaliser des commandes en ligne dans des restaurants gastronomiques à Paris.
 Ce site a été réalisé grâce au pre-processeur SASS afin de faciliter sa maintenance et son évolution.
 Voici quelle est l'architecture du site :
