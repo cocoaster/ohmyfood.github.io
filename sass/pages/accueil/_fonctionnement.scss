@@ -8,7 +8,6 @@
   margin-left: 1px;
   margin-bottom: 25px;
 }
-
 #functioninglist {
   max-width: 92%;
   list-style-type: none;
@@ -35,7 +34,6 @@
     color: $primary;
   }
 }
-
 .number__container {
   position: absolute;
   top: 50%;
@@ -102,6 +100,7 @@
     font-size: 1.5em;
   }
 }
+
 @include media-breapoint-up("sm3") {
   .homeh2-1 {
     font-size: 1.3em;
@@ -122,7 +121,6 @@
     font-size: 1.63em;
   }
 }
-
 
 @include media-breapoint-up("m") {
   #functioning {
@@ -203,12 +201,10 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-
   .homeh2 {
     font-family: $font2;
     font-size: 1.3em;
   }
-
   #functioninglist {
     display: flex;
     justify-content: space-between;
@@ -216,7 +212,6 @@
     max-width: 100%;
     margin-right: 20px;
   }
-
   .functioning__button {
     margin-bottom: 20px;
     margin-right: 0px;
@@ -230,7 +225,6 @@
       }
     }
   }
-
   .fcticon {
     font-size: 1.3em;
     margin-right: 13px;
@@ -248,7 +242,6 @@
     text-align: center;
     margin-top: 7px;
   }
-
   .homeh2-1 {
     font-family: $font2;
     font-size: 1.6em;
@@ -261,7 +254,6 @@
     margin: auto;
     padding-left: 35px;
   }
-
   .functioning__button {
     width: 90%;
     padding: 20px 10px 20px 20px;
@@ -297,5 +289,4 @@
     font-size: 1.7em;
     margin-right: 25px;
   }
-
 }

@@ -76,7 +76,6 @@ body {
   height: auto;
 }
 
-
 @keyframes smokegradient {
   0% {
     background-position: 0% 50%;
@@ -85,12 +84,10 @@ body {
   33% {
     opacity: 1;
   }
-
   66% {
     background-position: 100% 50%;
     opacity: 0;
   }
-
   100% {
     background-position: 0% 50%;
     opacity: 1;
@@ -157,6 +154,7 @@ body {
     height: auto;
   }
 }
+
 @include media-breapoint-up("m"){
     .smoke-1{
       bottom: -15px;
@@ -173,7 +171,6 @@ body {
   }
 }
 
-
 @include media-breapoint-up("md"){
   .smoke {
     height: 120px;
@@ -189,7 +186,6 @@ body {
   }
 }
 
-
 @include media-breapoint-up("xl") {
   #globalsmoke {
     position: relative;
@@ -201,7 +197,6 @@ body {
     margin: 0 auto;
   }
 }
-
 
 @include media-breapoint-up("xxl") {
   .smoke-1 {

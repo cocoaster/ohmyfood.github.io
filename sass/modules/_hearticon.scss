@@ -20,21 +20,20 @@ bottom: 45px;
   position: absolute;
   top: 0;
   left: 0;
-
-&#emptyheart:hover{
-  animation: heartanim2 0.4s ease-in-out forwards;
-}
-&#emptyheart:hover + .fullheart{
-  animation: heartanim 0.4s ease-in-out forwards;
-}
+  &#emptyheart:hover{
+    animation: heartanim2 0.4s ease-in-out forwards;
+  }
+  &#emptyheart:hover + .fullheart{
+    animation: heartanim 0.4s ease-in-out forwards;
+  }
 }
 .heartcontainer2{
   position: relative;
   width: 20px;
   height: 20px;
-&.heartcontainer2:hover > .fullheart{
-  animation: heartanim .4s linear  forwards;
-}
+  &.heartcontainer2:hover > .fullheart{
+    animation: heartanim .4s linear  forwards;
+  }
 }
 .fullheart {
   position: absolute;
@@ -48,7 +47,6 @@ bottom: 45px;
   background: linear-gradient(180deg, $primary 0%, $secondary 10%);
   background-size: 800% 800%;
   transform: scale(0);
-
   -webkit-animation: gradientheart 30s ease infinite;
   -moz-animation: gradientheart 30s ease infinite;
   -o-animation: gradientheart 30s ease infinite;
@@ -79,20 +77,18 @@ bottom: 45px;
 @keyframes heartanim{
   0%{
       transform:scale(0);
-  }
-  
+  } 
   100% {
           transform: scale(1.1);
-}
+  }
 }
 @keyframes heartanim2{
   0%{
       transform:scale(1);
-  }
-  
+  }  
   100% {
           transform: scale(0);
-}
+  }
 }
 @include media-breapoint-up("sm") {
   .heartscontainer1bis {

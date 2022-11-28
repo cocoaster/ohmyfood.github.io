@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background: transparent;
-  animation: loaderduration 5.1s both;
+  animation: loaderduration 3.1s both;
 }
 .maindesktop {
   margin-top: 54px;
@@ -43,8 +43,6 @@
   }
 }
 
-
-
 @include media-breapoint-up("ml") {
   .maindesktop {
     margin-top: 88px;
@@ -74,8 +72,6 @@
     margin-top: 166px;
   }
 }
-
-
 
 @include media-breapoint-up("xl") {
   body,

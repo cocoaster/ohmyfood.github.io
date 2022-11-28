@@ -6,7 +6,6 @@
 .menus2 {
   height: 1062px;
 }
-
 .firstcontainermenu {
   position: absolute;
   top: -20px;
@@ -28,7 +27,6 @@
   font-size: 1rem;
   margin-bottom: 0;
 }
-
 .starter {
   font-family: $font2;
 }
@@ -62,7 +60,6 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 0px 0px 9px 2px #b5b3b3;
-
   animation: enterelements 0.5s ease-in-out;
   @for $i from 1 to $number__containermenus {
     &--#{$i} {
@@ -88,7 +85,6 @@
     animation: priceanim 1s ease-in-out forwards;
   }
 }
-
 .title__container {
   background-color: #ffffff;
   margin-top: 0;
@@ -191,7 +187,6 @@
   .restaurantname {
     font-size: 1.5rem;
   }
-
   .starter {
     margin-top: 40px;
   }
@@ -217,13 +212,11 @@
     font-size: 0.64em;
     bottom: 10px;
   }
-
   .price {
     font-size: 0.64em;
     right: 15px;
     bottom: 10px;
   }
-
   .validation {
     width: 63px;
     height: 70px;
@@ -310,7 +303,6 @@
   .price {
     font-size: 1em;
   }
-
   .validation {
     height: 85px;
   }
@@ -345,12 +337,10 @@
   .restaurantname {
     font-size: 2rem;
   }
-
   .desktopmenus {
     display: flex;
     justify-content: space-between;
   }
-
   .starter {
     font-family: $font2;
     margin-bottom: 40px;
@@ -386,7 +376,6 @@
     font-size: 0.8em;
     margin-top: 10px;
   }
- 
   .points {
     background-color: #ffffff;
     opacity: 0;
@@ -432,7 +421,6 @@
   .menus2{
     height: 836px;
   }
-
   .firstcontainermenu{
     padding-left: 275px;
     padding-right: 275px;

@@ -46,44 +46,44 @@
 }
 
 @include media-breapoint-up("sm2"){
-  #homeh1{
-    font-size: 1.1em;
-    }
-    #navsection__txt{
-      font-size: 0.9em;
-    }
-    #navbar__button{
-      font-size: 0.8em;
-      padding: 13px 16px;
-    }
-}
-@include media-breapoint-up("sm3"){
-  #homeh1{
-    font-size: 1.2em;
-    }
-    #navsection__txt{
-      font-size: 1em;
-    }
-    #navbar__button{
-      font-size: 0.9em;
-    }
+#homeh1{
+  font-size: 1.1em;
+  }
+  #navsection__txt{
+    font-size: 0.9em;
+  }
+  #navbar__button{
+    font-size: 0.8em;
+    padding: 13px 16px;
+  }
 }
 
+@include media-breapoint-up("sm3"){
+#homeh1{
+  font-size: 1.2em;
+  }
+  #navsection__txt{
+    font-size: 1em;
+  }
+  #navbar__button{
+    font-size: 0.9em;
+  }
+}
 
 @include media-breapoint-up("m") {
-  #navsection{
-  padding-top: 50px;
-  padding-bottom: 58px;
+#navsection{
+padding-top: 50px;
+padding-bottom: 58px;
+}
+#homeh1{
+  font-size: 1.3em;
   }
-  #homeh1{
-    font-size: 1.3em;
-    }
-    #navsection__txt{
-      font-size: 1.1em;
-    }
-    #navbar__button{
-      font-size: 1em;
-    }
+  #navsection__txt{
+    font-size: 1.1em;
+  }
+  #navbar__button{
+    font-size: 1em;
+  }
 }
 
 @include media-breapoint-up("ml") {
@@ -98,6 +98,7 @@
     font-size: 1.1em;
   }
 }
+
 @include media-breapoint-up("ml1") {
 #homeh1{
   font-size: 1.8em;
@@ -148,7 +149,6 @@
     font-size: 1.3em;
   }
 }
-
 
 @include media-breapoint-up("xl") {
   #navsection {

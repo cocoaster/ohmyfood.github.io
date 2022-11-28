@@ -6,6 +6,7 @@
     transform: scaleX(1);
   }
 }
+
 @keyframes priceanim {
   0% {
     transform: translateX(0px);
@@ -27,6 +28,7 @@
     opacity: 1;
   }
 }
+
 @keyframes circleanim {
   0% {
     transform: rotate(0deg);
@@ -35,6 +37,7 @@
     transform: rotate(360 * 2deg);
   }
 }
+
 @keyframes validationcontainer {
   0% {
     transform: scaleX(0.6);
@@ -51,6 +54,7 @@
     opacity: 1;
   }
 }
+
 @keyframes enterelements {
   from {
     transform: translateY(30px);
@@ -61,6 +65,7 @@
     opacity: 1;
   }
 }
+
 //animation loader
 @keyframes loaderduration {
   0% {
@@ -82,18 +87,17 @@
     0% {
       transform: translateX(0px);
     }
-
     100% {
       transform: translateX(-305%);
     }
   }
 }
+
 @include media-breapoint-up("xl") {
   @keyframes priceanim {
     0% {
       transform: translateX(0px);
     }
-
     100% {
       transform: translateX(-375%);
     }
@@ -105,7 +109,6 @@
     0% {
       transform: translateX(0px);
     }
-  
     100% {
       transform: translateX(-555%);
     }

@@ -69,24 +69,24 @@ form {
   }
 
 @include media-breapoint-up("sm"){
-    form {
-      display: flex;
-      input {
-        border: 0px;
-        &::-webkit-input-placeholder {
-          font-size: 1em;
-        }
-        &:-moz-placeholder {
-          font-size: 1em;
-        }
-        &::-moz-placeholder {
-          font-size: 1em;
-        }
-        &:-ms-input-placeholder {
-          font-size: 1em;
-        }
-        }
+  form {
+    display: flex;
+    input {
+      border: 0px;
+      &::-webkit-input-placeholder {
+        font-size: 1em;
       }
+      &:-moz-placeholder {
+        font-size: 1em;
+      }
+      &::-moz-placeholder {
+        font-size: 1em;
+      }
+      &:-ms-input-placeholder {
+        font-size: 1em;
+      }
+    }
+  }
 }
 
 @include media-breapoint-up("sm2"){
@@ -214,7 +214,6 @@ form {
   } 
 }
 
-
 @include media-breapoint-up("md") {
   #location {
     margin-top: 153px;
@@ -295,7 +294,6 @@ form {
     margin: 0;
     font-size: 1.3rem;
     border-radius: 5px;
-
     input {
       width: 56%;
       height: 52px;
