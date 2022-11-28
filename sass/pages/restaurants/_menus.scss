@@ -298,12 +298,21 @@
   }
 }
 
+@include media-breapoint-up("ml1") {
+  .restaurantname{
+    font-size: 2em;
+  }
+}
+
 @include media-breapoint-up("md") {
   .menus {
     height: 1339px;
   }
   .menus2{
     height: 1454px;
+  }
+  .restaurantname{
+    font-size: 2.4em ;
   }
   .starter {
     font-family: $font2;
@@ -326,12 +335,21 @@
   }
 }
 
+@include media-breapoint-up("lg"){
+  .menus2{
+    height: 1450px;
+  }
+  .restaurantname {
+    font-size: 2.5rem;
+  }
+}
+
 @include media-breapoint-up("lg1") {
   .menus{
     height: 1343px; 
   }
   .menus2{
-    height: 1434px;
+    height: 1450px;
   }
 }
 
@@ -340,7 +358,7 @@
     height: 837px;
   }
   .menus2 {
-    height: 901px;
+    height: 909px;
   }
   .firstcontainermenu {
     top: -100px;
@@ -432,6 +450,15 @@
 @include media-breapoint-up("xxl"){
   .description__menus {
     font-size: 0.9em;
+  }
+}
+
+@include media-breapoint-up("xxxl"){
+  .menus{
+    height: 844px;
+  }
+  .menus2{
+    height: 906px;
   }
 }
 

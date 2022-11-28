@@ -122,9 +122,20 @@ figure {
   margin-top: 10px;
 }
 
+@include media-breapoint-up("ml") {
+  .arrow {
+    top: 20px;  
+    font-size: 1.8rem;
+  }
+}
+
 @include media-breapoint-up("ml1"){
   header{
     height: 83px;
+  }
+  .arrow {
+    top: 20px;  
+    font-size: 1.8rem;
   }
 }
 
@@ -135,16 +146,20 @@ figure {
   .header__container {
     margin-top: 17px;
   }
-}
-.arrow {
-  bottom: 12px;
-  font-size: 1.2rem;
+  .arrow {
+  top: 20px;  
+  font-size: 1.8rem;
+  }
 }
 
 @include media-breapoint-up("mll1"){
   header{
     height: 110px;
   } 
+  .arrow{
+    font-size: 2.2em;
+    top: 23px;
+  }
 }
 
 @include media-breapoint-up("md") {
@@ -161,18 +176,25 @@ figure {
   .arrow {
     font-size: 45px;
     margin-bottom: -37px;
+    top: 22px;
   }
 }
 
 @include media-breapoint-up("lg") {
   header {
-    height: 140px;
+    height: 145px;
+  }
+  .arrow{
+    top: 22px;
   }
 }
 
 @include media-breapoint-up("lg1") {
   header {
     height: 160px;
+  }
+  .arrow{
+    top: 36px;
   }
 }
 //version desktop

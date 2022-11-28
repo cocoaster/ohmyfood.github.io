@@ -120,6 +120,39 @@ bottom: 45px;
   }
 }
 
+@include media-breapoint-up("ml") {
+  .heartscontainer1bis{
+    top: 39px;
+    transform: scale(0.9);
+   }
+}
+
+@include media-breapoint-up("ml1") {
+  .heartscontainer1bis{
+   top: 49px;
+   transform: scale(0.9);
+  }
+} 
+
+@include media-breapoint-up("mll1") {
+  .heartscontainer1bis{
+    transform: scale(1);
+    top: 49px;
+  }
+}
+
+@include media-breapoint-up("md") {
+  .heartscontainer1bis{
+    transform: scale(1.1);
+    top: 55px;
+  }
+}
+
+@include media-breapoint-up("lg") {
+  .heartscontainer1bis{
+    top: 55px;
+  }
+}
 @include media-breapoint-up("lg1") {
   .heartscontainer1bis{
   transform: scale(1.1);
@@ -129,7 +162,7 @@ bottom: 45px;
 @include media-breapoint-up("xl") {
   .heartscontainer1bis {
     position: absolute;
-    top: 42px;
+    top: 46px;
     right: 90px;
     transform: scale(1.2);
   }

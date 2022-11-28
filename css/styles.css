@@ -635,6 +635,35 @@ body {
     top: 32px;
   }
 }
+@media screen and (min-width: 500px) {
+  .heartscontainer1bis {
+    top: 39px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 530px) {
+  .heartscontainer1bis {
+    top: 49px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 650px) {
+  .heartscontainer1bis {
+    transform: scale(1);
+    top: 49px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .heartscontainer1bis {
+    transform: scale(1.1);
+    top: 55px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .heartscontainer1bis {
+    top: 55px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .heartscontainer1bis {
     transform: scale(1.1);
@@ -643,7 +672,7 @@ body {
 @media screen and (min-width: 1100px) {
   .heartscontainer1bis {
     position: absolute;
-    top: 42px;
+    top: 46px;
     right: 90px;
     transform: scale(1.2);
   }
@@ -2215,12 +2244,20 @@ form input:focus::-webkit-input-placeholder {
     width: 8%;
   }
 }
+@media screen and (min-width: 530px) {
+  .restaurantname {
+    font-size: 2em;
+  }
+}
 @media screen and (min-width: 760px) {
   .menus {
     height: 1339px;
   }
   .menus2 {
     height: 1454px;
+  }
+  .restaurantname {
+    font-size: 2.4em;
   }
   .starter {
     font-family: robotto, sans-serif;
@@ -2242,12 +2279,20 @@ form input:focus::-webkit-input-placeholder {
     height: 85px;
   }
 }
+@media screen and (min-width: 830px) {
+  .menus2 {
+    height: 1450px;
+  }
+  .restaurantname {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   .menus {
     height: 1343px;
   }
   .menus2 {
-    height: 1434px;
+    height: 1450px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -2255,7 +2300,7 @@ form input:focus::-webkit-input-placeholder {
     height: 837px;
   }
   .menus2 {
-    height: 901px;
+    height: 909px;
   }
   .firstcontainermenu {
     top: -100px;
@@ -2346,6 +2391,14 @@ form input:focus::-webkit-input-placeholder {
 @media screen and (min-width: 1220px) {
   .description__menus {
     font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .menus {
+    height: 844px;
+  }
+  .menus2 {
+    height: 906px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -2552,9 +2605,19 @@ figure {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 500px) {
+  .arrow {
+    top: 20px;
+    font-size: 1.8rem;
+  }
+}
 @media screen and (min-width: 530px) {
   header {
     height: 83px;
+  }
+  .arrow {
+    top: 20px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2564,15 +2627,18 @@ figure {
   .header__container {
     margin-top: 17px;
   }
+  .arrow {
+    top: 20px;
+    font-size: 1.8rem;
+  }
 }
-.arrow {
-  bottom: 12px;
-  font-size: 1.2rem;
-}
-
 @media screen and (min-width: 650px) {
   header {
     height: 110px;
+  }
+  .arrow {
+    font-size: 2.2em;
+    top: 23px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -2589,16 +2655,23 @@ figure {
   .arrow {
     font-size: 45px;
     margin-bottom: -37px;
+    top: 22px;
   }
 }
 @media screen and (min-width: 830px) {
   header {
-    height: 140px;
+    height: 145px;
+  }
+  .arrow {
+    top: 22px;
   }
 }
 @media screen and (min-width: 1000px) {
   header {
     height: 160px;
+  }
+  .arrow {
+    top: 36px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -2765,6 +2838,11 @@ footer {
     padding-top: 35px;
   }
 }
+@media screen and (min-width: 1000px) {
+  footer {
+    padding-top: 5opx;
+  }
+}
 @media screen and (min-width: 1100px) {
   footer {
     z-index: 2;
@@ -2777,14 +2855,14 @@ footer {
     text-decoration: none;
   }
   #footertitle {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-left: 30px;
   }
   #footerlist {
     display: flex;
   }
   .footer__txt {
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin-left: 45px;
   }
 }

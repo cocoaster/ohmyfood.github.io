@@ -61,6 +61,12 @@ footer {
   }
 }
 
+@include media-breapoint-up("lg1") {
+  footer{
+    padding-top: 5opx;
+  }
+}
+
 @include media-breapoint-up("xl") {
   footer {
     z-index: 2;
@@ -74,7 +80,7 @@ footer {
   }
 
   #footertitle {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-left: 30px;
   }
 
@@ -82,7 +88,7 @@ footer {
     display: flex;
   }
   .footer__txt {
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin-left: 45px;
   }
 }
