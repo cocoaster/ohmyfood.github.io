@@ -2,7 +2,7 @@
 
 Ce dépôt contient le *frontend* du site __ohmyfood__ qui permet de réaliser des commandes en ligne dans des restaurants gastronomiques à Paris.
 Ce site a été réalisé à partir du pre-processeur SASS afin de faciliter sa maintenance et son évolution.
-Voici quelle est l'architecture du site :  
+Voici l'architecture des fichiers et dossiers du site :  
 
     1. Un dossier utils qui contient les fichiers :
     - "_variables" où se trouvent les variables (couleurs, fonts, media queries, les variables utilisées dans les fonctions)
