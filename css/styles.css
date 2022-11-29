@@ -682,6 +682,17 @@ body {
     bottom: 44px;
   }
 }
+@media screen and (min-width: 1220px) {
+  .heartscontainer1bis {
+    top: 49px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .heartscontainer1bis {
+    top: 60px;
+    transform: scale(1.4);
+  }
+}
 @-webkit-keyframes emptyanim {
   0% {
     transform: scale(1);
@@ -1559,14 +1570,22 @@ form input:focus::-webkit-input-placeholder {
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
   }
+  .circle {
+    padding: 10px;
+  }
   .fcticon {
     font-size: 1.3em;
     margin-right: 13px;
-    margin-left: 24px;
+    margin-left: 17px;
   }
   .fct__text {
     font-size: 1.3em;
     margin-right: 10px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .circle {
+    padding: 10px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -2248,13 +2267,19 @@ form input:focus::-webkit-input-placeholder {
   .restaurantname {
     font-size: 2em;
   }
+  .menus {
+    height: 1236px;
+  }
+  .menus2 {
+    height: 1326px;
+  }
 }
 @media screen and (min-width: 760px) {
   .menus {
-    height: 1339px;
+    height: 1377px;
   }
   .menus2 {
-    height: 1454px;
+    height: 1484px;
   }
   .restaurantname {
     font-size: 2.4em;
@@ -2281,7 +2306,7 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 830px) {
   .menus2 {
-    height: 1450px;
+    height: 1485px;
   }
   .restaurantname {
     font-size: 2.5rem;
@@ -2289,15 +2314,15 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 1000px) {
   .menus {
-    height: 1343px;
+    height: 1378px;
   }
   .menus2 {
-    height: 1450px;
+    height: 1488px;
   }
 }
 @media screen and (min-width: 1100px) {
   .menus {
-    height: 837px;
+    height: 845px;
   }
   .menus2 {
     height: 909px;
@@ -2317,6 +2342,7 @@ form input:focus::-webkit-input-placeholder {
   }
   .restaurantname {
     font-size: 2rem;
+    margin-top: 50px;
   }
   .desktopmenus {
     display: flex;
@@ -2329,7 +2355,8 @@ form input:focus::-webkit-input-placeholder {
   }
   .subtitle__menus {
     font-size: 1.3em;
-    margin-bottom: 37px;
+    margin-bottom: 60px;
+    margin-top: 15px;
   }
   .subtitle__menus:after {
     content: "";
@@ -2341,6 +2368,7 @@ form input:focus::-webkit-input-placeholder {
     padding-left: 10px;
     padding-top: 10px;
     margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -2389,6 +2417,15 @@ form input:focus::-webkit-input-placeholder {
   }
 }
 @media screen and (min-width: 1220px) {
+  .menus {
+    height: 844px;
+  }
+  .menus2 {
+    height: 907px;
+  }
+  .restaurantname {
+    font-size: 2.4rem;
+  }
   .description__menus {
     font-size: 0.9em;
   }
@@ -2399,6 +2436,9 @@ form input:focus::-webkit-input-placeholder {
   }
   .menus2 {
     height: 906px;
+  }
+  .restaurantname {
+    font-size: 2.8em;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -2449,11 +2489,21 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 1100px) {
   .order {
-    margin-top: -13px;
+    margin-top: 28px;
   }
   .order__button {
     font-size: 1.2em;
     padding: 20px 60px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .order {
+    margin-top: 47px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .order {
+    margin-top: 47px;
   }
 }
 @media screen and (min-width: 2000px) {

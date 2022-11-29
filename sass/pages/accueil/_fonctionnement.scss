@@ -225,14 +225,23 @@
       }
     }
   }
+  .circle{
+    padding: 10px;
+  }
   .fcticon {
     font-size: 1.3em;
     margin-right: 13px;
-    margin-left: 24px;
+    margin-left: 17px;
   }
   .fct__text {
     font-size: 1.3em;
     margin-right: 10px;
+  }
+}
+
+@include media-breapoint-up("lg"){
+  .circle{
+    padding: 10px;
   }
 }
 
