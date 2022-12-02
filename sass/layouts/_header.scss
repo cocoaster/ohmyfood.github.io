@@ -1,9 +1,4 @@
 //responsive mobile devices
-*, ::before, ::after{
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
 header {
   width: 100%;
   margin: 0 auto;
@@ -14,7 +9,7 @@ header {
 }
 .header__container,
 .desktop__header {
-  margin-top: 15px;
+  margin-top: 17px;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -32,77 +27,79 @@ header {
   font-weight: 900;
   color: rgb(57, 57, 57);
 }
-
-figure {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 7px;
-}
 .homelink2 {
   display: block;
   text-decoration: none;
+  width: auto;
+  display: flex;
   height: auto;
   text-align: center;
-}
-#logo {
-  text-align: center;
-  width: 55%;
-  height: auto;
 }
 .letter{
+  font-family: $font1, sans-serif;
+  font-size: 1.7rem;
+  color: #000000;
   perspective: 1000px;
-  opacity: 0;
-  animation: letteranim 0.3s linear forwards;
-
+  transform-origin: right;
+  transform: translateX(500px);  
+  margin: 0;
+}
+.letterOcontainer{
+  display: flex;
+  position: relative;
+  width: 35.7px;
+  margin: 0;
 }
 .letter-1{
-  animation-delay: 3s;
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.1s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.9s;
+
   }
 .letter-2 {
-  animation-delay: 3.05s;  
+  animation-delay: 3.1s, 3.85s;  
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.2s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.95s;
+
 }
 .letter-3 {
-  animation-delay: 3.1s;  
+  animation-delay: 3.2s, 3.9s; 
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.3s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 4s;
+ 
 }
 .letter-4 {
-  animation-delay: 3.15s;  
+  animation-delay: 3.3s, 3.95s; 
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.4s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 4.05s;
+ 
 }
 .letter-5 {
-  animation-delay: 3.2s;  
+  animation-delay: 3.4s, 4s;  
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.5s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 4.05s;
+
+}
+.letterO1 {
+  position: absolute;
+  margin: 0;
+  animation-delay: 3.5s, 4.05s, 5s;  
+  animation: letterOanim1 .5s cubic-bezier(.5, 0.05, 1, .5) forwards 3.6s,spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 4.1s, letterOanim2-1 forwards .5s ease-in-out 5.1s;
+}
+.letterO2 {
+  position: absolute;
+  margin: 0;
+  animation-delay: 3.6s, 4.1s, 5s; 
+  animation: letterOanim1 .5s cubic-bezier(.5, 0.05, 1, .5) forwards 3.7s, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 4.15s, letterOanim2-2 forwards .5s ease-in-out 5.1s ;
 }
 .letter-6 {
-  animation-delay: 3.25s;  
-}
-.letter-7 {
-  animation-delay: 3.3s;  
-}
-.letter-8 {
-  animation-delay: 3.35s;  
+  animation-delay: 3.7s, 4.15s;
+  animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards 3.8s, spacingletter 1s ease-in-out  forwards 4.2s;
 }
 
-
-
-
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
   header{
     height: 63px;
   }
-  figure {
-    margin-top: 0;
-  }
-  .arrow {
-    top: 7px;
-    left: 28px;
-    font-size: 1.2rem;
-  }
+  .header__container,
+.desktop__header {
+  margin-top: 22px;
+  height: 41px;
 }
-@include media-breapoint-up("sm3") {
-  header{
-    height: 73px ;
-  }
-  figure {
-    margin-top: 0;
-  }
   .arrow {
     top: 7px;
     left: 28px;
@@ -110,26 +107,89 @@ figure {
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breakpoint-up("sm1"){
+  header{
+    height: 67px;
+  }
+  .header__container,
+.desktop__header {
+  margin-top: 23px;
+  height: 44px;
+}
+.letter{
+  font-size: 1.8rem;
+}
+}
+
+@include media-breakpoint-up("sm2bis") {
+  header{
+    height: 67px;
+  }
+  .header__container,
+  .desktop__header {
+  margin-top: 22px;
+  height: 45px;
+  }
+  .letter{
+    font-size: 1.9rem;
+  }
+}
+
+@include media-breakpoint-up("sm3") {
+  header{
+    height: 73px ;
+  }
+  .header__container,
+  .desktop__header {
+  margin-top: 24px;
+  height: 49px;
+  }
+  .arrow {
+    top: 7px;
+    left: 28px;
+    font-size: 1.8rem;
+  }
+  .letter{
+    font-size: 2rem;
+  }
+  .letterOcontainer{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@include media-breakpoint-up("m") {
   header {
     height: 73px;
   }
   .header__container {
-    margin-top: 9px;
+    margin-top: 23px;
+    height: 50px;
+  }
+  .letter{
+    font-size: 2.2rem;
+  }
+  .letterOcontainer{
+    margin-left: 4px;
+    margin-right: 5px;
   }
 }
-figure {
-  margin-top: 10px;
+
+@include media-breakpoint-up("m1") {
+  .letter{
+    font-size: 2.4rem;
+  }
 }
 
-@include media-breapoint-up("ml") {
+
+@include media-breakpoint-up("ml") {
   .arrow {
     top: 20px;  
     font-size: 1.8rem;
   }
 }
 
-@include media-breapoint-up("ml1"){
+@include media-breakpoint-up("ml1"){
   header{
     height: 83px;
   }
@@ -137,38 +197,69 @@ figure {
     top: 20px;  
     font-size: 1.8rem;
   }
+  .header__container {
+    margin-top: 23px;
+    height: 56px;
+  }
+  .letter{
+    font-size: 2.7rem;
+  }
+  .letterOcontainer{
+    margin-left: 6px;
+    margin-right: 7px;
+  }
 }
 
-@include media-breapoint-up("mll") {
+@include media-breakpoint-up("mll") {
   header {
-    height: 95px;
+    height: 97px;
   }
   .header__container {
-    margin-top: 17px;
+    margin-top: 32px;
+    height: 50px;
   }
   .arrow {
   top: 20px;  
   font-size: 1.8rem;
   }
+  .letter{
+    font-size: 2.9rem;
+  }
+  .letterOcontainer{
+    margin-left: 10px;
+    margin-right: 12px;
+  }
 }
 
-@include media-breapoint-up("mll1"){
+@include media-breakpoint-up("mll1"){
   header{
     height: 110px;
   } 
+  .header__container {
+    margin-top: 32px;
+    height: 82px;
+  }
   .arrow{
     font-size: 2.2em;
     top: 23px;
   }
+  .letter{
+    font-size: 3.4rem;
+  }
+  .letterOcontainer{
+    margin-left: 15px;
+    margin-right: 17px;
+  }
 }
 
-@include media-breapoint-up("md") {
+//version tablette
+@include media-breakpoint-up("md") {
   header {
     height: 139px;
   }
   .header__container {
     position: relative;
-    margin-top: 32px;
+    margin-top: 42px;
   }
   .homelink {
     text-decoration: none;
@@ -178,9 +269,18 @@ figure {
     margin-bottom: -37px;
     top: 22px;
   }
+  .letter{
+    font-size: 3.8rem;
+    transform: translateX(1000px);  
+
+  }
+  .letterOcontainer{
+    margin-left: 19px;
+    margin-right: 22px;
+  }
 }
 
-@include media-breapoint-up("lg") {
+@include media-breakpoint-up("md1") {
   header {
     height: 145px;
   }
@@ -189,47 +289,43 @@ figure {
   }
 }
 
-@include media-breapoint-up("lg1") {
+@include media-breakpoint-up("lg"){
+  header {
+    height: 145px;
+  }
+  .header__container {
+    margin-top: 45px;
+  }
+  .arrow{
+    top: 22px;
+  }
+  .letter{
+    font-size: 4rem;
+  }
+  .letterOcontainer{
+    margin-left: 20px;
+    margin-right: 23px;
+  }
+}
+
+@include media-breakpoint-up("lg1") {
   header {
     height: 160px;
   }
   .arrow{
     top: 36px;
   }
+  .letter{
+    font-size: 4.8rem;
+  }
+  .letterOcontainer{
+    margin-left: 29px;
+    margin-right: 33px;
+  }
 }
+
 //version desktop
-@include media-breapoint-up("xl") {
-  .desktop__header {
-    width: 100%;
-    background-color: #ffffff;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include fixed(top);
-  }
-  .header__container {
-    margin-top: 40px;
-  }
-  #homelogo {
-    margin-top: 39px;
-    margin-bottom: 52px;
-    margin-left: -10%;
-    width: 100%;
-    height: 150px;
-  }
-  #logo {
-    margin-bottom: 50px;
-  }
-
-  .logoplace {
-    width: 100%;
-    margin: auto;
-    margin-right: 0;
-    height: 150px;
-    margin-left: 10px;
-  }
-
+@include media-breakpoint-up("xl") {
   header {
     margin-top: 0;
     padding-top: 0;
@@ -239,28 +335,46 @@ figure {
     height: 153px;
   }
   .header__container {
-    margin-top: 0px;
+    margin-top: 113px;
     margin-bottom: 20px;
     height: 143px;
+  }  
+  .desktop__header {
+    padding-top: 50px;
+    margin-top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fixed(top);
+  }
+ 
+  .homelink {
+    text-decoration: none;
   }
   .homelink2 {
     height: 150px;
   }
-  #logo {
+  .logoplace {
     width: 600px;
     height: 150px;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 50px;
   }
-  .homelink {
-    text-decoration: none;
+  .letter{
+    font-size: 5.8rem;
   }
-  .arrow {
-    font-size: 4rem;
-    top: 36px;
-    left: 34px;
+  .letterOcontainer {
+    margin-left: 38px;
+    margin-right: 43px;
   }
 }
 
-@include media-breapoint-up("xxl") {
+@include media-breakpoint-up("xxl") {
   #homelogo {
     margin-bottom: 118px;
     margin-top: 90px;
@@ -279,7 +393,7 @@ figure {
   }
 }
 
-@include media-breapoint-up("xxxxl"){
+@include media-breakpoint-up("xxxxl"){
   .header__container{
     height: 301px;
   }
@@ -288,5 +402,63 @@ figure {
   }
   .arrow{
     top: 118px;
+  }
+}
+
+@keyframes letterOanim1{
+  0%{     
+
+    transform: translateX(1000px);  }
+  100%{
+    left: 50%;
+    transform: translateX(-50%);  }
+} 
+
+@keyframes letterOanim2-1{
+  0%{  
+  transform: translateX(0px); 
+ }
+  100%{
+  transform: translateX(-100%);
+  }
+} 
+@keyframes letterOanim2-2{
+  0%{  
+    transform: translateX(0);
+    }
+
+  100%{
+    transform: translate(0%); 
+  }
+} 
+
+@keyframes letteranim{
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transform: translateX(1000px);
+  }   
+  100% {
+    opacity: 1;
+    transform: rotateY(90deg);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes letteranim2{
+  0%{    
+    transform: rotateY(90deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  } 
+}
+
+@keyframes spacingletter{
+  0%{
+    letter-spacing: 100px;
+  }
+  100%{
+    letter-spacing: normal;
   }
 }

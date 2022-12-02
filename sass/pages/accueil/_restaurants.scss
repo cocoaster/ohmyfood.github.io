@@ -67,18 +67,18 @@
   font-size: 1em;
 }
 
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
   .homeh2 {
     font-size: 1.1em;
   }
 }
-@include media-breapoint-up("sm2") {
+@include media-breakpoint-up("sm2") {
   .homeh2 {
     font-size: 1.2em;
   }
 }
 
-@include media-breapoint-up("sm3") {
+@include media-breakpoint-up("sm3") {
   #restaurants{
     margin-top: 70px;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breakpoint-up("m") {
   #restaurants{
     margin-top: 70px;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@include media-breapoint-up("ml") {
+@include media-breakpoint-up("ml") {
   #restaurants{
     padding: 40px 3%;
     }
@@ -106,7 +106,7 @@
   }
 }
 
-@include media-breapoint-up("ml1") {
+@include media-breakpoint-up("ml1") {
   #restaurants{
     padding: 45px 3%;
     }
@@ -116,7 +116,7 @@
   }
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   #restaurants {
     padding: 40px 20px;
   }
@@ -133,11 +133,11 @@
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   #restaurants {
     background-color: transparent;
     position: absolute;
-    padding: 40px 20px;
+    padding: 40px 0px;
     right: 15px;
     top: 248px;
     text-align: center;
@@ -145,21 +145,23 @@
     max-width: 56%;
   }
   .homeh2 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin-bottom: 60px;
   }
   .restaurant__lign {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
   .restaurantlink {
     width: 98%;
+    margin-right: 12px;
   }
 .restaurantcontainers {
   width: 95%;
   height: 265px;
+  margin-right: 10px;
   animation: enterelements .5s ease-in-out;
   animation-delay: 3.1s;
   @for $e from 1 to $numrestaurantcontainers {
@@ -168,7 +170,6 @@
     }
   }
 }
-
   .restaurantimg {
     width: 100%;
     height: 186px;
@@ -192,7 +193,19 @@
   }
 }
 
-@include media-breapoint-up("xxxxl") {
+@include media-breakpoint-up("xl1"){
+  .restaurant__lign{
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up("xxl"){
+  .restaurant__lign{
+    margin-bottom: 22px;
+  }
+}
+
+@include media-breakpoint-up("xxxxl") {
   #restaurants {
     top: 208px;
   }

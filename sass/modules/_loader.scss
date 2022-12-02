@@ -139,7 +139,7 @@ body {
   }
 }
 
-@include media-breapoint-up("sm"){
+@include media-breakpoint-up("sm"){
   .smoke-1{
     bottom: -33px;
   }
@@ -155,7 +155,7 @@ body {
   }
 }
 
-@include media-breapoint-up("m"){
+@include media-breakpoint-up("m"){
     .smoke-1{
       bottom: -15px;
     }
@@ -171,7 +171,7 @@ body {
   }
 }
 
-@include media-breapoint-up("md"){
+@include media-breakpoint-up("md"){
   .smoke {
     height: 120px;
   }
@@ -186,7 +186,7 @@ body {
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   #globalsmoke {
     position: relative;
     width: 80px;
@@ -198,7 +198,7 @@ body {
   }
 }
 
-@include media-breapoint-up("xxl") {
+@include media-breakpoint-up("xxl") {
   .smoke-1 {
     bottom: -20px;
   }

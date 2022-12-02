@@ -223,6 +223,8 @@
 }
 *, ::before, ::after {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html,
@@ -659,7 +661,7 @@ body {
     top: 55px;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
   .heartscontainer1bis {
     top: 55px;
   }
@@ -726,44 +728,49 @@ body {
     margin-top: 59px;
   }
 }
+@media screen and (min-width: 285px) {
+  .maindesktop {
+    margin-top: 68px;
+  }
+}
 @media screen and (min-width: 310px) {
   .maindesktop {
-    margin-top: 70px;
+    margin-top: 68.5px;
   }
 }
 @media screen and (min-width: 350px) {
   .maindesktop {
-    margin-top: 66px;
+    margin-top: 69px;
   }
 }
 @media screen and (min-width: 360px) {
   .maindesktop {
-    margin-top: 77px;
+    margin-top: 69px;
   }
 }
 @media screen and (min-width: 380px) {
   .maindesktop {
-    margin-top: 78px;
+    margin-top: 74px;
   }
 }
 @media screen and (min-width: 420px) {
   .maindesktop {
-    margin-top: 88px;
+    margin-top: 74px;
   }
 }
 @media screen and (min-width: 500px) {
   .maindesktop {
-    margin-top: 88px;
+    margin-top: 74px;
   }
 }
 @media screen and (min-width: 600px) {
   .maindesktop {
-    margin-top: 115px;
+    margin-top: 97px;
   }
 }
 @media screen and (min-width: 650px) {
   .maindesktop {
-    margin-top: 111px;
+    margin-top: 115px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -844,13 +851,6 @@ html {
   box-shadow: 1px 1px 3px 3px #a8a6a6;
 }
 
-.location__icon {
-  font-size: 0.9em;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  color: #363636;
-}
-
 form {
   display: flex;
   align-items: center;
@@ -862,6 +862,12 @@ form {
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;
+}
+form .location__icon {
+  font-size: 0.9em;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  color: #363636;
 }
 form input {
   border: 0px;
@@ -921,8 +927,14 @@ form input:focus::-webkit-input-placeholder {
   }
 }
 @media screen and (min-width: 350px) {
+  #location {
+    height: 43px;
+  }
   form {
     font-size: 1.1em;
+  }
+  form .location__icon {
+    margin-left: 20px;
   }
   form input {
     border: 0px;
@@ -947,6 +959,9 @@ form input:focus::-webkit-input-placeholder {
   form {
     font-size: 1.05em;
   }
+  form .location__icon {
+    margin-left: 32px;
+  }
   form input {
     border: 0px;
   }
@@ -967,11 +982,35 @@ form input:focus::-webkit-input-placeholder {
   #location {
     height: 55px;
   }
-  .location__icon {
-    font-size: 1.3em;
-  }
   form {
     font-size: 1.1em;
+  }
+  form .location__icon {
+    font-size: 1.3em;
+  }
+  form input {
+    border: 0px;
+  }
+  form input::-webkit-input-placeholder {
+    font-size: 1.1em;
+  }
+  form input:-moz-placeholder {
+    font-size: 1.1em;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.1em;
+  }
+  form input:-ms-input-placeholder {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 450px) {
+  form {
+    font-size: 1.1em;
+  }
+  form .location__icon {
+    font-size: 1.3em;
+    margin-left: 56px;
   }
   form input {
     border: 0px;
@@ -1012,17 +1051,77 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.15em;
   }
 }
+@media screen and (min-width: 530px) {
+  #location {
+    height: 78px;
+  }
+  form {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form input {
+    border: 0px;
+  }
+  form input::-webkit-input-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form input:-moz-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.2em;
+  }
+  form input:-ms-input-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  #location__txt {
+    height: 78px;
+  }
+}
+@media screen and (min-width: 600px) {
+  form {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form .location__icon {
+    margin-left: 79px;
+  }
+  form input {
+    border: 0px;
+  }
+  form input::-webkit-input-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form input:-moz-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.2em;
+  }
+  form input:-ms-input-placeholder {
+    font-size: 1.2em;
+    height: 78px;
+  }
+  #location__txt {
+    height: 78px;
+  }
+}
 @media screen and (min-width: 650px) {
   #location {
-    height: 67px;
-  }
-  .location__icon {
-    font-size: 1.4em;
-    padding-right: 27px;
+    height: 79px;
   }
   form {
     font-size: 1.3em;
     height: 45px;
+  }
+  form .location__icon {
+    font-size: 1.4em;
+    padding-right: 27px;
   }
   form input {
     border: 0px;
@@ -1037,42 +1136,38 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.3em;
   }
   form input:-ms-input-placeholder {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 760px) {
   #location {
     margin-top: 153px;
   }
-  .location__icon {
-    font-size: 1em;
-    padding-right: 27px;
-  }
   form {
     margin: 0 130px;
     height: 60px;
-    font-size: 1.4em;
+    font-size: 1.3em;
+  }
+  form .location__icon {
+    font-size: 1em;
+    padding-right: 27px;
+    margin-left: -28px;
   }
   form input {
     height: 45px;
     border: 0px;
   }
   form input::-webkit-input-placeholder {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   form input:-moz-placeholder {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   form input::-moz-placeholder {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   form input:-ms-input-placeholder {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 830px) {
-  .location__icon {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1080,68 +1175,58 @@ form input:focus::-webkit-input-placeholder {
     margin-top: 153px;
     height: 82px;
   }
-  .location__icon {
-    font-size: 1em;
-    padding-right: 10px;
-  }
   form {
     font-size: 1.8em;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
   }
-  form input {
-    border: 0px;
-    height: 50px;
-  }
-  form input::-webkit-input-placeholder {
-    font-size: 1em;
-  }
-  form input:-moz-placeholder {
-    font-size: 1em;
-  }
-  form input::-moz-placeholder {
-    font-size: 1em;
-  }
-  form input:-ms-input-placeholder {
-    font-size: 1em;
+  form .location__icon {
+    font-size: 2.1rem;
+    padding-right: 26px;
+    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1100px) {
   #location {
-    height: 53px;
-    width: 390px;
+    height: 55px;
+    width: 354px;
     margin: 0 auto;
     margin-top: 374px;
     box-shadow: 0px -0.5px 2.5px 0px #aaa9a9;
     border-radius: 5px;
   }
-  .location__icon {
-    font-size: 1.2rem;
+  form {
+    margin: 0;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 356px;
+    height: 61px;
+  }
+  form .location__icon {
+    font-size: 1.4rem;
     padding-right: 16px;
     padding-left: 32px;
   }
-  form {
-    margin: 0;
-    font-size: 1.3rem;
-    border-radius: 5px;
-  }
   form input {
     width: 56%;
-    height: 52px;
+    height: 55px;
   }
   form input::-webkit-input-placeholder {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   form input:-moz-placeholder {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   form input::-moz-placeholder {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   form input:-ms-input-placeholder {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+  #location__txt {
+    height: 60px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -1281,7 +1366,7 @@ form input:focus::-webkit-input-placeholder {
     font-size: 1.3em;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
   #navsection {
     padding-top: 80px;
     padding-bottom: 88px;
@@ -1418,11 +1503,17 @@ form input:focus::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 285px) {
+  #functioning {
+    margin-left: 21px;
+  }
+  #functioning-list {
+    padding-left: 5px;
+  }
   .homeh2-1 {
     font-size: 1.1em;
   }
   .fct__text {
-    font-size: 1.13em;
+    font-size: 1.28em;
   }
   .fcticon {
     margin: 0px 15px 0px 25px;
@@ -1539,8 +1630,8 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 760px) {
   #functioning {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .homeh2 {
     font-family: robotto, sans-serif;
@@ -1583,9 +1674,22 @@ form input:focus::-webkit-input-placeholder {
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
+  #functioning {
+    margin-right: 40px;
+  }
   .circle {
     padding: 10px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .fct__text {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .fct__text {
+    font-size: 1.6em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1617,8 +1721,21 @@ form input:focus::-webkit-input-placeholder {
     margin-right: 23px;
   }
   .fct__text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .functioning__button {
+    margin-bottom: 29px;
+  }
+  .fct__text {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .fct__text {
+    font-size: 1.9em;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -1780,7 +1897,7 @@ form input:focus::-webkit-input-placeholder {
   #restaurants {
     background-color: transparent;
     position: absolute;
-    padding: 40px 20px;
+    padding: 40px 0px;
     right: 15px;
     top: 248px;
     text-align: center;
@@ -1788,21 +1905,23 @@ form input:focus::-webkit-input-placeholder {
     max-width: 56%;
   }
   .homeh2 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin-bottom: 60px;
   }
   .restaurant__lign {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
   .restaurantlink {
     width: 98%;
+    margin-right: 12px;
   }
   .restaurantcontainers {
     width: 95%;
     height: 265px;
+    margin-right: 10px;
     -webkit-animation: enterelements 0.5s ease-in-out;
             animation: enterelements 0.5s ease-in-out;
     -webkit-animation-delay: 3.1s;
@@ -1840,6 +1959,16 @@ form input:focus::-webkit-input-placeholder {
     text-align: start;
     margin: 0px 0px 13px 20px;
     font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1138px) {
+  .restaurant__lign {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .restaurant__lign {
+    margin-bottom: 22px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -2304,7 +2433,7 @@ form input:focus::-webkit-input-placeholder {
     height: 85px;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
   .menus2 {
     height: 1485px;
   }
@@ -2511,12 +2640,6 @@ form input:focus::-webkit-input-placeholder {
     margin-top: 3px;
   }
 }
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 header {
   width: 100%;
   margin: 0 auto;
@@ -2530,7 +2653,7 @@ header {
 
 .header__container,
 .desktop__header {
-  margin-top: 15px;
+  margin-top: 17px;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -2551,78 +2674,98 @@ header {
   color: rgb(57, 57, 57);
 }
 
-figure {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 7px;
-}
-
 .homelink2 {
   display: block;
   text-decoration: none;
+  width: auto;
+  display: flex;
   height: auto;
   text-align: center;
-}
-
-#logo {
-  text-align: center;
-  width: 55%;
-  height: auto;
 }
 
 .letter {
+  font-family: shrikhand, sans-serif;
+  font-size: 1.7rem;
+  color: #000000;
   perspective: 1000px;
-  opacity: 0;
-  -webkit-animation: letteranim 0.3s linear forwards;
-          animation: letteranim 0.3s linear forwards;
+  transform-origin: right;
+  transform: translateX(500px);
+  margin: 0;
+}
+
+.letterOcontainer {
+  display: flex;
+  position: relative;
+  width: 35.7px;
+  margin: 0;
 }
 
 .letter-1 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.1s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.9s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.1s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.9s;
 }
 
 .letter-2 {
-  -webkit-animation-delay: 3.05s;
-          animation-delay: 3.05s;
+  -webkit-animation-delay: 3.1s, 3.85s;
+          animation-delay: 3.1s, 3.85s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.2s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.95s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.2s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.95s;
 }
 
 .letter-3 {
-  -webkit-animation-delay: 3.1s;
-          animation-delay: 3.1s;
+  -webkit-animation-delay: 3.2s, 3.9s;
+          animation-delay: 3.2s, 3.9s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.3s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.3s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4s;
 }
 
 .letter-4 {
-  -webkit-animation-delay: 3.15s;
-          animation-delay: 3.15s;
+  -webkit-animation-delay: 3.3s, 3.95s;
+          animation-delay: 3.3s, 3.95s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.4s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.05s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.4s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.05s;
 }
 
 .letter-5 {
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
+  -webkit-animation-delay: 3.4s, 4s;
+          animation-delay: 3.4s, 4s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.5s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.05s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.5s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.05s;
+}
+
+.letterO1 {
+  position: absolute;
+  margin: 0;
+  -webkit-animation-delay: 3.5s, 4.05s, 5s;
+          animation-delay: 3.5s, 4.05s, 5s;
+  -webkit-animation: letterOanim1 0.5s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.6s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.1s, letterOanim2-1 forwards 0.5s ease-in-out 5.1s;
+          animation: letterOanim1 0.5s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.6s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.1s, letterOanim2-1 forwards 0.5s ease-in-out 5.1s;
+}
+
+.letterO2 {
+  position: absolute;
+  margin: 0;
+  -webkit-animation-delay: 3.6s, 4.1s, 5s;
+          animation-delay: 3.6s, 4.1s, 5s;
+  -webkit-animation: letterOanim1 0.5s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.7s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.15s, letterOanim2-2 forwards 0.5s ease-in-out 5.1s;
+          animation: letterOanim1 0.5s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.7s, spacingletter 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 4.15s, letterOanim2-2 forwards 0.5s ease-in-out 5.1s;
 }
 
 .letter-6 {
-  -webkit-animation-delay: 3.25s;
-          animation-delay: 3.25s;
-}
-
-.letter-7 {
-  -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
-}
-
-.letter-8 {
-  -webkit-animation-delay: 3.35s;
-          animation-delay: 3.35s;
+  -webkit-animation-delay: 3.7s, 4.15s;
+          animation-delay: 3.7s, 4.15s;
+  -webkit-animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.8s, spacingletter 1s ease-in-out forwards 4.2s;
+          animation: letteranim 1s cubic-bezier(0.5, 0.05, 1, 0.5) forwards 3.8s, spacingletter 1s ease-in-out forwards 4.2s;
 }
 
 @media screen and (min-width: 285px) {
   header {
     height: 63px;
   }
-  figure {
-    margin-top: 0;
+  .header__container,
+.desktop__header {
+    margin-top: 22px;
+    height: 41px;
   }
   .arrow {
     top: 7px;
@@ -2630,17 +2773,52 @@ figure {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 310px) {
+  header {
+    height: 67px;
+  }
+  .header__container,
+.desktop__header {
+    margin-top: 23px;
+    height: 44px;
+  }
+  .letter {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  header {
+    height: 67px;
+  }
+  .header__container,
+.desktop__header {
+    margin-top: 22px;
+    height: 45px;
+  }
+  .letter {
+    font-size: 1.9rem;
+  }
+}
 @media screen and (min-width: 380px) {
   header {
     height: 73px;
   }
-  figure {
-    margin-top: 0;
+  .header__container,
+.desktop__header {
+    margin-top: 24px;
+    height: 49px;
   }
   .arrow {
     top: 7px;
     left: 28px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .letter {
+    font-size: 2rem;
+  }
+  .letterOcontainer {
+    margin-left: 3px;
+    margin-right: 3px;
   }
 }
 @media screen and (min-width: 420px) {
@@ -2648,13 +2826,22 @@ figure {
     height: 73px;
   }
   .header__container {
-    margin-top: 9px;
+    margin-top: 23px;
+    height: 50px;
+  }
+  .letter {
+    font-size: 2.2rem;
+  }
+  .letterOcontainer {
+    margin-left: 4px;
+    margin-right: 5px;
   }
 }
-figure {
-  margin-top: 10px;
+@media screen and (min-width: 450px) {
+  .letter {
+    font-size: 2.4rem;
+  }
 }
-
 @media screen and (min-width: 500px) {
   .arrow {
     top: 20px;
@@ -2669,26 +2856,56 @@ figure {
     top: 20px;
     font-size: 1.8rem;
   }
+  .header__container {
+    margin-top: 23px;
+    height: 56px;
+  }
+  .letter {
+    font-size: 2.7rem;
+  }
+  .letterOcontainer {
+    margin-left: 6px;
+    margin-right: 7px;
+  }
 }
 @media screen and (min-width: 600px) {
   header {
-    height: 95px;
+    height: 97px;
   }
   .header__container {
-    margin-top: 17px;
+    margin-top: 32px;
+    height: 50px;
   }
   .arrow {
     top: 20px;
     font-size: 1.8rem;
+  }
+  .letter {
+    font-size: 2.9rem;
+  }
+  .letterOcontainer {
+    margin-left: 10px;
+    margin-right: 12px;
   }
 }
 @media screen and (min-width: 650px) {
   header {
     height: 110px;
   }
+  .header__container {
+    margin-top: 32px;
+    height: 82px;
+  }
   .arrow {
     font-size: 2.2em;
     top: 23px;
+  }
+  .letter {
+    font-size: 3.4rem;
+  }
+  .letterOcontainer {
+    margin-left: 15px;
+    margin-right: 17px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -2697,7 +2914,7 @@ figure {
   }
   .header__container {
     position: relative;
-    margin-top: 32px;
+    margin-top: 42px;
   }
   .homelink {
     text-decoration: none;
@@ -2706,6 +2923,14 @@ figure {
     font-size: 45px;
     margin-bottom: -37px;
     top: 22px;
+  }
+  .letter {
+    font-size: 3.8rem;
+    transform: translateX(1000px);
+  }
+  .letterOcontainer {
+    margin-left: 19px;
+    margin-right: 22px;
   }
 }
 @media screen and (min-width: 830px) {
@@ -2716,6 +2941,24 @@ figure {
     top: 22px;
   }
 }
+@media screen and (min-width: 850px) {
+  header {
+    height: 145px;
+  }
+  .header__container {
+    margin-top: 45px;
+  }
+  .arrow {
+    top: 22px;
+  }
+  .letter {
+    font-size: 4rem;
+  }
+  .letterOcontainer {
+    margin-left: 20px;
+    margin-right: 23px;
+  }
+}
 @media screen and (min-width: 1000px) {
   header {
     height: 160px;
@@ -2723,9 +2966,31 @@ figure {
   .arrow {
     top: 36px;
   }
+  .letter {
+    font-size: 4.8rem;
+  }
+  .letterOcontainer {
+    margin-left: 29px;
+    margin-right: 33px;
+  }
 }
 @media screen and (min-width: 1100px) {
+  header {
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    height: 153px;
+  }
+  .header__container {
+    margin-top: 113px;
+    margin-bottom: 20px;
+    height: 143px;
+  }
   .desktop__header {
+    padding-top: 50px;
+    margin-top: 0;
     width: 100%;
     background-color: #ffffff;
     height: 200px;
@@ -2736,53 +3001,26 @@ figure {
     z-index: 10;
     top: 0;
   }
-  .header__container {
-    margin-top: 40px;
-  }
-  #homelogo {
-    margin-top: 39px;
-    margin-bottom: 52px;
-    margin-left: -10%;
-    width: 100%;
-    height: 150px;
-  }
-  #logo {
-    margin-bottom: 50px;
-  }
-  .logoplace {
-    width: 100%;
-    margin: auto;
-    margin-right: 0;
-    height: 150px;
-    margin-left: 10px;
-  }
-  header {
-    margin-top: 0;
-    padding-top: 0;
-    position: absolute;
-    top: 0;
-    background-color: transparent;
-    height: 153px;
-  }
-  .header__container {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    height: 143px;
+  .homelink {
+    text-decoration: none;
   }
   .homelink2 {
     height: 150px;
   }
-  #logo {
+  .logoplace {
     width: 600px;
     height: 150px;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 50px;
   }
-  .homelink {
-    text-decoration: none;
+  .letter {
+    font-size: 5.8rem;
   }
-  .arrow {
-    font-size: 4rem;
-    top: 36px;
-    left: 34px;
+  .letterOcontainer {
+    margin-left: 38px;
+    margin-right: 43px;
   }
 }
 @media screen and (min-width: 1220px) {
@@ -2820,6 +3058,100 @@ figure {
   }
   .arrow {
     top: 118px;
+  }
+}
+@-webkit-keyframes letterOanim1 {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@keyframes letterOanim1 {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes letterOanim2-1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes letterOanim2-1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes letterOanim2-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes letterOanim2-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes letteranim {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transform: translateX(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(90deg);
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes letteranim2 {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes letteranim2 {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes spacingletter {
+  0% {
+    letter-spacing: 100px;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
+@keyframes spacingletter {
+  0% {
+    letter-spacing: 100px;
+  }
+  100% {
+    letter-spacing: normal;
   }
 }
 footer {
@@ -2871,6 +3203,10 @@ footer {
   padding-right: 12px;
 }
 
+.footericon2 {
+  padding-right: 7px;
+}
+
 @media screen and (min-width: 760px) {
   footer {
     display: flex;
@@ -2883,7 +3219,7 @@ footer {
     margin-left: 15px;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
   footer {
     padding-top: 35px;
   }

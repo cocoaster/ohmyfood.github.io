@@ -92,7 +92,7 @@ bottom: 45px;
   }
 }
 
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
   .heartscontainer1bis {
     transform: scale(0.8);
     top: 37px;
@@ -100,21 +100,21 @@ bottom: 45px;
   }
 }
 
-@include media-breapoint-up("sm1"){
+@include media-breakpoint-up("sm1"){
   .heartscontainer1bis {
     top: 30px;
     right: 21px;
   }
 }
 
-@include media-breapoint-up("sm2bis") {
+@include media-breakpoint-up("sm2bis") {
   .heartscontainer1bis{
   top: 30px;
   right: 41px;
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breakpoint-up("m") {
   .heartscontainer1bis {
     transform: scale(0.8);
     right: 54px;
@@ -122,46 +122,46 @@ bottom: 45px;
   }
 }
 
-@include media-breapoint-up("ml") {
+@include media-breakpoint-up("ml") {
   .heartscontainer1bis{
     top: 39px;
     transform: scale(0.9);
    }
 }
 
-@include media-breapoint-up("ml1") {
+@include media-breakpoint-up("ml1") {
   .heartscontainer1bis{
    top: 49px;
    transform: scale(0.9);
   }
 } 
 
-@include media-breapoint-up("mll1") {
+@include media-breakpoint-up("mll1") {
   .heartscontainer1bis{
     transform: scale(1);
     top: 49px;
   }
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   .heartscontainer1bis{
     transform: scale(1.1);
     top: 55px;
   }
 }
 
-@include media-breapoint-up("lg") {
+@include media-breakpoint-up("lg") {
   .heartscontainer1bis{
     top: 55px;
   }
 }
-@include media-breapoint-up("lg1") {
+@include media-breakpoint-up("lg1") {
   .heartscontainer1bis{
   transform: scale(1.1);
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   .heartscontainer1bis {
     position: absolute;
     top: 46px;
@@ -175,13 +175,13 @@ bottom: 45px;
   }
 }
 
-@include media-breapoint-up("xxl"){
+@include media-breakpoint-up("xxl"){
   .heartscontainer1bis{
     top: 49px;
   }
 }
 
-@include media-breapoint-up("xxxl"){
+@include media-breakpoint-up("xxxl"){
   .heartscontainer1bis{
     top: 60px;
     transform: scale(1.4);

@@ -70,12 +70,18 @@
   }
 }
 
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
+  #functioning{
+    margin-left: 21px;
+  }
+  #functioning-list {
+  padding-left: 5px;
+  }
   .homeh2-1 {
     font-size: 1.1em;
   }
   .fct__text {
-    font-size: 1.13em;
+    font-size: 1.28em;
   }
   .fcticon {
     margin: 0px 15px 0px 25px;
@@ -83,7 +89,7 @@
   }
 }
 
-@include media-breapoint-up("sm2") {
+@include media-breakpoint-up("sm2") {
   .homeh2-1 {
     font-size: 1.2em;
   }
@@ -101,7 +107,7 @@
   }
 }
 
-@include media-breapoint-up("sm3") {
+@include media-breakpoint-up("sm3") {
   .homeh2-1 {
     font-size: 1.3em;
   }
@@ -122,7 +128,7 @@
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breakpoint-up("m") {
   #functioning {
     margin-top: 45px;
   }
@@ -137,7 +143,7 @@
   }
 }
 
-@include media-breapoint-up("ml") {
+@include media-breakpoint-up("ml") {
   #functioning {
     margin-top: 45px;
   }
@@ -153,7 +159,7 @@
   margin-right: 30px;
   }
 }
-@include media-breapoint-up("ml1") {
+@include media-breakpoint-up("ml1") {
   #functioning {
     margin-top: 50px;
     margin-left: 22px;
@@ -171,7 +177,7 @@
   }
 }
 
-@include media-breapoint-up("mll") {
+@include media-breakpoint-up("mll") {
   #functioning {
     margin-top: 58px;
     margin-left: 23px;
@@ -196,10 +202,10 @@
   }
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   #functioning {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .homeh2 {
     font-family: $font2;
@@ -239,13 +245,28 @@
   }
 }
 
-@include media-breapoint-up("lg"){
+@include media-breakpoint-up("lg"){
+  #functioning{
+    margin-right: 40px;
+  }
   .circle{
     padding: 10px;
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("lgg"){
+  .fct__text {
+    font-size: 1.5em;
+  }
+}
+
+@include media-breakpoint-up("lg1"){
+  .fct__text {
+    font-size: 1.6em;
+  }
+} 
+
+@include media-breakpoint-up("xl") {
   #functioning {
     margin: 50px 40px 0px 60px;
     text-align: center;
@@ -274,12 +295,27 @@
     margin-right: 23px;
   }
   .fct__text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-right: 20px;
   }
 }
 
-@include media-breapoint-up("xxxxl"){
+@include media-breakpoint-up("xxl"){
+  .functioning__button{
+    margin-bottom: 29px;
+  }
+  .fct__text{
+    font-size: 1.6em;
+  }
+}
+
+@include media-breakpoint-up("xxxl"){
+  .fct__text{
+    font-size: 1.9em;
+  } 
+}
+
+@include media-breakpoint-up("xxxxl"){
   .homeh2-1{
     margin-top: 42px;
     margin-bottom: 57px;

@@ -41,8 +41,11 @@ footer {
 .footericon {
   padding-right: 12px;
 }
+.footericon2{
+  padding-right: 7px;
+}
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   footer {
     display: flex;
     padding-top: 35px;
@@ -55,19 +58,19 @@ footer {
   }
 }
 
-@include media-breapoint-up("lg") {
+@include media-breakpoint-up("lg") {
   footer{
     padding-top: 35px ;
   }
 }
 
-@include media-breapoint-up("lg1") {
+@include media-breakpoint-up("lg1") {
   footer{
     padding-top: 5opx;
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   footer {
     z-index: 2;
     margin-top: 0px;
@@ -93,7 +96,7 @@ footer {
   }
 }
 
-@include media-breapoint-up("xxxxl"){
+@include media-breakpoint-up("xxxxl"){
   footer{
     padding-top: 51px;
     padding-bottom: 91px;

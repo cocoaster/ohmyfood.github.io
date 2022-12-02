@@ -176,7 +176,7 @@
   -o-transform: translate(-50%, -50%);
 }
 
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
   .menus {
     height: 1208px;
   }
@@ -223,7 +223,7 @@
   }
 }
 
-@include media-breapoint-up("sm1") {
+@include media-breakpoint-up("sm1") {
   .title__container {
     font-size: 1em;
   }
@@ -236,7 +236,7 @@
   }
 }
 
-@include media-breapoint-up("sm2") {
+@include media-breakpoint-up("sm2") {
   .title__container {
     font-size: 1em;
   }
@@ -249,7 +249,7 @@
   }
 }
 
-@include media-breapoint-up("sm2bis") {
+@include media-breakpoint-up("sm2bis") {
   .menus{
     height: 1205px;
   }
@@ -267,7 +267,7 @@
   }
 }
 
-@include media-breapoint-up("sm3") {
+@include media-breakpoint-up("sm3") {
   .menus{
     height: 1207px;
   }
@@ -276,7 +276,7 @@
   }
 }
 
-@include media-breapoint-up("m") {
+@include media-breakpoint-up("m") {
   .subtitle__menus {
     font-size: 1.1em;
     &:after {
@@ -287,7 +287,7 @@
   }
 }
 
-@include media-breapoint-up("ml") {
+@include media-breakpoint-up("ml") {
   .subtitle__menus {
     font-size: 1.1em;
     &:after {
@@ -298,7 +298,7 @@
   }
 }
 
-@include media-breapoint-up("ml1") {
+@include media-breakpoint-up("ml1") {
   .restaurantname{
     font-size: 2em;
   }
@@ -310,7 +310,7 @@
   }
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   .menus {
     height: 1377px;
   }
@@ -341,7 +341,7 @@
   }
 }
 
-@include media-breapoint-up("lg"){
+@include media-breakpoint-up("lg"){
   .menus2{
     height: 1485px;
   }
@@ -350,7 +350,7 @@
   }
 }
 
-@include media-breapoint-up("lg1") {
+@include media-breakpoint-up("lg1") {
   .menus{
     height: 1378px; 
   }
@@ -359,7 +359,7 @@
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   .menus {
     height: 845px;
   }
@@ -456,7 +456,7 @@
   }
 }
 
-@include media-breapoint-up("xxl"){
+@include media-breakpoint-up("xxl"){
   .menus{
     height: 844px;
   }
@@ -471,7 +471,7 @@
   }
 }
 
-@include media-breapoint-up("xxxl"){
+@include media-breakpoint-up("xxxl"){
   .menus{
     height: 844px;
   }
@@ -483,7 +483,7 @@
   }
 }
 
-@include media-breapoint-up("xxxxl") {
+@include media-breakpoint-up("xxxxl") {
   .menus{
     height: 800px;
   }

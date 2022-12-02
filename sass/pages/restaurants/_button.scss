@@ -13,14 +13,14 @@
   @extend .btn;
 }
 
-@include media-breapoint-up("sm") {
+@include media-breakpoint-up("sm") {
   .order__button {
     padding: 15px 40px;
     font-size: 1em;
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   .order {
     margin-top: 28px;
   }
@@ -30,19 +30,19 @@
   }
 }
 
-@include media-breapoint-up("xxl"){
+@include media-breakpoint-up("xxl"){
   .order{
     margin-top: 47px;
   }
 }
 
-@include media-breapoint-up("xxxl"){
+@include media-breakpoint-up("xxxl"){
   .order{
     margin-top: 47px;
   }
 }
 
-@include media-breapoint-up("xxxxl"){
+@include media-breakpoint-up("xxxxl"){
   .order{
     margin-top: 3px;
   }

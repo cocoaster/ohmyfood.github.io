@@ -2,13 +2,13 @@
   margin-top: 58px;
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   .mainrestaurant {
     margin-top: 140px;
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   body {
     height: 100%;
   }
@@ -21,7 +21,7 @@
   }
 }
 
-@include media-breapoint-up("xxxxl"){
+@include media-breakpoint-up("xxxxl"){
   .mainrestaurant{
     height: 1450px;
   }

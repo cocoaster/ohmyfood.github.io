@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-@include media-breapoint-up("md") {
+@include media-breakpoint-up("md") {
   #topsection {
     margin-top: 0px;
   }
@@ -15,14 +15,14 @@
   }
 }
 
-@include media-breapoint-up("xl") {
+@include media-breakpoint-up("xl") {
   .topimg {
     margin-top: 90px;
     height: 450px;
   }
 }
 
-@include media-breapoint-up("xxxxl") {
+@include media-breakpoint-up("xxxxl") {
   .topimg {
     height: 654px;
   }
