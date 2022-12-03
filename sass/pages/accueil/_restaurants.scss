@@ -73,6 +73,9 @@
   }
 }
 @include media-breakpoint-up("sm2") {
+  #restaurants{
+    padding-left: 16px;
+  }
   .homeh2 {
     font-size: 1.2em;
   }

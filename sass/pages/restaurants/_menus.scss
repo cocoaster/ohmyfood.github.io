@@ -4,7 +4,7 @@
   height: 976px;
 }
 .menus2 {
-  height: 1062px;
+  height: 1050px;
 }
 .firstcontainermenu {
   position: absolute;
@@ -70,10 +70,13 @@
     box-shadow: 1px 1px 7px 2px #8a8989;
   }
   &:hover .points {
-    animation: pointsanim 1s ease-in-out forwards;
+    animation: pointsanim 1s ease-in-out forwards .6s;
   }
   &:hover .points0 {
-    animation: pointsanim 1s ease-in-out forwards;
+    animation: pointsanim 1s ease-in-out forwards .6s;
+  }
+  &:hover .points1{
+    animation: pointsanim 1s ease-in-out forwards .6s;
   }
   &:hover .validation {
     animation: checkanim 1s ease-in-out forwards;
@@ -93,7 +96,7 @@
   position: absolute;
   font-size: 0.6em;
   margin-left: 0px;
-  top: 8px;
+  top: 11px;
   left: 10px;
 }
 .description__menus {
@@ -101,7 +104,7 @@
   font-size: 0.52em;
   color: #2a2929;
   position: absolute;
-  bottom: 4px;
+  bottom: 12px;
   left: 10px;
   width: 78%;
 }
@@ -111,7 +114,6 @@
 }
 .points1 {
   padding-right: 58px;
-
   background-color: #ffffff;
   opacity: 0;
 }
@@ -121,7 +123,7 @@
 }
 .price {
   position: absolute;
-  bottom: 4px;
+  bottom: 12px;
   right: 10px;
   font-size: 0.52em;
   font-weight: bold;
@@ -185,7 +187,7 @@
     width: 100%;
   }
   .restaurantname {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .starter {
     margin-top: 40px;
@@ -205,17 +207,17 @@
     }
   }
   .title__container {
-    margin-top: 2px;
+    margin-top: 3px;
     font-size: 0.9em;
   }
   .description__menus {
     font-size: 0.64em;
-    bottom: 10px;
+    bottom: 15px;
   }
   .price {
     font-size: 0.64em;
     right: 15px;
-    bottom: 10px;
+    bottom: 15px;
   }
   .validation {
     width: 63px;
