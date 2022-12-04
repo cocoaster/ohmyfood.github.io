@@ -5,16 +5,16 @@
   display: inline-block;
 }
 .heartscontainer1bis {
-  transform: scale(0.7);
   position: absolute;
-  top: 23px;
-  right: 18px;
+  transform: scale(0.7);
+  bottom: 1px;
+  right: 8px;
 }
 .heartscontainer1 {
   position: absolute;
-transform: scale(0.9);
-right: 16px;
-bottom: 45px;
+  transform: scale(0.9);
+  right: 16px;
+  bottom: 45px;
 }
 #emptyheart{
   position: absolute;
@@ -95,22 +95,27 @@ bottom: 45px;
 @include media-breakpoint-up("sm") {
   .heartscontainer1bis {
     transform: scale(0.8);
-    top: 26px;
-    right: 27px;
+    right: 10px;
+    bottom: 3.5px;
   }
 }
 
 @include media-breakpoint-up("sm1"){
   .heartscontainer1bis {
-    top: 30px;
     right: 21px;
   }
 }
 
 @include media-breakpoint-up("sm2bis") {
   .heartscontainer1bis{
-  top: 30px;
-  right: 41px;
+    right: 41px;
+    bottom: 7.5px;
+  }
+}
+
+@include media-breakpoint-down("sm3") {
+  .heartscontainer1bis{
+    bottom: 9.5px;
   }
 }
 
@@ -118,53 +123,44 @@ bottom: 45px;
   .heartscontainer1bis {
     transform: scale(0.8);
     right: 54px;
-    top: 32px;
+  }
+}
+
+@include media-breakpoint-up("m1") {
+  .heartscontainer1bis{
+    transform: scale(1);
+    right: 40px;
   }
 }
 
 @include media-breakpoint-up("ml") {
   .heartscontainer1bis{
-    top: 39px;
     transform: scale(0.9);
    }
 }
 
 @include media-breakpoint-up("ml1") {
   .heartscontainer1bis{
-   top: 49px;
-   transform: scale(0.9);
+   transform: scale(1.2);
+   bottom: 9.5px;
   }
 } 
 
 @include media-breakpoint-up("mll1") {
   .heartscontainer1bis{
     transform: scale(1);
-    top: 49px;
   }
 }
 
 @include media-breakpoint-up("md") {
   .heartscontainer1bis{
     transform: scale(1.1);
-    top: 55px;
-  }
-}
-
-@include media-breakpoint-up("lg") {
-  .heartscontainer1bis{
-    top: 55px;
-  }
-}
-@include media-breakpoint-up("lg1") {
-  .heartscontainer1bis{
-  transform: scale(1.1);
   }
 }
 
 @include media-breakpoint-up("xl") {
   .heartscontainer1bis {
     position: absolute;
-    top: 46px;
     right: 90px;
     transform: scale(1.2);
   }
@@ -175,16 +171,10 @@ bottom: 45px;
   }
 }
 
-@include media-breakpoint-up("xxl"){
-  .heartscontainer1bis{
-    top: 49px;
-  }
-}
-
 @include media-breakpoint-up("xxxl"){
   .heartscontainer1bis{
-    top: 60px;
-    transform: scale(1.4);
+    bottom: 22px;
+    transform: scale(1.8);
   }
 }
 
@@ -194,5 +184,11 @@ bottom: 45px;
   }
   100% {
     transform: scale(0);
+  }
+}
+
+@include media-breakpoint-up("xxxxl"){
+  .heartscontainer1{
+    bottom: 60px;
   }
 }

@@ -13,7 +13,7 @@
   }
 
   100% {
-    transform: translateX(-285%);
+    transform: translateX(-40%);
   }
 }
 
@@ -88,9 +88,20 @@
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(-360%);
+      transform: translateX(-90%);
     }
   }
+}
+
+@include media-breakpoint-up("ml1"){
+  @keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-110%);
+    }
+  } 
 }
 
 @include media-breakpoint-up("xl") {
@@ -99,7 +110,7 @@
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(-375%);
+      transform: translateX(-120%);
     }
   }
 }

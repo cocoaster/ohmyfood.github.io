@@ -5,6 +5,48 @@
   width: 100%;
 }
 
+@include media-breakpoint-up("sm"){
+  .topimg{
+    height: 203px;
+  }
+}
+
+@include media-breakpoint-up("sm1"){
+  .topimg{
+    height: 231px;
+  }
+}
+
+@include media-breakpoint-up("sm3") {
+  .topimg{
+    height: 309px;
+  }
+}
+
+@include media-breakpoint-up("m1"){
+  .topimg{
+    height: 343px;
+  }
+}
+
+@include media-breakpoint-up("ml1"){
+  .topimg{
+    height: 408px;
+  } 
+}
+
+@include media-breakpoint-up("mll"){
+  .topimg{
+    height: 440px;
+  } 
+}
+
+@include media-breakpoint-up("mll1"){
+  .topimg{
+    height: 600px;
+  } 
+}
+
 @include media-breakpoint-up("md") {
   #topsection {
     margin-top: 0px;

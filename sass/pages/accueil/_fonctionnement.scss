@@ -288,7 +288,7 @@
   .homeh2-1 {
     font-family: $font2;
     font-size: 1.6em;
-    margin-top: 14px;
+    margin-top: 40px;
     margin-bottom: 36px;
   }
   #functioninglist {
@@ -328,6 +328,22 @@
   } 
 }
 
+@include media-breakpoint-up("xxxl2"){
+  .functioning__button{
+    padding: 31px 25px 30px 39px;
+  }
+  .circle{
+    padding: 15px;
+  }
+  .fcticon{
+    font-size: 2.4em;
+    margin-right: 40px;
+  }
+  .fct__text{
+    font-size: 2.4em;
+  } 
+}
+
 @include media-breakpoint-up("xxxxl"){
   .homeh2-1{
     margin-top: 42px;
@@ -340,11 +356,11 @@
     padding-bottom: 30px;
   }
   .fcticon {
-    font-size: 1.9em;
+    font-size: 2.4em;
     margin-right: 28px;
   }
   .fct__text {
-    font-size: 1.7em;
+    font-size: 2.4em;
     margin-right: 25px;
   }
 }

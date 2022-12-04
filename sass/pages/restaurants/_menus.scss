@@ -23,10 +23,17 @@
   padding-right: 15px;
   padding-top: 20px;
 }
+.restaurantname__container{
+  margin-right: 20px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 .restaurantname {
   font-family: $font1;
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 0;
 }
 .starter {
@@ -80,6 +87,9 @@
   &:hover .points1{
     animation: pointsanim 1s ease-in-out forwards .6s;
   }
+  &:hover .points2{
+    animation: pointsanim 1s ease-in-out forwards .6s;
+  }
   &:hover .validation {
     animation: checkanim 1s ease-in-out forwards;
   }
@@ -119,11 +129,19 @@
   background-color: #ffffff;
   opacity: 0;
 }
+.points2 {
+  padding-right: 58px;
+  background-color: #ffffff;
+  opacity: 0;
+}
 .points{
   background-color: #ffffff;
   opacity: 0;
 }
 .price {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
   position: absolute;
   bottom: 12px;
   right: 10px;
@@ -138,7 +156,7 @@
   width: 40px;
   height: 50px;
   background-color: $tertiary;
-  z-index: 1;
+  z-index: 10;
   border-radius: 0px 10px 8px 0px;
   -webkit-border-radius: 0px 10px 8px 0px;
   -moz-border-radius: 0px 10px 8px 0px;
@@ -188,7 +206,7 @@
     height: 1294px;
   }
   .restaurantname {
-    font-size: 1.3rem;
+    font-size: 1.2em;
   }
   .starter {
     margin-top: 40px;
@@ -227,6 +245,7 @@
     bottom: 15px;
   }
   .price {
+    padding-left: 10px;
     font-size: 0.64em;
     right: 15px;
     bottom: 15px;
@@ -241,9 +260,11 @@
   .title__container {
     font-size: 1em;
   }
+  .restaurantname{
+    font-size: 1.3em;
+  }
   .description__menus {
     font-size: 0.7em;
-    bottom: 10px;
   }
   .price {
     font-size: 0.7em;
@@ -260,6 +281,7 @@
   }
   .price {
     font-size: 0.8em;
+    bottom: 10px;
   }
 }
 
@@ -283,14 +305,20 @@
 
 @include media-breakpoint-up("sm3") {
   .menus{
-    height: 1207px;
+    height: 1220px;
   }
   .menus2 {
     height: 1312px;
   }
+  .restaurantname{
+    font-size: 1.7em;
+  }
 }
 
 @include media-breakpoint-up("m") {
+  .menus{
+    height: 1318px;
+  }
   .subtitle__menus {
     font-size: 1.1em;
     &:after {
@@ -301,7 +329,37 @@
   }
 }
 
+@include media-breakpoint-up("m1") {
+  .menus{
+    height: 1398px;
+  }
+  .menus2{
+    height: 1512px;
+  }
+  .restaurantname{
+    font-size: 2.1em;
+  }
+  .container__menus {
+    height: 88px;
+  }
+  .title__container{
+    font-size: 1.2em ;
+  }
+  .description__menus{
+    font-size: 1.1em;
+  }
+  .validation{
+    height: 88px;
+  }
+  .points2{
+    padding-right: 102px;   
+  }
+}
+
 @include media-breakpoint-up("ml") {
+  .menus2{
+    height: 1507px;
+  }
   .subtitle__menus {
     font-size: 1.1em;
     &:after {
@@ -317,7 +375,7 @@
     font-size: 2em;
   }
   .menus {
-    height: 1236px;
+    height: 1399px;
   }
   .menus2{
     height: 1326px;
