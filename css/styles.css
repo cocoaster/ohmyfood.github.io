@@ -2501,7 +2501,7 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 380px) {
   .menus {
-    height: 1220px;
+    height: 1214px;
   }
   .menus2 {
     height: 1312px;
@@ -2512,7 +2512,7 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 420px) {
   .menus {
-    height: 1318px;
+    height: 1228px;
   }
   .subtitle__menus {
     font-size: 1.1em;
@@ -2570,7 +2570,7 @@ form input:focus::-webkit-input-placeholder {
     height: 1399px;
   }
   .menus2 {
-    height: 1326px;
+    height: 1505px;
   }
 }
 @media screen and (min-width: 760px) {
