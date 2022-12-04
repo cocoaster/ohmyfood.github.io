@@ -167,9 +167,9 @@
   margin-right: 10px;
   animation: enterelements .5s ease-in-out;
   animation-delay: 3.1s;
-  @for $e from 1 to $numrestaurantcontainers {
-    &--#{$e} {
-      animation-delay: $animdelaybox * $e;
+  @for $i from 1 to $numrestaurantcontainers {
+    &--#{$i} {
+      animation-delay: $animdelaybox * $i;
     }
   }
 }
