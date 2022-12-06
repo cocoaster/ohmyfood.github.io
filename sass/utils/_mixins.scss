@@ -17,9 +17,5 @@
 @mixin homeletters{
   animation: letteranim 1s cubic-bezier(.5, 0.05, 1, .5)  forwards, spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards;
 }
-@mixin Oletters{
-  animation: letterOanim1 .5s cubic-bezier(.5, 0.05, 1, .5) forwards,
-  spacingletter 1s cubic-bezier(.5, 0.05, 1, .5)  forwards, 
-  letterOanim2-1 forwards 1s ease-in-out;
-}
+
 

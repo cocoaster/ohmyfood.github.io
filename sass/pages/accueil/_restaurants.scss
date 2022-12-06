@@ -165,11 +165,10 @@
   width: 95%;
   height: 281px;
   margin-right: 10px;
-  animation: enterelements .5s ease-in-out;
-  animation-delay: 3.1s;
+  animation: enterelements .5s ease-in-out 3.1s;
   @for $i from 1 to $numrestaurantcontainers {
     &--#{$i} {
-      animation-delay: $animdelaybox * $i;
+      animation-delay: calc($animdelaybox * $i);
     }
   }
 }
