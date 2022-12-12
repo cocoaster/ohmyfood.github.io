@@ -96,8 +96,8 @@ body {
 
 @keyframes mvtloader {
   0% {
-    -webkit-transform: translate(0px, 0);
-    transform: translateY(0px, 0);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
   15% {
     -webkit-transform: translate(4px, 10px);
