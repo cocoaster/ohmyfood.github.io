@@ -30,7 +30,8 @@
   border-radius: 20px 20px 20px 20px;
   font-family: $font2;
   box-shadow: 0px 4px 9px 3px #e2dddd;
-  transition: 0.4s ease-in-out;
+  animation: enterelements 1.5s cubic-bezier(.82,.02,0,.68) 3.1s;
+  transition: 0.4s;
   &:hover {
     box-shadow: -5px 7px 10px 4px #e2dddd;
   }
@@ -127,6 +128,11 @@
   .restaurant__lign {
     display: flex;
     justify-content: space-around;
+    @for $i from 1 to $numrestaurantcontainers {
+      &--#{$i} {
+        animation-delay: $animdelaybox * $i;
+      }
+    }
   }
   .restaurantlink {
     width: 98%;

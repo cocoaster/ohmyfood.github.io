@@ -28,7 +28,7 @@
   left: 10px;
 }
 
-@keyframes checkanim {
+@-webkit-keyframes checkanim {
   0% {
     transform: scaleX(0);
   }
@@ -37,6 +37,22 @@
   }
 }
 
+@keyframes checkanim {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes priceanim {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 @keyframes priceanim {
   0% {
     transform: translateX(0px);
@@ -45,7 +61,14 @@
     transform: translateX(-50%);
   }
 }
-
+@-webkit-keyframes circleanim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 @keyframes circleanim {
   0% {
     transform: rotate(0deg);
@@ -54,7 +77,22 @@
     transform: rotate(720deg);
   }
 }
-
+@-webkit-keyframes validationcontainer {
+  0% {
+    transform: scaleX(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(0.6);
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 @keyframes validationcontainer {
   0% {
     transform: scaleX(0.6);
@@ -71,7 +109,16 @@
     opacity: 1;
   }
 }
-
+@-webkit-keyframes enterelements {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes enterelements {
   from {
     transform: translateY(30px);
@@ -82,7 +129,20 @@
     opacity: 1;
   }
 }
-
+@-webkit-keyframes loaderduration {
+  0% {
+    opacity: 0;
+    z-index: -100;
+  }
+  99% {
+    opacity: 0;
+    z-index: -100;
+  }
+  100% {
+    opacity: 1;
+    z-index: 0;
+  }
+}
 @keyframes loaderduration {
   0% {
     opacity: 0;
@@ -98,6 +158,14 @@
   }
 }
 @media screen and (min-width: 285px) {
+  @-webkit-keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+  }
   @keyframes priceanim {
     0% {
       transform: translateX(0px);
@@ -108,6 +176,14 @@
   }
 }
 @media screen and (min-width: 530px) {
+  @-webkit-keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-110%);
+    }
+  }
   @keyframes priceanim {
     0% {
       transform: translateX(0px);
@@ -118,6 +194,14 @@
   }
 }
 @media screen and (min-width: 1100px) {
+  @-webkit-keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
   @keyframes priceanim {
     0% {
       transform: translateX(0px);
@@ -127,8 +211,15 @@
     }
   }
 }
-
 @media screen and (min-width: 2000px) {
+  @-webkit-keyframes priceanim {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-555%);
+    }
+  }
   @keyframes priceanim {
     0% {
       transform: translateX(0px);
@@ -238,7 +329,7 @@ body {
   height: auto;
 }
 
-@keyframes smokegradient {
+@-webkit-keyframes smokegradient {
   0% {
     background-position: 0% 50%;
     opacity: 0;
@@ -256,6 +347,46 @@ body {
   }
 }
 
+@keyframes smokegradient {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    background-position: 100% 50%;
+    opacity: 0;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mvtloader {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  15% {
+    transform: translate(4px, 10px);
+  }
+  30% {
+    transform: translate(-1px, 0px);
+  }
+  45% {
+    transform: translate(3px, 10px);
+  }
+  65% {
+    transform: translate(0px, 0px);
+  }
+  85% {
+    transform: translate(2px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes mvtloader {
   0% {
     transform: translate(0px, 0px);
@@ -279,7 +410,19 @@ body {
     transform: translate(0px, 0px);
   }
 }
-
+@-webkit-keyframes endloader {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes endloader {
   0% {
     opacity: 1;
@@ -422,6 +565,17 @@ body {
   animation: gradientheart 30s ease infinite;
 }
 
+@-webkit-keyframes gradientheart {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes gradientheart {
   0% {
     background-position: 0% 50%;
@@ -433,7 +587,14 @@ body {
     background-position: 0% 50%;
   }
 }
-
+@-webkit-keyframes heartanim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 @keyframes heartanim {
   0% {
     transform: scale(0);
@@ -442,7 +603,14 @@ body {
     transform: scale(1.1);
   }
 }
-
+@-webkit-keyframes heartanim2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes heartanim2 {
   0% {
     transform: scale(1);
@@ -527,6 +695,14 @@ body {
   .heartscontainer1bis {
     bottom: 22px;
     transform: scale(1.8);
+  }
+}
+@-webkit-keyframes emptyanim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes emptyanim {
@@ -1497,12 +1673,12 @@ form input:focus::-webkit-input-placeholder {
             animation: enterelements 0.5s ease-in-out 3.1s;
   }
   .functioning__button--1 {
-    -webkit-animation-delay: 0.25s;
-            animation-delay: 0.25s;
-  }
-  .functioning__button--2 {
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
+  }
+  .functioning__button--2 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
   .circle {
     padding: 10px;
@@ -1651,7 +1827,9 @@ form input:focus::-webkit-input-placeholder {
   border-radius: 20px 20px 20px 20px;
   font-family: robotto, sans-serif;
   box-shadow: 0px 4px 9px 3px #e2dddd;
-  transition: 0.4s ease-in-out;
+  -webkit-animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68) 3.1s;
+          animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68) 3.1s;
+  transition: 0.4s;
 }
 .restaurantcontainers:hover {
   box-shadow: -5px 7px 10px 4px #e2dddd;
@@ -1747,6 +1925,10 @@ form input:focus::-webkit-input-placeholder {
     display: flex;
     justify-content: space-around;
   }
+  .restaurant__lign--1 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
   .restaurantlink {
     width: 98%;
   }
@@ -1787,16 +1969,8 @@ form input:focus::-webkit-input-placeholder {
             animation: enterelements 0.5s ease-in-out 3.1s;
   }
   .restaurantcontainers--1 {
-    -webkit-animation-delay: 0.25s;
-            animation-delay: 0.25s;
-  }
-  .restaurantcontainers--2 {
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
-  }
-  .restaurantcontainers--3 {
-    -webkit-animation-delay: 0.75s;
-            animation-delay: 0.75s;
   }
   .restaurantimg {
     width: 100%;
@@ -2032,8 +2206,8 @@ form input:focus::-webkit-input-placeholder {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 0px 0px 9px 2px #b5b3b3;
-  -webkit-animation: enterelements 0.5s ease-in-out;
-          animation: enterelements 0.5s ease-in-out;
+  -webkit-animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68);
+          animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68);
 }
 .container__menus--1 {
   -webkit-animation-delay: 0.1s;
@@ -2759,7 +2933,14 @@ header {
           animation-delay: 0.7s, 1.25s;
 }
 
-
+@-webkit-keyframes spacingletter {
+  0% {
+    letter-spacing: 5px;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
 
 @keyframes spacingletter {
   0% {
@@ -2769,7 +2950,16 @@ header {
     letter-spacing: normal;
   }
 }
-
+@-webkit-keyframes letteranim {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 @keyframes letteranim {
   0% {
     opacity: 0;
@@ -3023,7 +3213,16 @@ header {
   .letter {
     font-size: 5.8rem;
   }
- 
+  @-webkit-keyframes letteranim {
+    0% {
+      opacity: 0;
+      transform: translateX(1000px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
   @keyframes letteranim {
     0% {
       opacity: 0;
@@ -3034,7 +3233,14 @@ header {
       transform: translateX(0px);
     }
   }
- 
+  @-webkit-keyframes spacingletter {
+    0% {
+      letter-spacing: 20px;
+    }
+    100% {
+      letter-spacing: normal;
+    }
+  }
   @keyframes spacingletter {
     0% {
       letter-spacing: 20px;
