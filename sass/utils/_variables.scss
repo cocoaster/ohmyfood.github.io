@@ -37,16 +37,17 @@ lighten($secondary, $lighten));
 $font1: shrikhand;
 $font2: robotto, sans-serif;
 
-$numfunctioning__button: 3;
-$animboxduration: 1s;
-$animdelaybutton: calc($animboxduration / $numfunctioning__button);
-
-$numrestaurantcontainers: 2;
-$animdelaybox: calc($animboxduration / $numrestaurantcontainers);
-
 $number__containermenus: 10;
 $animduration: 1s;
 $animdelay: calc($animduration / $number__containermenus);
+
+$numfunctioning__button: 3;
+$animdelaybutton: calc($animduration / $numfunctioning__button);
+
+$numrestaurantcontainers: 2;
+$animdelaybox: calc($animduration / $numrestaurantcontainers);
+
+
 
 
 

@@ -6,7 +6,7 @@ Afin de faciliter la maintenance du site voici le récapitulatif de l'architectu
 
     1. Un dossier utils qui contient les fichiers :
     - "_variables" où se trouvent les variables (couleurs, fonts, media queries, les variables utilisées dans les fonctions)
-    - _extensions: les extensions
+    - "_extensions": les extensions
     - "_mixins" où sont les mixins utilisées pour créer le header en position fixe et les media queries
     - "_animations" où se trouvent les animations pour valider le choix des menus, l'entrée des éléments et celle du loader  
 
