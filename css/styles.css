@@ -2034,8 +2034,10 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 2000px) {
   #restaurants {
-    right: 30px;
+    right: 39px;
     top: 250px;
+    padding: 40px 20px;
+    width: 55%;
   }
   .homeh2 {
     margin-bottom: 90px;
@@ -2043,13 +2045,13 @@ form input:focus::-webkit-input-placeholder {
   }
   .restaurant__lign {
     margin-bottom: 17px;
-    margin-left: 8px;
+    margin-left: 20px;
   }
   .restaurantlink {
     margin-right: 0;
   }
   .restaurantcontainers {
-    width: 85%;
+    width: 90%;
     height: 418px;
   }
   .restaurantimg {

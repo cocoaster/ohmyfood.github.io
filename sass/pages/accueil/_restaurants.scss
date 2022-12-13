@@ -230,8 +230,10 @@
 
 @include media-breakpoint-up("xxxxl") {
   #restaurants {
-    right: 30px;
-    top: 250px
+    right: 39px;
+    top: 250px;
+    padding: 40px 20px;
+    width: 55%;
   }
   .homeh2 {
     margin-bottom: 90px;
@@ -239,7 +241,7 @@
   }
   .restaurant__lign{
     margin-bottom: 17px;
-    margin-left: 8px;
+    margin-left: 20px;
   }
 
   .restaurantlink{
@@ -247,7 +249,7 @@
   }
 
   .restaurantcontainers{
-    width: 85%;
+    width: 90%;
     height: 418px;
   }
   .restaurantimg{
