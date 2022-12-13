@@ -840,6 +840,7 @@ html {
   }
   .whiteleftcontainerdesktop {
     height: 1644px;
+    width: 45.2%;
   }
 }
 #location {
@@ -1788,6 +1789,9 @@ form input:focus::-webkit-input-placeholder {
     margin-bottom: 57px;
     font-size: 3em;
   }
+  #functioninglist {
+    width: 70%;
+  }
   .functioning__button {
     margin-bottom: 40px;
     padding-top: 30px;
@@ -2030,6 +2034,7 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 2000px) {
   #restaurants {
+    right: 30px;
     top: 250px;
   }
   .homeh2 {
@@ -2038,8 +2043,13 @@ form input:focus::-webkit-input-placeholder {
   }
   .restaurant__lign {
     margin-bottom: 17px;
+    margin-left: 8px;
+  }
+  .restaurantlink {
+    margin-right: 0;
   }
   .restaurantcontainers {
+    width: 85%;
     height: 418px;
   }
   .restaurantimg {
