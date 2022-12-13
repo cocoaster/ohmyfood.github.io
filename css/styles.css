@@ -2081,10 +2081,10 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 2000px) {
   .mainrestaurant {
-    height: 1450px;
+    height: 1530px;
   }
   .mainrestaurant2 {
-    height: 1484px;
+    height: 1548px;
   }
 }
 .topimg {
@@ -2723,10 +2723,10 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 2000px) {
   .menus {
-    height: 800px;
+    height: 879px;
   }
   .menus2 {
-    height: 836px;
+    height: 883px;
   }
   .firstcontainermenu {
     padding-left: 275px;
@@ -2788,7 +2788,7 @@ form input:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 2000px) {
   .order {
-    margin-top: 3px;
+    margin-top: 25px;
   }
 }
 header {
@@ -3390,7 +3390,7 @@ footer {
 }
 @media screen and (min-width: 2000px) {
   footer {
-    padding-top: 51px;
+    padding-top: 80px;
     padding-bottom: 91px;
     padding-left: 40px;
   }
