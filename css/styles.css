@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
 .btn, .order__button, #navbar__button {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   color: #ffffff;
   border: none;
   box-shadow: -1px 1px 4px 0.5px #b2acac;
@@ -866,7 +866,7 @@ form {
   outline: none;
   border: 0px;
   background-color: #eaeaea;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;
@@ -886,26 +886,26 @@ form input {
 }
 form input::-webkit-input-placeholder {
   color: #000000;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
 }
 form input:-moz-placeholder {
   color: #000000;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   width: 100%;
 }
 form input::-moz-placeholder {
   color: #000000;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
 }
 form input:-ms-input-placeholder {
   color: #000000;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
 }
@@ -1256,7 +1256,7 @@ form input:focus::-webkit-input-placeholder {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -1264,7 +1264,7 @@ form input:focus::-webkit-input-placeholder {
 #navsection__txt {
   width: 80%;
   margin: 0 auto;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.6em;
   color: #565555;
   text-align: center;
@@ -1437,7 +1437,7 @@ form input:focus::-webkit-input-placeholder {
 }
 
 .homeh2-1 {
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9em;
   margin-left: 1px;
   margin-bottom: 25px;
@@ -1446,7 +1446,7 @@ form input:focus::-webkit-input-placeholder {
 #functioninglist {
   max-width: 92%;
   list-style-type: none;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: bold;
   margin: 6px;
   padding-left: 0px;
@@ -1664,7 +1664,7 @@ form input:focus::-webkit-input-placeholder {
     margin-right: 30px;
   }
   .homeh2 {
-    font-family: robotto, sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 1.3em;
   }
   #functioninglist {
@@ -1729,7 +1729,7 @@ form input:focus::-webkit-input-placeholder {
     margin-top: 7px;
   }
   .homeh2-1 {
-    font-family: robotto, sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 1.6em;
     margin-top: 40px;
     margin-bottom: 36px;
@@ -1819,7 +1819,7 @@ form input:focus::-webkit-input-placeholder {
 }
 
 .homeh2 {
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 1em;
   margin: 10px;
   margin-bottom: 15px;
@@ -1839,7 +1839,7 @@ form input:focus::-webkit-input-placeholder {
   height: auto;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   box-shadow: 0px 4px 9px 3px #e2dddd;
   -webkit-animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68) 3.1s;
           animation: enterelements 1.5s cubic-bezier(0.82, 0.02, 0, 0.68) 3.1s;
@@ -1873,13 +1873,13 @@ form input:focus::-webkit-input-placeholder {
 }
 
 .restaurant__title {
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   margin: 10px 0px 13px 10px;
   font-size: 1em;
 }
 
 .restaurantp {
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   margin: 0px 0px 13px 10px;
   font-size: 1em;
 }
@@ -2194,7 +2194,7 @@ form input:focus::-webkit-input-placeholder {
 }
 
 .starter {
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 .subtitle__menus {
@@ -2564,7 +2564,7 @@ form input:focus::-webkit-input-placeholder {
     font-size: 2.4em;
   }
   .starter {
-    font-family: robotto, sans-serif;
+    font-family: roboto, sans-serif;
   }
   .subtitle__menus {
     font-size: 1em;
@@ -2628,7 +2628,7 @@ form input:focus::-webkit-input-placeholder {
     justify-content: space-between;
   }
   .starter {
-    font-family: robotto, sans-serif;
+    font-family: roboto, sans-serif;
     margin-bottom: 40px;
     width: 400px;
   }
@@ -3320,7 +3320,7 @@ footer {
 
 #footerlist {
   list-style-type: none;
-  font-family: robotto, sans-serif;
+  font-family: roboto, sans-serif;
   padding-left: 15px;
 }
 
